@@ -1,0 +1,31 @@
+<ion-view view-title="Fit-Up-Payment History" ng-controller="listVideoController">
+  <ion-content>
+
+    <div class="list list-inset">
+
+      <div align="center">
+        <table class="simply">
+          <!-- Table header -->
+          <thead class="simply th">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Video Name</th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody class="simply tbody">
+          <tr ng-repeat="favorite in favorites">
+            <td>{{$index+1}}</td>
+            <td>step One.mp4</td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
+

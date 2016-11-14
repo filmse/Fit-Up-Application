@@ -1,0 +1,142 @@
+<ion-side-menus enable-menu-with-back-views="true">
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <div style="border: solid 1px cadetblue" class="button button-dark overDivvv item-divider colorMenu"
+             ng-show="user" ng-click="logout()">
+          Log Out
+        </div>
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+
+    <ion-content>
+      <ion-list>
+
+        <div ng-show="user">
+          <div class="item item-divider colorMenu">
+            <a class="ion-ios-gear dark" href="#/app/edituser"></a>
+            Edit Profile
+          </div>
+          <div align="right">
+            <div class="item item-divider colorMenu">
+              <div align="center" class="text-center profileUser">
+                <div align="center">
+                  <div style="float: left; margin-left: -15%; margin-top: -10%" ng-repeat="image in user.images"
+                       class="thumbnailCircles">
+                    <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgs">
+                  </div>
+                </div>
+                <!--<h5><b>Status</b><br> {{user['roles'][0]['roleName']}}</h5>-->
+                <!--<h5><b>Email</b>: {{user.email}}</h5>-->
+                <!--<button-->
+                <!--style="font-size: larger; width: 100px; -moz-border-radius: 5em; margin-left: 2em; border-radius: 10px / 20px;"-->
+                <!--class="button button-small">"{{user.username}}"-->
+                <!--</button>-->
+                <p
+                  style="font-size: 20px; width: 100px; margin-left: 5em; margin-bottom: 100em; color: black">
+                  {{user.username}}</p>
+                <br>
+              </div>
+            </div>
+          </div>
+          <!--<div align="center" class="text-center profileUser">-->
+          <!--<div align="center">-->
+          <!--<div style="float: left" ng-repeat="image in user.images" class="thumbnailCircles">-->
+          <!--<img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgs">-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--<h5><b>Welcome</b><br> "{{user.username}}" </h5>-->
+          <!--<h5><b>Status</b><br> {{user['roles'][0]['roleName']}}</h5>-->
+          <!--&lt;!&ndash;<h5><b>Email</b>: {{user.email}}</h5>&ndash;&gt;-->
+          <!--<br>-->
+          <!--</div>-->
+        </div>
+
+        <div class="item item-divider colorMenu">
+          User Menu
+        </div>
+        <ion-item menu-close class="item item-icon-left item-icon-right" href="#/app/login" ng-hide="user">
+          <i class="icon ion-ios-person"></i>
+          Login
+          <i class="icon ion-ios-arrow-right button-small"></i>
+        </ion-item>
+        <ion-item menu-close class="item item-icon-left item-icon-right" href="#/app/register" ng-hide="user">
+          <i class="icon ion-ios-personadd"></i>
+          Register
+          <i class="icon ion-ios-arrow-right button-small"></i>
+        </ion-item>
+        <!--<ion-item class="item item-icon-left item-icon-right" menu-close href="#/app/board">-->
+        <!--<i class="icon ion-android-folder"></i>-->
+        <!--Information-->
+        <!--<i class="icon ion-ios-arrow-right button-small"></i>-->
+        <!--</ion-item>-->
+        <ion-item class="item item-icon-left item-icon-right" menu-close href="#/app/video">
+          <i class="icon ion-ios-film"></i>
+          Main
+          <i class="icon ion-ios-arrow-right button-small"></i>
+        </ion-item>
+        <ion-item class="item item-icon-left item-icon-right" ng-show="user" menu-close href="#/app/favorite">
+          <i class="icon ion-heart"></i>
+          My Favorite
+          <i class="icon ion-ios-arrow-right button-small"></i>
+        </ion-item>
+        <ion-item class="item item-icon-left item-icon-right" ng-show="user" menu-close href="#/app/payment">
+          <i class="icon ion-ios-cart"></i>
+          Shopping Cart
+          <i class="icon ion-ios-arrow-right button-small"></i>
+        </ion-item>
+
+        <div ng-show="hasRole('trainer')">
+          <div class="item item-divider colorMenu">
+            Trainer Menu
+          </div>
+          <!--http://localhost:81/watched/upload.php-->
+          <ion-item menu-close href="#/app/addVideo">
+            Upload Video
+          </ion-item>
+          <ion-item menu-close href="#/app/addInformation">
+            Upload Information
+          </ion-item>
+          <ion-item menu-close href="#/app/listInformation">
+            Information History
+          </ion-item>
+          <ion-item menu-close href="#/app/listVideo">
+            Video History
+          </ion-item>
+        </div>
+
+        <div ng-show="hasRole('admin')">
+          <div class="item item-divider colorMenu">
+            Admin Menu
+          </div>
+          <ion-item menu-close href="#/app/management">
+            System management
+          </ion-item>
+        </div>
+
+        <!--<div align="center">-->
+        <!--<div class="item item-divider colorMenu" ng-show="user">-->
+        <!--<ion-item menu-close ng-click="logout()">-->
+        <!--Log Out &nbsp;&nbsp;<i class="icon ion-log-out" style="font-size:30px"></i>-->
+        <!--</ion-item>-->
+        <!--</div>-->
+        <!--</div>-->
+
+      </ion-list>
+    </ion-content>
+
+  </ion-side-menu>
+</ion-side-menus>

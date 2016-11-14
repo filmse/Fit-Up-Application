@@ -1,0 +1,32 @@
+<ion-view view-title="Fit-Up" name="Edit-view" ng-controller="editInfoController">
+  <ion-content class="padding">
+
+    <div align="center">
+      <div class="modal" style="height: 700px">
+
+        <div class="list LabelSmooth boundary">
+          <br>
+          <div style="font-size: large; font-size: 30px">
+            {{infos.name}}
+          </div>
+
+          <br>
+          <br>
+
+          <div ng-repeat="imageFitUpInfo in infos.imageInfos">
+            <img ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}">
+          </div>
+
+          <br>
+
+          <div>
+            {{infos.description}}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view view-title="Fit-Up">
+  <ion-content class="padding">
+
+    <div class="list list-inset">
+
+      <form name="editform" novalidate flow-init>
+        <div class="list list-inset">
+          <div class="list LabelSmooth boundary">
+            <div class="form-group">
+              <div ng-repeat="file in $flow.files" class="text-center" align="center">
+                <div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>
+                <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
+                  Cancel
+                </a>
+              </div>
+              <div align="center">
+                <button type="file" class="button icon-left ion-imageFitUpInfo button-positive" flow-btn>Add Picture
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Topic:</p>
+            <label class="item item-input banner-info">
+              <input type="text" id="productname" name="productname" placeholder="Topic" ng-model="vm.info.name"
+                     maxlength="50" required/>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>Content:</p>
+            <label class="item item-input banner-info">
+              <input style="width: 100%; height: 100px;" type="text" id="productdescription"
+                     placeholder="description" name="productdescription" ng-model="vm.info.description"
+                     maxlength="2000" required/>
+            </label>
+          </div>
+
+          <button class="button button-block button-positive" ng-click="vm.addInfo($flow)">Add</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
+  </ion-content>
+</ion-view>

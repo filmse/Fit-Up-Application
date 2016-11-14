@@ -1,0 +1,46 @@
+<ion-view view-title="Fit-Up-Payment History" ng-controller="shoppingListController">
+  <ion-content>
+
+    <div class="list list-inset">
+
+      <div class="bar bar-header item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="search" placeholder="Search" ng-model="name"/>
+        </label>
+        <button class="button button-dark" ng-click="searchProduct(name)">
+          Search
+        </button>
+      </div>
+
+      <hr>
+
+      <div align="center">
+        <table class="simply">
+          <!-- Table header -->
+          <thead class="simply th">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Shopping Cart</th>
+            <th scope="col">Pay Money</th>
+          </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody class="simply tbody">
+          <tr ng-repeat="shoppingCart in shoppingCarts | filter: name">
+            <td>{{$index+1}}</td>
+            <td>{{shoppingCart.purchaseDate}}-{{shoppingCart.id}}</td>
+            <td>
+            <span>
+              <a class="ion-ios-gear dark" ng-href="#/app/payments/{{shoppingCart.id}}">Payment</a>
+            </span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

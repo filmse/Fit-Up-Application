@@ -1,0 +1,103 @@
+<ion-view view-title="Edit Account" name="Edit-view">
+  <ion-content class="padding BgEdiit" ng-controller="listUserController">
+
+    <br>
+
+    <form name="editform" novalidate flow-init>
+
+      <h1>Your Profile</h1>
+      <div class="BorderImg"></div>
+      <br>
+      <br>
+      <br>
+
+      <div align="center">
+        <div class="text-center thumbnailCircle">
+          <div ng-repeat="image in user.images">
+            <img ng-src="data:{{image.contentType}};base64,{{image.content}}" style="cursor: pointer"
+                 class="thumbnailImg" ng-click="deleteImage(image.id)">
+          </div>
+          <div class="text-center" align="center">
+            <div ng-repeat="file in $flow.files">
+              <a class="ion-close-circled dark" style="cursor: pointer" ng-click="$flow.cancel()"></a>
+              <div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"></div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="ion-images" style="font-size: 5em; cursor: pointer;" aria-disabled="true" type="file"
+               flow-btn>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <ul class="address">
+
+        <li>
+          <ul class="address-text">
+            <li><b>Name</b></li>
+            <li>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <input class="form-control" type="text" placeholder="Username" ng-model="user.username"
+                         ng-pattern="/^[a-zA-Z0-9]*$/" ng-minlength="4" ng-maxlength="20" required>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="address-text">
+            <li><b>Email</b></li>
+            <li>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <input class="form-control" type="email" placeholder="E-mail" ng-model="user.email" required>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="address-text">
+            <li><b>Password</b></li>
+            <li>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <input type="password" placeholder="Password" id="txtNewPassword" ng-model="user.password"
+                         ng-minlength="4" ng-maxlength="20" required>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <!--<h5 style="cursor: pointer" type="file" flow-btn><u><b>Add Picture</b></u></h5>-->
+        <button type="submit" class="button button-block button-positive" ng-disabled="editform.$invalid"
+                ng-click="editUser($flow)"> Edit
+        </button>
+      </ul>
+
+    </form>
+    <div class="dark" align="left">
+      <p style="cursor: pointer" ng-click="deleteUsers(user.id)">Delete Account</p>
+    </div>
+  </ion-content>
+</ion-view>
+
+<!--<script type="text/javascript">-->
+
+<!--function checkPasswordMatch() {-->
+<!--var password = $("#txtNewPassword").val();-->
+<!--var confirmPassword = $("#txtConfirmPassword").val();-->
+
+<!--if (password != confirmPassword)-->
+<!--$("#divCheckPasswordMatch").html("Passwords do not match!");-->
+<!--else-->
+<!--$("#divCheckPasswordMatch").html("Passwords match.");-->
+<!--}-->
+
+<!--</script>-->

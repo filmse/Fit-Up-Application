@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fitup">
+    <output-path>$PROJECT_DIR$/out/artifacts/fitup</output-path>
+    <root id="archive" name="fitup.war" />
+  </artifact>
+</component>

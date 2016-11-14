@@ -1,0 +1,62 @@
+<ion-view view-title="Fit-Up" name="Edit-view" ng-controller="editInfoController">
+  <ion-content class="padding">
+
+    <form name="editform" novalidate flow-init>
+      <div class="list list-inset">
+
+        <div class="form-group">
+          <td>
+            <div ng-repeat="imageFitUpInfo in infos.imageInfos" class="text-center">
+              <img ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}" class="thumbnail">
+              <a><span class="ion-close-circled" ng-click="deleteImageInfo(imageFitUpInfo.id)"></span></a>
+            </div>
+          </td>
+        </div>
+
+        <div class="form-group">
+          <div class="responsive-sm">
+            <div ng-repeat="file in $flow.files" class=" text-center" align="center">
+              <!--<td>{{$index+1}}</td>-->
+              <!--<td>{{file.name}}</td>-->
+              <div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>
+              <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
+                Cancel
+              </a>
+            </div>
+            <br>
+            <div align="center">
+            <button type="file" class="button icon-left ion-imageFitUpInfo button-positive" flow-btn>Add Picture</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="item item-input">
+            <input type="text" id="name" name="name" ng-model="infos.name" required/>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="item item-input">
+            <input type="text" id="description" name="description" ng-model="infos.description" required/>
+          </label>
+        </div>
+
+        <!--<div class="form-group">-->
+        <!--<input type="file" flow-btn/>-->
+        <!--<table>-->
+        <!--<tr ng-repeat="file in $flow.files">-->
+        <!--<td><img flow-img="$flow.files[{{$index}}]"></td>-->
+        <!--</tr>-->
+        <!--</table>-->
+        <!--</div>-->
+
+        <button class="button button-block button-positive" ng-click="editInfo($flow)">Edit</button>
+
+
+      </div>
+
+    </form>
+
+  </ion-content>
+</ion-view>

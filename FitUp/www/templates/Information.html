@@ -1,0 +1,27 @@
+<ion-view view-title="Fit-Up-Information" name="dashboard-view">
+  <ion-content class="padding">
+
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="name"/>
+      </label>
+      <button class="button button-dark" ng-click="searchInfo(name)">
+        Search
+      </button>
+    </div>
+    <hr>
+
+    <div class="list">
+      <a class="overDivs item item-thumbnail-left" ng-repeat="fitUpInfo in infos | filter:name"
+         ng-href="#/app/informationExpand/{{fitUpInfo.id}}">
+        <img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
+             ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}">
+        <h2>{{fitUpInfo.name}}</h2>
+        <p class="over overflow-ellipsis">{{fitUpInfo.description}}</p>
+        <p style="color: red">Read More...</p>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,219 @@
+<ion-view view-title="Fit-Up" name="Video-view">
+  <ion-content class="padding BgEdiitt">
+
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="name"/>
+      </label>
+    </div>
+    <hr style="border-color: red">
+    <br>
+
+    <div class="row">
+
+      <div class="col text-center">
+        <h3 class="title" style="color: white">Welcome</h3>
+        <p style="color: white">{{user.username}}</p>
+        <!--<p>This could be your Dashboard.</p>-->
+        <br>
+        <div style="width: 100%; height: 150px; font-size: 10px;" ng-click="videoClicks()"
+             class="ImgD1 overDivsy button button-full button-positive animated bounceInRight">
+
+          <div
+            style="width: 200px ;float: left; border-radius: 5px; font-size: 20px; background-color: red; margin-top: 100px; opacity: 0.7;">
+            Video
+          </div>
+        </div>
+        <br>
+        <div style="width: 100%; height: 150px; font-size: 10px;" ng-click="InfoClicks()"
+             class="ImgD2 overDivsy button button-full button-positive animated bounceInLeft">
+
+          <div
+            style="width: 200px ;float: right; border-radius: 5px; font-size: 20px; background-color: red; margin-top: 100px; opacity: 0.7;">
+            Information
+          </div>
+        </div>
+        <br>
+        <div style="width: 100%; height: 150px; font-size: 10px;" ng-click="aboutUsClicks()"
+             class="ImgD3 overDivsy button button-full button-assertive animated bounceInRight">
+
+          <div
+            style="width: 200px ;float: left; border-radius: 5px; font-size: 20px; background-color: red; margin-top: 100px; opacity: 0.7;">
+            About Us
+          </div>
+        </div>
+        <br>
+        <p style="color: gray">@Fit-Up Application</p>
+        <p style="color: gray">WWW.Fit-Up Sport Inc, 2016</p>
+        <br>
+      </div>
+    </div>
+
+    <!--<div class="list card" ng-repeat="video in videos">-->
+    <!--<div class="item item-avatar">-->
+    <!--<img style="background-color: #2B333F">-->
+    <!--<h2>{{video.name}}</h2>-->
+    <!--<p>{{video.price}} THB.</p>-->
+    <!--<p>{{video.videoClips[0].fileName}}</p>-->
+    <!--</div>-->
+
+    <!--<div class="item item-body">-->
+    <!--<video controls width="300" height="auto">-->
+    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>-->
+    <!--</video>-->
+    <!--<p>{{video.description}}</p>-->
+    <!--<p>-->
+    <!--<button ng-show="user" style="width: 5em; font-size: small" class="overDivvv button button-dark button-small"-->
+    <!--ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>-->
+    <!--</button>-->
+    <!--<button ng-show="user" style="width: 5em; font-size: small" class="overDivvv button button-dark button-small"-->
+    <!--ng-click="addToCart(user)">Buy-->
+    <!--</button>-->
+    <!--</p>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<ion-item>-->
+
+    <!--<div class="row responsive-sm" ng-repeat="video in videos">-->
+
+    <!--<div class="col">-->
+    <!--<ul class="list">-->
+
+    <!--<div class="scopes">-->
+    <!--<div class="item item-image">-->
+    <!--<br>-->
+
+    <!--<div align="center">-->
+    <!--{{video.videoClips[0].fileName}}-->
+    <!--</div>-->
+
+    <!--<video id="my-video" class="video-js" controls preload="auto" width="450" height="264">-->
+    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>-->
+    <!--</video>-->
+
+    <!--<div align="center" style="cursor: pointer">-->
+    <!--<ion ng-show="user" style="width: 5em; font-size: small"-->
+    <!--ng-click="addToFavorite(user)">Add Favorite<i class="ion-heart ion-large"></i>-->
+    <!--</ion>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;<video controls style="width: 350px; height: auto">&ndash;&gt;-->
+    <!--&lt;!&ndash;<source src="{{movie.src}}" type="video/mp4">&ndash;&gt;-->
+    <!--&lt;!&ndash;</video>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div ng-repeat="videoClip in video.videoClips" class="text-center" class="thumbnail">&ndash;&gt;-->
+    <!--&lt;!&ndash;<img ng-src="data:{{videoClip.contentType}};base64,{{videoClip.content}}">&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div align="center">-->
+    <!--<h1>{{video.name}}</h1>-->
+    <!--{{video.description}}<br>-->
+    <!--<br><b>Price: </b>{{video.price}}THB.<br>-->
+    <!--{{video.videoClips[0].fileName}}-->
+    <!--<br>-->
+
+    <!--<div align="center">-->
+    <!--<button ng-show="user" style="width: 5em; font-size: small" class="button button-dark button-small"-->
+    <!--ng-click="addToCart(user)">Buy-->
+    <!--</button>-->
+    <!--&lt;!&ndash;&lt;!&ndash;{{$index+1}}&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>{{video.name}}</p><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;{{video.description}}<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br><b>Price: </b>{{video.price}}THB.&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--</ion-item>-->
+
+    <!--<ion-item ng-repeat="video in videos">-->
+
+    <!--<div align="center" style="cursor: pointer">-->
+    <!--<ion ng-show="user" style="width: 5em; font-size: small"-->
+    <!--ng-click="addToFavorite(user)">Add Favorite<i class="ion-heart ion-large"></i>-->
+    <!--</ion>-->
+    <!--</div>-->
+
+    <!--<div ng-controller="HomeCtrl as controller" class="videogular-container">-->
+
+    <!--<videogular vg-theme="controller.config.theme">-->
+    <!--<vg-media vg-src="controller.config.sources"-->
+    <!--vg-tracks="controller.config.tracks">-->
+    <!--</vg-media>-->
+
+    <!--<vg-controls>-->
+    <!--<vg-play-pause-button></vg-play-pause-button>-->
+    <!--&lt;!&ndash;<vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>&ndash;&gt;-->
+    <!--<vg-scrub-bar>-->
+    <!--<vg-scrub-bar-current-time></vg-scrub-bar-current-time>-->
+    <!--</vg-scrub-bar>-->
+    <!--&lt;!&ndash;<vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>&ndash;&gt;-->
+    <!--<vg-volume>-->
+    <!--<vg-mute-button></vg-mute-button>-->
+    <!--<vg-volume-bar></vg-volume-bar>-->
+    <!--</vg-volume>-->
+    <!--<vg-fullscreen-button></vg-fullscreen-button>-->
+    <!--</vg-controls>-->
+
+    <!--<vg-overlay-play></vg-overlay-play>-->
+    <!--<vg-poster vg-url='controller.config.plugins.poster'></vg-poster>-->
+    <!--</videogular>-->
+    <!--</div>-->
+
+    <!--<div align="center">-->
+    <!--<h2>Name: {{video.name}}</h2>-->
+    <!--</h2>{{video.description}}</h2><br>-->
+    <!--</h2>Price:{{video.price}}THB.</h2>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--&lt;!&ndash;<div class="row responsive-sm" ng-repeat="video in videos">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col">&ndash;&gt;-->
+    <!--&lt;!&ndash;<ul class="list">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="lines">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="textVid">&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;{{$index+1}}&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>{{video.name}}</p><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;{{video.description}}<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br><b>Price: </b>{{video.price}}THB.&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="scopes">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="item item-image">&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="thumbnailVideo">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div ng-repeat="videoClip in video.videoClips" class="text-center">&ndash;&gt;-->
+    <!--&lt;!&ndash;<img ng-src="data:{{videoClip.contentType}};base64,{{videoClip.content}}">&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--<div align="center">-->
+    <!--<button ng-show="user" style="width: 5em; font-size: small" class="button button-dark button-small"-->
+    <!--ng-click="addToCart(user)">Buy-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--</ion-item>-->
+
+  </ion-content>
+</ion-view>
+

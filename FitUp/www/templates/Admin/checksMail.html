@@ -1,0 +1,32 @@
+<ion-view view-title="Fit-Up">
+  <ion-content>
+
+    <div class="list list-inset">
+
+      <div align="center">
+        <table class="simply">
+          <!-- Table header -->
+          <thead class="simply th">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status</th>
+            <th scope="col">Delete</th>
+          </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody class="simply tbody">
+          <tr ng-repeat="passSet in passSets">
+            <td>{{$index+1}}</td>
+            <td>{{passSet.passSet}}</td>
+            <td><p>Retrieve Password</p></td>
+            <td> <a style="margin-left: 7%" class="ion-close" ng-click="deleteInfo(fitUpInfo.id)"></a> </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
