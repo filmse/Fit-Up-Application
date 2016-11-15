@@ -128,6 +128,12 @@
           templateUrl: 'templates/menu.html'
         })
 
+        .state('app.aboutUs', {
+          url: '/aboutUs',
+          abstract: true,
+          templateUrl: 'templates/aboutUs.html'
+        })
+
         .state('app.board', {
           url: '/board',
           views: {

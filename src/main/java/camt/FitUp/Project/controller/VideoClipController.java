@@ -46,23 +46,21 @@ public class VideoClipController {
                 videoClip.setFileName(multipartFile.getOriginalFilename());
                 videoClip.setContentType(multipartFile.getContentType());
                 videoClip.setCreated(Calendar.getInstance().getTime());
-                    //videoClip.setContent(multipartFile.getBytes());
-                    //System.out.println(context.getRealPath("Save file in folder"));
-                    //System.out.println("Complete!!!!!");
+                videoClip.setContent(multipartFile.getBytes());
+                //System.out.println(context.getRealPath("Save file in folder"));
+                //System.out.println("Complete!!!!!");
                 Video video1 = videoService.addVideoClip(video, videoClip);
                 for (VideoClip v : video1.getVideoClips()) {
-                    //C:\\Users\\Film\\AppData\\Local\\Temp\\tomcat-docbase.7283868075101832394.8080\\video\\
-//                    File outputFile = new File("C:\\Users\\Film\\Documents\\Application\\FitUp\\www\\templates\\video\\" + multipartFile.getOriginalFilename());
-//                    File outputFile = new File("C:\\Users\\Film\\Documents\\Application\\src\\main\\resources\\video\\" + video1.getId() + "-" + v.getId() + ".mp4");
-                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up\\FitUp\\www\\templates\\video\\" + multipartFile.getOriginalFilename());
+
+//                  File outputFile = new File("C:\\Users\\Film\\Documents\\Application\\src\\main\\resources\\video\\" + video1.getId() + "-" + v.getId() + ".mp4");
+                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\FitUp\\www\\templates\\video\\" + multipartFile.getOriginalFilename());
 //                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up\\FitUp\\www\\templates\\video\\" + video1.getId() + "-" + v.getId()+ ".mp4");
                     FileOutputStream outputStream = new FileOutputStream(outputFile);
                     outputStream.write(multipartFile.getBytes());
-
                 }
-                    //  File outputFile = new File("C:\\Users\\Film\\AppData\\Local\\Temp\\tomcat-docbase.7283868075101832394.8080\\video\\"+video1.getId()+".mp4");
-                    //  FileOutputStream outputStream = new FileOutputStream(outputFile);
-                    // outputStream.write(multipartFile.getBytes());
+//                File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\FitUp\\www\\templates\\video\\" + video1.getId() + ".mp4");
+//                FileOutputStream outputStream = new FileOutputStream(outputFile);
+//                outputStream.write(multipartFile.getBytes());
             }
 
         } catch (Exception e) {
@@ -70,4 +68,45 @@ public class VideoClipController {
         }
         return video;
     }
+
+//    @RequestMapping(value = "/add", method = RequestMethod.POST)
+//    @ResponseBody
+//    public Video addVideoClip(HttpServletRequest request,
+//                              HttpServletResponse response, @RequestParam("videoId") Long videoId) throws IOException {
+//        MultipartHttpServletRequest mRequest;
+//        Video video = videoService.getVideo(videoId);
+//
+//        try {
+//            mRequest = (MultipartHttpServletRequest) request;
+//            Iterator<String> itr = mRequest.getFileNames();
+//            while (itr.hasNext()) {
+//                System.out.print("makky");
+//                MultipartFile multipartFile = mRequest.getFile(itr.next());
+//
+//                VideoClip videoClip = new VideoClip();
+//                videoClip.setFileName(multipartFile.getOriginalFilename());
+//                videoClip.setContentType(multipartFile.getContentType());
+//                videoClip.setCreated(Calendar.getInstance().getTime());
+//                /// videoClip.setContent(multipartFile.getBytes());
+//                //System.out.println(context.getRealPath("Save file in folder"));
+//                //System.out.println("Complete!!!!!");
+//                Video video1 = videoService.addVideoClip(video, videoClip);
+//                for (VideoClip v : video1.getVideoClips()) {
+//
+////                  File outputFile = new File("C:\\Users\\Film\\Documents\\Application\\src\\main\\resources\\video\\" + video1.getId() + "-" + v.getId() + ".mp4");
+//                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\src\\main\\resources\\video\\" + v.getId()+".mp4");
+////                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up\\FitUp\\www\\templates\\video\\" + video1.getId() + "-" + v.getId()+ ".mp4");
+//                    FileOutputStream outputStream = new FileOutputStream(outputFile);
+//                    outputStream.write(multipartFile.getBytes());
+//                }
+////                File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\FitUp\\www\\templates\\video\\" + video1.getId() + ".mp4");
+////                FileOutputStream outputStream = new FileOutputStream(outputFile);
+////                outputStream.write(multipartFile.getBytes());
+//            }
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return video;
+//    }
 }

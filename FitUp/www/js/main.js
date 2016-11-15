@@ -11,14 +11,25 @@
       $scope.videoClicks = function () {
         $state.go("app.videoExpand");
       }
-
       $scope.InfoClicks = function () {
         $state.go("app.board");
       }
-
       $scope.aboutUsClicks = function () {
-        $state.go("app.videoExpand");
+        $state.go("app.aboutFit");
       }
 
+      $scope.uploadVideo = function () {
+        $state.go("app.addVideo");
+      }
+      $scope.VideoHis = function () {
+        $state.go("app.listVideo");
+      }
+      $scope.UploadInfo = function () {
+        $state.go("app.addInformation");
+      }
+      $scope.InfoHis = function () {
+        $state.go("app.listInformation");
+      }
     })
+
 })();

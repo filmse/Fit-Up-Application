@@ -20,7 +20,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/")
 public class VideoController {
-
     @Autowired
     UserService userService;
 
@@ -91,5 +90,38 @@ public class VideoController {
         Video video = videoService.getVideo(videoId);
         return videoService.deleteVideoClip(video, videoClipId);
     }
+
+    //    @RequestMapping(value="/play/{id}", method=RequestMethod.GET)
+//    public  void getMedia(@PathVariable("id") Long id, HttpServletRequest request, HttpServletResponse response) throws IOException
+//    {
+//        Video video = videoService.getVideo(id);
+//        //logic for getting path to media on server
+//        String path =  "C:\\Users\\Film\\Documents\\Fit-Up-Application\\src\\main\\resources\\video\\"++"mp4";///context.getRealPath("//video//Fitness run");
+//
+//        System.out.print("makky"+path);
+//        ///return "makky"+path;
+//        byte[] bytes = Files.readAllBytes(Paths.get(path));
+//        response.getOutputStream().write(bytes);
+//    }
+
+//    @RequestMapping(value = "/playVideo/{id}", method = RequestMethod.GET)
+//    @ResponseBody
+//    public void  home(@PathVariable("id") Long id,Locale locale, Model model, HttpServletRequest    request, HttpServletResponse response) throws IOException {
+//       /// logger.info("Welcome home! The client locale is {}.", locale);
+//         VideoClip videoClip = videoClipRepository.findOne(id);
+//        String filePath = "C:\\Users\\Film\\Documents\\Fit-Up-Application\\src\\main\\resources\\video\\"+videoClip.getId()+".mp4";
+//        int fileSize = (int) new File(filePath).length();
+//        response.setContentLength(fileSize);
+//        response.setContentType("video");
+//        FileInputStream inputStream = new FileInputStream(filePath);
+//        ServletOutputStream outputStream = response.getOutputStream();
+//       int value = IOUtils.copy(inputStream, outputStream);
+//        System.out.println("File Size :: "+fileSize);
+//        System.out.println("Copied Bytes :: "+value);
+//        IOUtils.closeQuietly(inputStream);
+//        IOUtils.closeQuietly(outputStream);
+//       /// response.setBufferSize(fileSize);
+//    }
+
 
 }

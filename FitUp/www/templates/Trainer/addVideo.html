@@ -2,34 +2,36 @@
   <ion-content class="padding BgEdiitt">
 
     <div class="list list-inset BgEdiitt modal">
-
       <form name="editform" novalidate flow-init>
 
         <div class="list list-inset BgEdiitt">
           <div class="list LabelSmooth boundary">
             <div class="form-group">
-              <div ng-repeat="file in $flow.files">
+              <div style="color: white" ng-repeat="file in $flow.files">
                 <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>-->
                 {{file.name}}<br>
                 <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
                   Cancel
                 </a>
               </div>
-              <div>
-                <button ng-hide="$flow.getSize()!=0" type="file" class="button button-positive button-small" flow-btn>Select Video
+              <div align="center">
+                <button ng-hide="$flow.getSize()!=0" type="file" class="button button-positive button-small" flow-btn>
+                  Select Video
                 </button>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label class="item item-input banner-info">
-              <input type="text" id="videoName" name="videoName" placeholder="Name" ng-model="vm.video.name"
+            <label class="item-input">
+              <input style="color: white" type="text" id="videoName" name="videoName" placeholder="Name"
+                     ng-model="vm.video.name"
                      maxlength="50" required/>
             </label>
           </div>
+          <br>
           <div class="form-group">
-            <label class="item item-input banner-info">
-              <input type="text" id="description" name="description" placeholder="Description"
+            <label class="item-input">
+              <input style="color: white" type="text" id="description" name="description" placeholder="Description"
                      ng-model="vm.video.description"
                      maxlength="50" required/>
             </label>
@@ -46,7 +48,6 @@
         </div>
 
       </form>
-
     </div>
 
   </ion-content>

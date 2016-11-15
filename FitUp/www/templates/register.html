@@ -1,7 +1,5 @@
 <ion-view view-title="Fit-Up">
   <ion-content class="BgRegis">
-    <!--<div class="modal"-->
-    <!--style="background-color: #9e9e9e;height: 740px; border-radius: 10px">-->
 
     <div style="padding: 20px">
       <form align="center" name="form" novalidate flow-init>
@@ -37,7 +35,7 @@
                   <h5 style="color: white">Username</h5>
                 </div>
                 <div class="LabelSmooth" style="width: 95%; background-color: white">
-                  <input style="width: 95%" type="text" placeholder="[4-20 characters, English only]"
+                  <input style="width: 95%; height: 3em" type="text" placeholder="[4-20 characters, English only]"
                          ng-model="vm.user.username" name="username" ng-minlength="4" ng-maxlength="20"
                          ng-pattern="/^[a-zA-Z0-9]*$/" required>
                 </div>
@@ -50,7 +48,7 @@
                   <h5 style="color: white">Email</h5>
                 </div>
                 <div class="LabelSmooth" style="width: 95%;background-color: white">
-                  <input style="width: 95%" type="email"
+                  <input style="width: 95%; height: 3em" type="email"
                          placeholder="[Email format, Example: xxxx@xmail.com]"
                          name="email" ng-model="vm.user.email" required>
                 </div>
@@ -63,7 +61,8 @@
                   <h5 style="color: white">Password</h5>
                 </div>
                 <div class="LabelSmooth" style="width: 95%;background-color: white">
-                  <input style="width: 95%" type="password" placeholder="[4-20 characters, Allow specials character]"
+                  <input style="width: 95%; height: 3em" type="password"
+                         placeholder="[4-20 characters, Allow specials character]"
                          id="txtNewPassword"
                          ng-model="vm.user.password" ng-minlength="4" ng-maxlength="20" required>
                 </div>
@@ -76,7 +75,7 @@
                   <h5 style="color: white">Re-Password</h5>
                 </div>
                 <div class="LabelSmooth" style="width: 95%;background-color: white">
-                  <input style="width: 95%" type="password" placeholder="Re-Password"
+                  <input style="width: 95%; height: 3em" type="password" placeholder="Re-Password"
                          id="txtConfirmPassword" onkeyup="checkPasswordMatch();"
                          ng-minlength="4" ng-maxlength="20" required>
                 </div>
@@ -100,7 +99,6 @@
       </form>
     </div>
 
-    <!--</div>-->
     <br>
   </ion-content>
 </ion-view>
