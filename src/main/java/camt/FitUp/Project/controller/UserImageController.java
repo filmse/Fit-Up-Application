@@ -25,26 +25,26 @@ public class UserImageController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public User addImageUser(HttpServletRequest request,
-                         HttpServletResponse response, @RequestParam("userId")Long userId){
+                             HttpServletResponse response, @RequestParam("userId") Long userId) {
         MultipartHttpServletRequest mRequest;
         User user = userService.getUser(userId);
 
-        try{
-            mRequest = (MultipartHttpServletRequest)request;
-            Iterator<String> itr= mRequest.getFileNames();
-            while(itr.hasNext()){
+        try {
+            mRequest = (MultipartHttpServletRequest) request;
+            Iterator<String> itr = mRequest.getFileNames();
+            while (itr.hasNext()) {
                 MultipartFile multipartFile = mRequest.getFile(itr.next());
                 ImageUser image = new ImageUser();
                 image.setFileName(multipartFile.getOriginalFilename());
                 image.setContentType(multipartFile.getContentType());
                 image.setContent(multipartFile.getBytes());
                 image.setCreated(Calendar.getInstance().getTime());
-                userService.addImageUser(user,image);
+                userService.addImageUser(user, image);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

@@ -130,8 +130,11 @@
 
         .state('app.aboutUs', {
           url: '/aboutUs',
-          abstract: true,
-          templateUrl: 'templates/aboutUs.html'
+          views: {
+            'menuContent': {
+              templateUrl: 'templates/aboutUs.html'
+            }
+          }
         })
 
         .state('app.board', {
@@ -371,9 +374,9 @@
       simultaneousUploads: 4,
       singleFile: false
     };
-    // flowFactoryProvider.on('catchAll', function ($log) {
-    //   console.log('catchAll', arguments);
-    // });
+    flowFactoryProvider.on('catchAll', function ($log) {
+      console.log('catchAll', arguments);
+    });
     // Can be used with different implementations of Flow.js
     // flowFactoryProvider.factory = fustyFlowFactory;
   }

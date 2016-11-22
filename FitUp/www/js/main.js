@@ -15,7 +15,7 @@
         $state.go("app.board");
       }
       $scope.aboutUsClicks = function () {
-        $state.go("app.aboutFit");
+        $state.go("app.aboutUs");
       }
 
       $scope.uploadVideo = function () {

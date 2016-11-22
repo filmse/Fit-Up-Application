@@ -2,12 +2,10 @@ package camt.FitUp.Project.controller;
 
 import camt.FitUp.Project.entity.Favorite;
 import camt.FitUp.Project.entity.User;
-import camt.FitUp.Project.entity.Video;
 import camt.FitUp.Project.service.FavoriteService;
 import camt.FitUp.Project.service.UserService;
 import camt.FitUp.Project.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.method.P;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 

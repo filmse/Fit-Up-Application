@@ -7,11 +7,14 @@
         </button>
       </ion-nav-buttons>
       <ion-nav-buttons side="right">
-        <div style="border: solid 1px cadetblue" class="button button-dark overDivvv item-divider colorMenu"
-             ng-show="user" ng-click="logout()">
-          Log Out
+        <div style="margin-top: -10%; " ng-repeat="image in user.images"
+             class="thumbnailCircless">
+          <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgsss">
         </div>
-        </button>
+        <!--<div style="border: solid 1px cadetblue" class="button button-dark overDivvv item-divider colorMenu"-->
+        <!--ng-show="user" ng-click="logout()">-->
+        <!--Log Out-->
+        <!--</div>-->
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -34,7 +37,7 @@
             <div class="item item-divider colorMenu">
               <div align="center" class="text-center profileUser">
                 <div align="center">
-                  <div style="margin-top: -10%" ng-repeat="image in user.images"
+                  <div style="margin-top: -5%" ng-repeat="image in user.images"
                        class="thumbnailCircles">
                     <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgs">
                   </div>
@@ -164,6 +167,14 @@
           <ion-item menu-close href="#/app/management">
             System management
           </ion-item>
+        </div>
+
+        <div align="center">
+          <div class="item item-divider colorMenu" ng-show="user">
+            <ion-item menu-close ng-click="logout()">
+              Log Out &nbsp;&nbsp;<i class="icon ion-log-out" style="font-size:30px"></i>
+            </ion-item>
+          </div>
         </div>
 
       </ion-list>

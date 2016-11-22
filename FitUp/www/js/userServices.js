@@ -61,7 +61,7 @@
 
   // /** @ngInject */
   // function UserService($resource) {
-  //   return $resource('http://10.80.54.229:8080/register/:action', {}, {
+  //   return $resource('http://10.80.54.110:8080/register/:action', {}, {
   //     // authenticate: {
   //     method: 'POST'
   //     // params: {'action': 'authenticate'},
@@ -72,7 +72,7 @@
   //
   // /** @ngInject */
   // function userService($resource) {
-  //   return $resource('http://10.80.54.229:8080/customer/:id', {id: '@_id'}, {
+  //   return $resource('http://10.80.54.110:8080/customer/:id', {id: '@_id'}, {
   //     update: {
   //       method: 'PUT', // this method issues a PUT request
   //       params:{
@@ -88,7 +88,7 @@
   //
   // /** @ngInject */
   // function queryUserService($resource) {
-  //   return $resource('http://10.80.54.229:8080/customer/login',
+  //   return $resource('http://10.80.54.110:8080/customer/login',
   //     {
   //       query: {
   //         method: 'GET', // this method issues a GET request
@@ -101,7 +101,7 @@
   //
   // /** @ngInject */
   // function ChangeRole($resource) {
-  //   return $resource('http://10.80.54.229:8080/customerRole/:id', {id: '@_id'}, {
+  //   return $resource('http://10.80.54.110:8080/customerRole/:id', {id: '@_id'}, {
   //     update: {
   //       method: 'PUT', // this method issues a PUT request
   //       params: {

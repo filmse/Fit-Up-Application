@@ -1,7 +1,10 @@
 package camt.FitUp.Project.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.hibernate4.HibernateExceptionTranslator;
@@ -19,7 +22,7 @@ import java.util.Properties;
 /**
  * This configuration class configures the persistence layer of our example application and
  * enables annotation driven transaction management.
- *
+ * <p>
  * This configuration is put to a single class because this way we can write integration
  * tests for our persistence layer by using the configuration used by our example
  * application. In other words, we can ensure that the persistence layer of our application
@@ -30,7 +33,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
 @EnableJpaRepositories("camt.FitUp.Project.repository")
-@PropertySources(value={@PropertySource("classpath:/hibernate.properties")})
+@PropertySources(value = {@PropertySource("classpath:/hibernate.properties")})
 class PersistenceContext {
     private static final String[] ENTITY_PACKAGES = {
             "camt.FitUp.Project.entity"
@@ -80,7 +83,8 @@ class PersistenceContext {
         jpaProperties.put(PROPERTY_NAME_HIBERNATE_FORMAT_SQL, env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_FORMAT_SQL));
         factory.setJpaProperties(jpaProperties);
 
-        factory.afterPropertiesSet();;
+        factory.afterPropertiesSet();
+        ;
         return factory.getObject();
     }
 

@@ -29,6 +29,8 @@ public class shoppingCartController {
     public ShoppingCart addShoppingCart(@RequestParam("userId") Long userId, @RequestBody ShoppingCart shoppingCart, BindingResult bindingResult) {
         User user = userService.getUser(userId);
         return shoppingCartService.addShoppingCart(user, shoppingCart);
+
+
     }
 
     @RequestMapping(value = "shoppingList", method = RequestMethod.GET)
