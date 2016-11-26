@@ -1,5 +1,5 @@
-<ion-view view-title="Fit-Up" name="Video-view">
-  <ion-content>
+<ion-view>
+  <ion-content ng-controller="listVideoController">
     <div class="bar bar-header item-input-inset">
       <label style="background-color: gray" class="item-input-wrapper">
         <i class="icon ion-ios-search placeholder-icon"></i>
@@ -26,17 +26,16 @@
          class="ImgD3 button button-assertive animated bounceInDown"><p style="margin-top: 20px;">Fun</p></a>&nbsp&nbsp
     </div>
 
-    <div class="button-bar">
-      <a style="font-size: 30px" class="button icon ion-ios-film button-large" ng-click="videoClicks()"><p
+    <div class="button-bar" style="height: 50px;">
+      <a style="font-size: 30px" class="button icon ion-ios-film button-large overDiv" ng-click="videoClicks()"><p
         style="font-size: small; margin-top: -30px">Video</p></a>
-      <a style="font-size: 30px" class="button icon ion-android-list button-large" ng-click="InfoClicks()"><p
+      <a style="font-size: 30px" class="button icon ion-android-list button-large overDiv" ng-click="InfoClicks()"><p
         style="font-size: small; margin-top: -30px">Information</p></a>
-      <a style="font-size: 30px" class="button ion-ios-cart button-large"><p
+      <a style="font-size: 30px" class="button ion-ios-cart button-large overDiv" ng-click="Payment()"><p
         style="font-size: small; margin-top: -30px">Pay money</p></a>
-      <a style="font-size: 30px" class="button ion-ios-compose button-large" ng-click="aboutUsClicks()"><p
-        style="font-size: small; margin-top: -30px">About Us</p></a>
+      <a style="font-size: 30px" class="button ion-ios-compose button-large overDiv" ng-click="aboutUsClicks()"><p
+        style="font-size: small; margin-top: -30px">Help</p></a>
     </div>
-
 
     <!--<div class="item item-divider">-->
     <!--<div class="row">-->

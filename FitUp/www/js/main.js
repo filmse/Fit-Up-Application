@@ -30,6 +30,9 @@
       $scope.InfoHis = function () {
         $state.go("app.listInformation");
       }
+      $scope.Payment = function () {
+        $state.go("app.payment");
+      }
     })
 
 })();

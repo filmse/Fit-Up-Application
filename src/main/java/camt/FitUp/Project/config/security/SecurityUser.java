@@ -22,6 +22,7 @@
 //            this.setUsername(user.getUsername());
 //            this.setEmail(user.getEmail());
 //            this.setRoles(user.getRoles());
+//            this.setImages(user.getImages());
 //            this.setPassword(user.getPassword());
 ////            this.setShoppingCarts(user.getShoppingCarts());
 //        }

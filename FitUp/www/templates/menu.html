@@ -7,6 +7,11 @@
         </button>
       </ion-nav-buttons>
       <ion-nav-buttons side="right">
+
+        <!--<div style="margin: 6px">-->
+          <!--{{user.username}}-->
+        <!--</div>-->
+
         <div style="margin-top: -10%; " ng-repeat="image in user.images"
              class="thumbnailCircless">
           <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgsss">
@@ -33,6 +38,7 @@
             <a class="ion-ios-gear dark" href="#/app/edituser"></a>
             Edit Profile
           </div>
+
           <div align="right">
             <div class="item item-divider colorMenu">
               <div align="center" class="text-center profileUser">
@@ -52,6 +58,7 @@
               </div>
             </div>
           </div>
+
           <!--<div align="center" class="text-center profileUser">-->
           <!--<div align="center">-->
           <!--<div style="float: left" ng-repeat="image in user.images" class="thumbnailCircles">-->
@@ -88,12 +95,12 @@
           Home
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
-        <ion-item class="item item-icon-left item-icon-right" ng-show="user" menu-close href="#/app/favorite">
+        <ion-item class="item item-icon-left item-icon-right" ng-show="hasRole('member')" menu-close href="#/app/favorite">
           <i class="icon ion-heart"></i>
           My Favorite
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
-        <ion-item class="item item-icon-left item-icon-right" ng-show="user" menu-close href="#/app/payment">
+        <ion-item class="item item-icon-left item-icon-right" ng-show="hasRole('member')" menu-close href="#/app/payment">
           <i class="icon ion-ios-cart"></i>
           Shopping Cart
           <i class="icon ion-ios-arrow-right button-small"></i>

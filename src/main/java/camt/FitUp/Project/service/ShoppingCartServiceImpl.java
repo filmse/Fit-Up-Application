@@ -3,9 +3,11 @@ package camt.FitUp.Project.service;
 import camt.FitUp.Project.dao.ShoppingCartDao;
 import camt.FitUp.Project.entity.ShoppingCart;
 import camt.FitUp.Project.entity.User;
+import camt.FitUp.Project.entity.Video;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -18,8 +20,10 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     ShoppingCartDao shoppingCartDao;
 
     @Override
-    public ShoppingCart addShoppingCart(User user, ShoppingCart shoppingCart) {
-        return shoppingCartDao.addShoppingCart(user, shoppingCart);
+    public ShoppingCart addShoppingCart(Video video, ShoppingCart shoppingCart, User user) {
+        shoppingCart.setPurchaseDate(Calendar.getInstance().getTime());
+        return shoppingCartDao.addShoppingCart(video, shoppingCart, user);
+
     }
 
     @Override
@@ -31,4 +35,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     public ShoppingCart shoppingId(Long id) {
         return shoppingCartDao.shoppingId(id);
     }
+
+
 }

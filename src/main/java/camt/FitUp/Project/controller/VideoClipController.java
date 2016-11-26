@@ -46,7 +46,7 @@ public class VideoClipController {
                 videoClip.setFileName(multipartFile.getOriginalFilename());
                 videoClip.setContentType(multipartFile.getContentType());
                 videoClip.setCreated(Calendar.getInstance().getTime());
-                videoClip.setContent(multipartFile.getBytes());
+//                videoClip.setContent(multipartFile.getBytes());
                 //System.out.println(context.getRealPath("Save file in folder"));
                 //System.out.println("Complete!!!!!");
                 Video video1 = videoService.addVideoClip(video, videoClip);

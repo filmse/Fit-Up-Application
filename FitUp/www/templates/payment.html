@@ -1,5 +1,5 @@
-<ion-view view-title="Fit-Up-Payment History" ng-controller="shoppingListController">
-  <ion-content>
+<ion-view>
+  <ion-content ng-controller="listUserController">
 
     <div class="list list-inset">
 
@@ -13,32 +13,55 @@
         </button>
       </div>
 
-      <hr>
-
       <div align="center">
         <table class="simply">
           <!-- Table header -->
           <thead class="simply th">
           <tr>
-            <th scope="col">#</th>
             <th scope="col">Shopping Cart</th>
-            <th scope="col">Pay Money</th>
+            <th scope="col"></th>
+            <th scope="col">Payment</th>
           </tr>
           </thead>
           <!-- Table body -->
           <tbody class="simply tbody">
-          <tr ng-repeat="shoppingCart in shoppingCarts | filter: name">
-            <td>{{$index+1}}</td>
-            <td>{{shoppingCart.purchaseDate}}-{{shoppingCart.id}}</td>
+          <tr ng-repeat="shopping in user.shoppingCarts | filter: name">
+            <td>{{shopping.purchaseDate}}-{{shopping.id}}</td>
+            <td>{{}}</td>
             <td>
-            <span>
-              <a class="ion-ios-gear dark" ng-href="#/app/payments/{{shoppingCart.id}}">Payment</a>
-            </span>
+      <span>
+      <a class="ion-ios-gear dark" ng-href="#/app/payments/{{shoppingCart.id}}">Payment</a>
+      </span>
             </td>
           </tr>
           </tbody>
         </table>
       </div>
+
+      <!--<div align="center">-->
+      <!--<table class="simply">-->
+      <!--&lt;!&ndash; Table header &ndash;&gt;-->
+      <!--<thead class="simply th">-->
+      <!--<tr>-->
+      <!--<th scope="col">#</th>-->
+      <!--<th scope="col">Cart</th>-->
+      <!--<th scope="col">Payment</th>-->
+      <!--</tr>-->
+      <!--</thead>-->
+      <!--&lt;!&ndash; Table body &ndash;&gt;-->
+      <!--<tbody class="simply tbody">-->
+      <!--<tr ng-repeat="shoppingCart in shoppingCarts | filter: name">-->
+      <!--<td>{{$index+1}}</td>-->
+      <!--<td>{{shoppingCart.purchaseDate}}-{{shoppingCart.id}}</td>-->
+      <!--<td>-->
+      <!--<span>-->
+      <!--<a class="ion-ios-gear dark" ng-href="#/app/payments/{{shoppingCart.id}}">Payment</a>-->
+      <!--</span>-->
+      <!--</td>-->
+      <!--</tr>-->
+      <!--</tbody>-->
+      <!--</table>-->
+      <!--</div>-->
 
     </div>
 

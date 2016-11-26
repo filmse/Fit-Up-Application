@@ -1,8 +1,12 @@
 package camt.FitUp.Project.entity;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Dto on 2/7/2015.
@@ -16,8 +20,16 @@ public class ShoppingCart {
     @Temporal(TemporalType.TIMESTAMP)
     Date purchaseDate;
 
-    public ShoppingCart(Date purchaseDate) {
-        this.purchaseDate = purchaseDate;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    private Set<Video> videos = new HashSet<>();
+
+    public Set<Video> getVideos() {
+        return videos;
+    }
+
+    public void setVideos(Set<Video> videos) {
+        this.videos = videos;
     }
 
     public Long getId() {
@@ -57,4 +69,6 @@ public class ShoppingCart {
     public ShoppingCart() {
         this.setPurchaseDate(Calendar.getInstance().getTime());
     }
+
+
 }

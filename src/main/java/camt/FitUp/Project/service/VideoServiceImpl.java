@@ -1,5 +1,6 @@
 package camt.FitUp.Project.service;
 
+import camt.FitUp.Project.dao.UserDao;
 import camt.FitUp.Project.dao.VideoDao;
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.entity.Video;

@@ -65,7 +65,7 @@
 //    public void configure(WebSecurity web) throws Exception {
 //        web
 //                .ignoring()
-//                .antMatchers("/css/**", "/img/**", "/js/**");
+//                .antMatchers("/css/**", "/img/**", "/js/**", "/mp4/**", "/video/**");
 //    }
 //
 //    @Bean(name = "myAuthenticationManager")

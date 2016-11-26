@@ -85,14 +85,14 @@
 
   // /** @ngInject */
   // function VideoService($resource) {
-  //   return $resource('http://10.80.54.110:8080/video', {}, {
+  //   return $resource('http://10.80.54.235:8080/video', {}, {
   //     method: 'POST'
   //   })
   // }
   //
   // /** @ngInject */
   // function videoService($resource) {
-  //   return $resource('http://10.80.54.110:8080/video/:id', {id: '@_id'}, {
+  //   return $resource('http://10.80.54.235:8080/video/:id', {id: '@_id'}, {
   //     update: {
   //       method: 'PUT', // this method issues a PUT request
   //       params: {
@@ -107,7 +107,7 @@
   //
   // /** @ngInject */
   // function queryVideoService($resource) {
-  //   return $resource('http://10.80.54.110:8080/videoName',
+  //   return $resource('http://10.80.54.235:8080/videoName',
   //     {
   //       query: {
   //         method: 'GET', // this method issues a GET request
@@ -120,7 +120,7 @@
   //
   // /** @ngInject */
   // function addToFavoriteService($resource) {
-  //   return $resource('http://10.80.54.110:8080/addToFavorite', {}, {
+  //   return $resource('http://10.80.54.235:8080/addToFavorite', {}, {
   //     // authenticate: {
   //     method: 'POST'
   //     // params: {'action': 'authenticate'},
@@ -131,7 +131,7 @@
   //
   // /** @ngInject */
   // function getToFavoriteService($resource) {
-  //   return $resource('http://10.80.54.110:8080/getToFavorite',
+  //   return $resource('http://10.80.54.235:8080/getToFavorite',
   //     {
   //       query: {
   //         method: 'GET' // this method issues a GET request
@@ -144,7 +144,7 @@
   //
   // /** @ngInject */
   // function getToFavoriteIdService($resource) {
-  //   return $resource('http://10.80.54.110:8080/getToFavoriteIdService/:id', {id: '@_id'}, {
+  //   return $resource('http://10.80.54.235:8080/getToFavoriteIdService/:id', {id: '@_id'}, {
   //     update: {
   //       method: 'PUT', // this method issues a PUT request
   //       params: {

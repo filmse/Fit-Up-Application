@@ -26,14 +26,12 @@
 //    private UserDetailsService userService;
 //
 //
-//
-//    public AuthenticationTokenProcessingFilter()
-//    {
+//    public AuthenticationTokenProcessingFilter() {
 //    }
+//
 //    @Override
 //    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-//            ServletException
-//    {
+//            ServletException {
 //        HttpServletRequest httpRequest = this.getAsHttpRequest(request);
 //
 //        String authToken = this.extractAuthTokenFromRequest(httpRequest);
@@ -56,8 +54,7 @@
 //    }
 //
 //
-//    private HttpServletRequest getAsHttpRequest(ServletRequest request)
-//    {
+//    private HttpServletRequest getAsHttpRequest(ServletRequest request) {
 //        if (!(request instanceof HttpServletRequest)) {
 //            throw new RuntimeException("Expecting an HTTP request");
 //        }
@@ -66,9 +63,8 @@
 //    }
 //
 //
-//    private String extractAuthTokenFromRequest(HttpServletRequest httpRequest)
-//    {
-//		/* Get token from header */
+//    private String extractAuthTokenFromRequest(HttpServletRequest httpRequest) {
+//        /* Get token from header */
 //        String authToken = httpRequest.getHeader("X-Auth-Token");
 //
 //		/* If token not found get it from request parameter */

@@ -25,7 +25,6 @@ public class User {
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    // Cascade and CascadeType must be the org.hibernate.annotation
     @Cascade(CascadeType.ALL)
     private Set<Role> roles = new HashSet<>();
 
@@ -48,6 +47,18 @@ public class User {
     @ManyToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<Favorite> favorites = new HashSet<>();
+
+    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<ShoppingCart> shoppingCarts, Set<Favorite> favorites) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.roles = roles;
+        this.images = images;
+        this.infos = infos;
+        this.videos = videos;
+        this.shoppingCarts = shoppingCarts;
+        this.favorites = favorites;
+    }
 
     public User(String username, String email, String password, Set<Role> roles) {
         this.username = username;
@@ -75,34 +86,20 @@ public class User {
         this.videos = videos;
     }
 
-    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<ShoppingCart> shoppingCarts) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.roles = roles;
-        this.images = images;
-        this.infos = infos;
-        this.videos = videos;
-        this.shoppingCarts = shoppingCarts;
-    }
-
-    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<ShoppingCart> shoppingCarts, Set<Favorite> favorites) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.roles = roles;
-        this.images = images;
-        this.infos = infos;
-        this.videos = videos;
-        this.shoppingCarts = shoppingCarts;
-        this.favorites = favorites;
-    }
-
     //@PreUpdate
     //@PrePersist
     //public void setLastUpdate() {
     //   this.setPassword(new BCryptPasswordEncoder(10).encode(this.getPassword()));
     //}
+
+
+    public Set<ShoppingCart> getShoppingCarts() {
+        return shoppingCarts;
+    }
+
+    public void setShoppingCarts(Set<ShoppingCart> shoppingCarts) {
+        this.shoppingCarts = shoppingCarts;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -143,14 +140,6 @@ public class User {
 
     public void setFavorites(Set<Favorite> favorites) {
         this.favorites = favorites;
-    }
-
-    public Set<ShoppingCart> getShoppingCarts() {
-        return shoppingCarts;
-    }
-
-    public void setShoppingCarts(Set<ShoppingCart> shoppingCarts) {
-        this.shoppingCarts = shoppingCarts;
     }
 
     public Set<Video> getVideos() {

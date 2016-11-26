@@ -38,7 +38,7 @@
       }
     })
     /** @ngInject */
-    .controller('listVideoController', function (userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService, getToFavoriteService) {
+    .controller('listVideoController', function (shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService, getToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
@@ -64,19 +64,27 @@
         });
       }
 
-      $scope.addToCart = function (user) {
-        user.users = null;
-        shoppingService.save({userId: user.id}, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
+      $scope.addToCart = function (video) {
+        console.log(video);
+        //console.log(user);
+
+        $scope.user = $rootScope.user;
+        console.log($rootScope.user);
+        video.videos = null;
+        shoppingService.save({videoId: video.id,userId: $rootScope.user.id}, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
+
           alert("Success!!");
-          //success event
           $rootScope.shoppingCart = shoppingCart;
-          // window.location.reload();
-          // $state.go("app.payment");
-          // $scope.$apply();
-          // $scope.$digest();
-        }, function () {
-          // fail event
-          alert("Failed!!");
+        }, function (user) {
+
+          $scope.user = $rootScope.user;
+          shoppingAddUserService.save({userId: $rootScope.user.id}, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
+            alert("Success!!");
+            $rootScope.shoppingCart = shoppingCart;
+          }, function () {
+            // fail event
+            alert("Failed!!");
+          })
         })
       }
 

@@ -1,13 +1,14 @@
 package camt.FitUp.Project.config;
 
-import camt.FitUp.Project.entity.*;
+import camt.FitUp.Project.entity.FitUpInfo;
+import camt.FitUp.Project.entity.Role;
+import camt.FitUp.Project.entity.User;
+import camt.FitUp.Project.entity.Video;
 import camt.FitUp.Project.repository.FitUpInfoRepository;
 import camt.FitUp.Project.repository.UserRepository;
-import camt.FitUp.Project.repository.VideoClipRepository;
 import camt.FitUp.Project.repository.VideoRepository;
 import camt.FitUp.Project.service.ImageUtil;
 import camt.FitUp.Project.service.ImageUtilForum;
-import org.mockito.internal.matchers.Null;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
@@ -75,7 +76,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         Role trainerRole = new Role("trainer");
         Role memberRole = new Role("member");
 
-//        Video video1 = new Video("Sport", "The sport is very fun", "100");
+//        Video video1 = new Video(1l, "Five Step", "The video exercise", "100");
 
         FitUpInfo products1 = new FitUpInfo(1l, "Body Solid Flat Bench", "All the basic barbell and dumbbell exercises then this flat bench\n" +
                 "should be your choice! Increase your strength and flexibility with this ultra-tough workout bench.\n", ImageUtilForum.resizeImage(ImageUtilForum.getImages("picRquip/E11.png"), 200));
@@ -114,6 +115,9 @@ public class DatabaseInitializationBean implements InitializingBean {
         infos.add(products3);
         infos.add(products4);
         trainer.setInfos(infos);
+//        Set<Video> videos = new HashSet<>();
+//        videos.add(video1);
+//        trainer.setVideos(videos);
 
         User trainer1 = new User();
         trainer1.setId(4l);

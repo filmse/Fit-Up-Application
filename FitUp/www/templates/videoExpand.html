@@ -1,4 +1,4 @@
-<ion-view view-title="Fit-Up">
+<ion-view>
   <ion-content class="padding BgEdiitt" ng-controller="listVideoController">
 
     <div style="width: 100%" class="item-input-inset">
@@ -11,32 +11,52 @@
     </div>
     <hr style="border-color: red">
 
+    <div class="list card" style="border-radius: 0.5em" ng-repeat="video in videos">
+      <div class="item item-avatar" ng-controller="listUserController">
+
+        <img style="background-color: #2B333F">
+        <h2>{{video.name}}</h2>
+        <p>{{video.price}} THB.</p>
+        <!--<p>{{video.videoClips[0].fileName}}</p>-->
+        <div align="left" ng-show="hasRole('member')">
+          <p>
+            <a ng-show="user" style="width: 5em; font-size: small"
+               ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>
+            </a>
+          </p>
+          <div align="right" ng-show="hasRole('member')">
+            <button ng-show="user" style="width: 5em; margin-top: -62px; font-size: small"
+                    class="overDivvv button button-dark button-small"
+                    ng-click="addToCart(video)">Buy
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="item item-body" style="height: 250px">
+        <div align="center">
+          <video controls width="80%" height="auto">
+            <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>
+          </video>
+          <p>{{video.description}}</p>
+        </div>
+      </div>
+    </div>
+
     <!--Mock Video from youtube 1-->
     <div class="list card" style="border-radius: 0.5em">
       <div class="item item-avatar">
         <img style="background-color: #2B333F">
         <h2>Kungs vs Cookin</h2>
-        <p>Free THB.</p>
+        <p>- THB.</p>
         <!--<p>This Girl</p>-->
       </div>
-
-      <div class="item item-body">
+      <hr>
+      <div class="item item-body" style="height: 250px">
         <div align="center">
-          <iframe width="260" height="auto" src="https://www.youtube.com/embed/EZVQLzOUZG4" frameborder="0"
+          <iframe width="80%" height="auto" src="https://www.youtube.com/embed/EZVQLzOUZG4" frameborder="0"
                   allowfullscreen></iframe>
-          <div align="left">
-            <p>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToFavorite(user)">List <i class="ion-heart ion-large"></i>
-              </button>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToCart(user)">Buy
-              </button>
-            </p>
-            <p>Fitness HipNThigh Excercise</p>
-          </div>
+          <p>Fitness HipNThigh Excercise</p>
         </div>
 
       </div>
@@ -46,95 +66,21 @@
       <div class="item item-avatar">
         <img style="background-color: #2B333F">
         <h2>An Introduction to ra'yoKa by Rainbeau Mars</h2>
-        <p>Free THB.</p>
+        <p>- THB.</p>
         <!--<p>This Girl</p>-->
       </div>
-
-      <div class="item item-body">
+      <hr>
+      <div class="item item-body" style="height: 250px">
         <div align="center">
-          <iframe width="300" height="auto" src="https://www.youtube.com/embed/sU_EHvXUjx0" frameborder="0"
+          <iframe width="80%" height="auto" src="https://www.youtube.com/embed/sU_EHvXUjx0" frameborder="0"
                   allowfullscreen></iframe>
-          <div align="left">
-            <p>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>
-              </button>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToCart(user)">Buy
-              </button>
-            </p>
-            <p>www.rayoka.com
-              ra'yoKa uses breath centered flow and yoga therapeutics and enhances it with martial arts movement and
-              core conditioning so you can improve your core and muscle groups while enhancing our flexibility.</p>
-          </div>
+          <p>www.rayoka.com
+            ra'yoKa uses breath centered flow and yoga therapeutics and enhances it with martial arts movement and
+            core conditioning so you can improve your core and muscle groups while enhancing our flexibility.</p>
         </div>
 
       </div>
     </div>
-    <!--Mock Video from youtube 3-->
-    <div class="list card" style="border-radius: 0.5em">
-      <div class="item item-avatar">
-        <img style="background-color: #2B333F">
-        <h2>Dancercise Kids</h2>
-        <p>Free THB.</p>
-        <!--<p>This Girl</p>-->
-      </div>
-
-      <div class="item item-body">
-        <div align="center">
-          <iframe width="300" height="auto" src="https://www.youtube.com/embed/R4BNW_tveeo" frameborder="0"
-                  allowfullscreen></iframe>
-          <div align="left">
-            <p>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>
-              </button>
-              <button ng-show="user" style="width: 5em; font-size: small"
-                      class="overDivvv button button-dark button-small"
-                      ng-click="addToCart(user)">Buy
-              </button>
-            </p>
-            <p>Dancercise Jam</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!--<div class="list card" style="border-radius: 0.5em" ng-repeat="video in videos">-->
-    <!--<div class="item item-avatar">-->
-    <!--<img style="background-color: #2B333F">-->
-    <!--<h2>{{video.name}}</h2>-->
-    <!--<p>{{video.price}} THB.</p>-->
-    <!--<p>{{video.videoClips[0].fileName}}</p>-->
-    <!--</div>-->
-
-    <!--<div class="item item-body">-->
-    <!--<div align="center">-->
-    <!--<video controls width="560" height="315">-->
-    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>-->
-    <!--</video>-->
-    <!--<div align="left">-->
-    <!--<p>-->
-    <!--<button ng-show="user" style="width: 5em; font-size: small"-->
-    <!--class="overDivvv button button-dark button-small"-->
-    <!--ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>-->
-    <!--</button>-->
-    <!--<button ng-show="user" style="width: 5em; font-size: small"-->
-    <!--class="overDivvv button button-dark button-small"-->
-    <!--ng-click="addToCart(user)">Buy-->
-    <!--</button>-->
-    <!--</p>-->
-    <!--<p>{{video.description}}</p>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--</div>-->
-    <!--</div>-->
 
   </ion-content>
 </ion-view>

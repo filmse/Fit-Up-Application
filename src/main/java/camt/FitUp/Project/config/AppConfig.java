@@ -20,14 +20,14 @@ import java.util.Locale;
 @Import({PersistenceContext.class})
 public class AppConfig extends WebMvcConfigurerAdapter {
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowCredentials(false)
-                .allowedOrigins("*")
-                .allowedMethods("PUT", "POST", "GET", "OPTIONS", "DELETE")
-                .exposedHeaders("Authorization", "Content-Type");
-    }
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        registry.addMapping("/**")
+//                .allowCredentials(false)
+//                .allowedOrigins("*")
+//                .allowedMethods("PUT", "POST", "GET", "OPTIONS", "DELETE")
+//                .exposedHeaders("Authorization", "Content-Type");
+//    }
 
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {

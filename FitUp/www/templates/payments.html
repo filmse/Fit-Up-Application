@@ -1,44 +1,7 @@
-<ion-view view-title="Fit-Up-Payment">
-  <ion-content>
-    <div id="paypal-container" align="center">
+<ion-view>
+  <ion-content ng-controller="editUserController">
+    <div id="paypal-container" align="center" ng-controller="dateController">
       <div style="margin: 2em">
-
-        <!--&lt;!&ndash;<form name="editform" novalidate>&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
-        <!--&lt;!&ndash;&lt;!&ndash; Table &ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;<table class="table table-hover">&ndash;&gt;-->
-        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th>#</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th>#</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th>Video Name</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th>Video Description</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th>Video Price</th>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
-        <!--&lt;!&ndash;<tr ng-repeat="shoppingCart in shoppingCarts">&ndash;&gt;-->
-        <!--&lt;!&ndash;<td>{{$index+1}}</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td>{{shoppingCart.id}}</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td>{{shoppingCart.selectedVideos[0].video.name}}</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td>{{shoppingCart.selectedVideos[0].video.description}}</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td>{{shoppingCart.selectedVideos[0].video.price}}</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
-        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th></th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th><strong translate>listProduct.total</strong></th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th></th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th></th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th></th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th class="text-right">{{total() | number :2}}</th>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;</table>&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="panel-body text-center">&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href ng_click="updateCart()" class="btn btn-primary ">update cart</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;<a href ng_click="saveCart(cart)" class="btn btn-primary ">save cart</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</form>&ndash;&gt;-->
 
         <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
 
@@ -51,46 +14,41 @@
           <!--&lt;!&ndash;<input type="image" src="http://www.paypal.com/th_TH/i/btn/x-click-but01.gif" name="submit"&ndash;&gt;-->
           <!--&lt;!&ndash;alt="Make payments with PayPal - it's fast, free and secure!">&ndash;&gt;-->
 
-          <div ng-repeat="shoppingCart in shoppingCarts">
+          <div ng-repeat="shopping in user.shoppingCarts">
 
             <h1>FitUp Application</h1>
-            <p><b>Receipt No.</b>{{shoppingCart.purchaseDate}}-{{shoppingCart.id}}</p>
+            <p><b>Receipt No.</b>{{shopping.purchaseDate}}-{{shopping.id}}</p>
             <p><b>Username.</b> {{user.username}}</p>
-            <p><b>Date.</b> 12/10/2559</p>
+            <p>{{ today | date : "fullDate" }}</p>
             <br>
-            <hr>
 
-            <div class="form-group">
-              <label class="item item-input LabelSmooth">
-                <P style="float: left"><b>Video Name.</b> Sport {{shoppingCart.selectedVideos[0].video.name}} </P>
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label class="item item-input LabelSmooth">
-                <P style="float: left"><b>Video Price.</b> 100.00 {{shoppingCart.selectedVideos[0].video.price}} </P>
-              </label>
-            </div>
-
-            <!--<hr style="width: 50%">-->
-
-            <div class="form-group">
-              <label class="item item-input LabelSmooth">
-                <P style="float: left"><b>Shipping Fee.</b> 0.00 THB</P>
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label class="item item-input LabelSmooth">
-                <P style="float: left"><b>VAT.</b> 0.00 THB</P>
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label class="item item-input LabelSmooth">
-                <P style="float: right; font-size: large"><b>Total Price.</b> 100.00 {{shoppingCart.selectedVideos[0].video.price}}
-                  THB</P>
-              </label>
+            <div ng-controller="listVideoController">
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <P style="float: left"><b>Video Name.</b>{{videos[0].name}}</P>
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <P style="float: left"><b>Video Price.</b>{{videos[0].price}}</P>
+                </label>
+              </div>
+              <!--<hr style="width: 50%">-->
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <P style="float: left"><b></b></P>
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <P style="float: left"><b></b></P>
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="item item-input LabelSmooth">
+                  <P style="float: right; font-size: large">Total Price. <b>{{videos[0].price}}</b>THB.</P>
+                </label>
+              </div>
             </div>
 
           </div>
