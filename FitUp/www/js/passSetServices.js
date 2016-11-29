@@ -8,36 +8,16 @@
     .factory('PassSetService', PassSetService)
     .factory('querypassSetService', querypassSetService);
 
-  // /**@ngInject*/
-  // function PassSetService($resource) {
-  //   return $resource('http://localhost:8080/passSet', {
-  //     method: 'POST' // this method issues a POST request
-  //   });
-  // }
-  //
-  // /**@ngInject*/
-  // function querypassSetService($resource) {
-  //   return $resource('http://localhost:8080/passSetList',
-  //     {
-  //       query: {
-  //         method: 'GET',// this method issues a GET request
-  //         params: {
-  //           name: ''
-  //         }
-  //       }
-  //     });
-  // }
-
   /**@ngInject*/
   function PassSetService($resource) {
-    return $resource('http://10.80.54.235:8080/passSet', {
+    return $resource('/passSet', {
       method: 'POST' // this method issues a POST request
     });
   }
 
   /**@ngInject*/
   function querypassSetService($resource) {
-    return $resource('http://10.80.54.235:8080/passSetList',
+    return $resource('/passSetList',
       {
         query: {
           method: 'GET',// this method issues a GET request

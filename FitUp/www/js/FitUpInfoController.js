@@ -31,7 +31,7 @@
       }
     })
     /** @ngInject */
-    .controller('listInfoController', function ($scope, $rootScope, infoService, queryInfoService, $http, $ionicLoading, $timeout) {
+    .controller('listInfoController', function ($scope, $rootScope, infoService, queryInfoService, $http, $ionicLoading, $timeout, userService) {
 
       $scope.queryPromise = infoService.query(function (data) {
         $ionicLoading.show({

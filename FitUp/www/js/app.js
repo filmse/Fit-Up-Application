@@ -1,12 +1,14 @@
 (function () {
   'use strict';
 
-  angular.module('ngResource+apiPrefix', ['ngResource'])
+  // angular.module('ngResource+apiPrefix', ['ngResource'])
   angular.module('starter.controllers', [])
   angular.module('starter.services', [])
   angular.module('starter', ['ionic',
     'ngCookies',
     'LocalStorageModule',
+    'ngResource+apiPrefix',
+    'cgBusy',
     'ngRoute',
     'flow',
     'ngResource',
@@ -19,7 +21,7 @@
     "com.2fdevs.videogular.plugins.controls",
     "com.2fdevs.videogular.plugins.overlayplay",
     "com.2fdevs.videogular.plugins.poster",
-    'starter.services',])
+    'starter.services'])
 
   /** Run */
     .run(function ($ionicPlatform) {
@@ -142,8 +144,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/Information.html',
-              controller: 'listInfoController',
-              controllerAs: 'vm'
+              controller: 'listInfoController'
             }
           }
         })

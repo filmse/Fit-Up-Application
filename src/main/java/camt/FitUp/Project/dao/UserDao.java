@@ -1,5 +1,6 @@
 package camt.FitUp.Project.dao;
 
+import camt.FitUp.Project.entity.FitUpInfo;
 import camt.FitUp.Project.entity.User;
 
 /**
@@ -12,4 +13,5 @@ public interface UserDao {
     User registerUser(User user);
 
     User findByUsername(String username);
+
 }

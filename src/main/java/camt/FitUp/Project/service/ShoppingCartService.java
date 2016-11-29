@@ -16,8 +16,6 @@ public interface ShoppingCartService {
 
     ShoppingCart shoppingId(Long id);
 
-
-
 //    ShoppingCart addSelectedVideo(ShoppingCart shoppingCart, Video video);
 //
 //    ShoppingCart addShoppingCart(ShoppingCart shoppingCart);

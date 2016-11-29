@@ -41,7 +41,7 @@
 
         <li>
           <ul class="address-text">
-            <li style="color: white"><b>Name</b></li>
+            <li style="color: white">Name</li>
             <li>
               <div class="form-group">
                 <label class="item item-input LabelSmooth">
@@ -54,7 +54,7 @@
         </li>
         <li>
           <ul class="address-text">
-            <li style="color: white"><b>Email</b></li>
+            <li style="color: white">Email</li>
             <li>
               <div class="form-group">
                 <label class="item item-input LabelSmooth">
@@ -67,7 +67,7 @@
 
         <li>
           <ul class="address-text">
-            <li><b>Password</b></li>
+            <li style="color: white">Password</li>
             <li>
               <div class="form-group">
                 <label class="item item-input LabelSmooth">
@@ -94,60 +94,60 @@
 
 
 <!--<ion-view view-title="Edit Account">-->
-  <!--<ion-content class="padding BgLogin" ng-controller="listUserController">-->
+<!--<ion-content class="padding BgLogin" ng-controller="listUserController">-->
 
-    <!--<form name="editform" novalidate flow-init>-->
+<!--<form name="editform" novalidate flow-init>-->
 
-      <!--<h2 style="color: white">Your Profile</h2>-->
-      <!--<div class="BorderImg"></div>-->
-      <!--<div align="center" style="padding: 1em">-->
-        <!--<div ng-repeat="image in user.images">-->
-          <!--<img ng-src="data:{{image.contentType}};base64,{{image.content}}" style="cursor: pointer"-->
-               <!--class="thumbnailImg" ng-click="deleteImage(image.id)">-->
-        <!--</div>-->
-        <!--<div align="center">-->
-          <!--<div ng-repeat="file in $flow.files">-->
-            <!--<a class="ion-close-circled dark" style="cursor: pointer" ng-click="$flow.cancel()"></a>-->
-            <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"></div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
+<!--<h2 style="color: white">Your Profile</h2>-->
+<!--<div class="BorderImg"></div>-->
+<!--<div align="center" style="padding: 1em">-->
+<!--<div ng-repeat="image in user.images">-->
+<!--<img ng-src="data:{{image.contentType}};base64,{{image.content}}" style="cursor: pointer"-->
+<!--class="thumbnailImg" ng-click="deleteImage(image.id)">-->
+<!--</div>-->
+<!--<div align="center">-->
+<!--<div ng-repeat="file in $flow.files">-->
+<!--<a class="ion-close-circled dark" style="cursor: pointer" ng-click="$flow.cancel()"></a>-->
+<!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-      <!--<div class="form-group">-->
-        <!--<label class="item item-input LabelSmooth">-->
-          <!--<input type="text" placeholder="Username" ng-model="user.username"-->
-                 <!--ng-pattern="/^[a-zA-Z0-9]*$/" ng-minlength="4" ng-maxlength="20" required>-->
-        <!--</label>-->
-      <!--</div>-->
-      <!--<div class="form-group">-->
-        <!--<label class="item item-input LabelSmooth">-->
-          <!--<input type="email" placeholder="E-mail" ng-model="user.email" required>-->
-        <!--</label>-->
-      <!--</div>-->
-      <!--<div class="form-group">-->
-        <!--<label class="item item-input LabelSmooth">-->
-          <!--<input type="password" placeholder="Password" id="txtNewPassword" ng-model="user.password"-->
-                 <!--ng-minlength="4" ng-maxlength="20" required>-->
-        <!--</label>-->
-      <!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="item item-input LabelSmooth">-->
+<!--<input type="text" placeholder="Username" ng-model="user.username"-->
+<!--ng-pattern="/^[a-zA-Z0-9]*$/" ng-minlength="4" ng-maxlength="20" required>-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="item item-input LabelSmooth">-->
+<!--<input type="email" placeholder="E-mail" ng-model="user.email" required>-->
+<!--</label>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="item item-input LabelSmooth">-->
+<!--<input type="password" placeholder="Password" id="txtNewPassword" ng-model="user.password"-->
+<!--ng-minlength="4" ng-maxlength="20" required>-->
+<!--</label>-->
+<!--</div>-->
 
-      <!--<button type="submit" class="button button-block button-positive" ng-disabled="editform.$invalid"-->
-              <!--ng-click="editUser($flow)"> Edit-->
-      <!--</button>-->
-      <!--<div class="dark" align="left">-->
-        <!--<p style="cursor: pointer" ng-click="deleteUsers(user.id)">Delete Account</p>-->
-      <!--</div>-->
-      <!--<br>-->
-      <!--<br>-->
-      <!--<br>-->
-      <!--&lt;!&ndash;<button ng-hide="$flow.getSize()!=0" class="button ion-images"&ndash;&gt;-->
-      <!--&lt;!&ndash;style="font-size: 1em; cursor: pointer; opacity: 0.7"&ndash;&gt;-->
-      <!--&lt;!&ndash;aria-disabled="true" type="file"&ndash;&gt;-->
-      <!--&lt;!&ndash;flow-btn>&ndash;&gt;-->
-      <!--&lt;!&ndash;Upload Picture Profile&ndash;&gt;-->
-      <!--&lt;!&ndash;</button>&ndash;&gt;-->
-    <!--</form>-->
+<!--<button type="submit" class="button button-block button-positive" ng-disabled="editform.$invalid"-->
+<!--ng-click="editUser($flow)"> Edit-->
+<!--</button>-->
+<!--<div class="dark" align="left">-->
+<!--<p style="cursor: pointer" ng-click="deleteUsers(user.id)">Delete Account</p>-->
+<!--</div>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--&lt;!&ndash;<button ng-hide="$flow.getSize()!=0" class="button ion-images"&ndash;&gt;-->
+<!--&lt;!&ndash;style="font-size: 1em; cursor: pointer; opacity: 0.7"&ndash;&gt;-->
+<!--&lt;!&ndash;aria-disabled="true" type="file"&ndash;&gt;-->
+<!--&lt;!&ndash;flow-btn>&ndash;&gt;-->
+<!--&lt;!&ndash;Upload Picture Profile&ndash;&gt;-->
+<!--&lt;!&ndash;</button>&ndash;&gt;-->
+<!--</form>-->
 
 
-  <!--</ion-content>-->
+<!--</ion-content>-->
 <!--</ion-view>-->

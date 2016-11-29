@@ -2,6 +2,7 @@ package camt.FitUp.Project.service;
 
 import camt.FitUp.Project.dao.FitUpInfoDao;
 import camt.FitUp.Project.dao.FitUpInfoDaoImpl;
+import camt.FitUp.Project.dao.UserDao;
 import camt.FitUp.Project.entity.FitUpInfo;
 import camt.FitUp.Project.entity.ImageFitUpInfo;
 import camt.FitUp.Project.entity.User;
@@ -30,11 +31,12 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
     @Autowired
     UserRepository userRepository;
 
+    @Autowired
+    UserDao userDao;
+
     @Override
     public FitUpInfo addForum(User user, FitUpInfo fitUpInfo) {
-        user.getInfos().add(fitUpInfo);
-        fitUpInfoDao.addForum(user, fitUpInfo);
-        return fitUpInfo;
+        return fitUpInfoDao.addForum(user, fitUpInfo);
     }
 
     @Override

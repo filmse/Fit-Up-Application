@@ -39,13 +39,6 @@ public class shoppingCartController {
         return shoppingCartService.addShoppingCart(video, shoppingCart, user);
     }
 
-//    @RequestMapping(value = "shoppingAddUser/{id}", method = RequestMethod.POST)
-//    @ResponseBody
-//    public ShoppingCart shoppingAddUserService(@PathVariable("id") Long userId, @RequestBody ShoppingCart shoppingCart, BindingResult bindingResult) {
-//        User user = userService.getUser(userId);
-//        return shoppingCartService.shoppingAddUserService(user, shoppingCart);
-//    }
-
     @RequestMapping(value = "shoppingList", method = RequestMethod.GET)
     public List<ShoppingCart> shoppinglist() {
         return shoppingCartService.shoppinglist();

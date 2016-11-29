@@ -3,23 +3,29 @@ package camt.FitUp.Project.dao;
 import camt.FitUp.Project.entity.FitUpInfo;
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.repository.FitUpInfoRepository;
+import camt.FitUp.Project.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 /**
  * Created by Dto on 2/9/2015.
  */
 
 @Repository
 public class FitUpInfoDaoImpl implements FitUpInfoDao {
+
     @Autowired
     FitUpInfoRepository fitUpInfoRepository;
 
+    @Autowired
+    UserRepository userRepository;
+
     @Override
     public FitUpInfo addForum(User user, FitUpInfo fitUpInfo) {
-        fitUpInfoRepository.save(fitUpInfo);
-        return fitUpInfo;
+        user.getInfos().add(fitUpInfo);
+        return fitUpInfoRepository.save(fitUpInfo);
     }
 
     @Override

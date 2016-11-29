@@ -28,12 +28,12 @@
         VideoService.save({userId: $rootScope.user.id}, vm.video, function (data) {
           var videoId = data.id;
           // set location
-          flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
+          flowFiles.opts.target = '/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId, videoName: name};
           flowFiles.upload();
           $rootScope.addSuccess = true;
-          $state.go("app.video");
+          //$state.go("app.video");
         })
       }
     })
@@ -71,7 +71,10 @@
         $scope.user = $rootScope.user;
         console.log($rootScope.user);
         video.videos = null;
-        shoppingService.save({videoId: video.id,userId: $rootScope.user.id}, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
+        shoppingService.save({
+          videoId: video.id,
+          userId: $rootScope.user.id
+        }, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
 
           alert("Success!!");
           $rootScope.shoppingCart = shoppingCart;
@@ -92,6 +95,7 @@
         user.users = null;
         addToFavoriteService.save({userId: user.id}, {FavoriteId: $rootScope.favorite}, function (favorite) {
           //success event
+          alert("Success!!");
           $rootScope.favorite = favorite;
           console.log("success")
           // window.location.reload();
@@ -124,7 +128,7 @@
         videoService.update({id: $scope.videos.id}, $scope.videos, function () {
           var videoId = $scope.videos.id;
           // set location
-          flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
+          flowFiles.opts.target = '/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId};
           flowFiles.upload();
@@ -143,7 +147,7 @@
         console.log(id)
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("http://localhost:8080/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
+          $http.delete("/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
             $scope.videos = data;
             console.log(video)
             $location.path("app.video");

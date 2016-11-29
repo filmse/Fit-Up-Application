@@ -9,7 +9,7 @@
 
   /** @ngInject */
   function UserService($resource) {
-    return $resource('http://localhost:8080/register/:action', {}, {
+    return $resource('/register/:action', {}, {
       // authenticate: {
         method: 'POST'
       //   params: {'action': 'authenticate'},
@@ -20,7 +20,7 @@
 
   /** @ngInject */
   function userService($resource) {
-    return $resource('http://localhost:8080/customer/:id', {id: '@_id'}, {
+    return $resource('/customer/:id', {id: '@_id'}, {
       update: {
         method: 'PUT', // this method issues a PUT request
         params: {
@@ -36,7 +36,7 @@
 
   /** @ngInject */
   function queryUserService($resource) {
-    return $resource('http://localhost:8080/customer/login',
+    return $resource('/customer/login',
       {
         query: {
           method: 'GET', // this method issues a GET request
@@ -49,7 +49,7 @@
 
   /** @ngInject */
   function ChangeRole($resource) {
-    return $resource('http://localhost:8080/customerRole/:id', {id: '@_id'}, {
+    return $resource('/customerRole/:id', {id: '@_id'}, {
       update: {
         method: 'PUT', // this method issues a PUT request
         params: {
@@ -58,57 +58,5 @@
       }
     });
   }
-
-  // /** @ngInject */
-  // function UserService($resource) {
-  //   return $resource('http://10.80.54.235:8080/register/:action', {}, {
-  //     // authenticate: {
-  //     method: 'POST'
-  //     // params: {'action': 'authenticate'},
-  //     // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-  //     //}
-  //   })
-  // }
-  //
-  // /** @ngInject */
-  // function userService($resource) {
-  //   return $resource('http://10.80.54.235:8080/customer/:id', {id: '@_id'}, {
-  //     update: {
-  //       method: 'PUT', // this method issues a PUT request
-  //       params:{
-  //         id: '@id',
-  //         username:'@username',
-  //         email: '@email',
-  //         password: '@password',
-  //         passSet: '@passSet'
-  //       }
-  //     }
-  //   });
-  // }
-  //
-  // /** @ngInject */
-  // function queryUserService($resource) {
-  //   return $resource('http://10.80.54.235:8080/customer/login',
-  //     {
-  //       query: {
-  //         method: 'GET', // this method issues a GET request
-  //         params: {
-  //           name:''
-  //         }
-  //       }
-  //     });
-  // }
-  //
-  // /** @ngInject */
-  // function ChangeRole($resource) {
-  //   return $resource('http://10.80.54.235:8080/customerRole/:id', {id: '@_id'}, {
-  //     update: {
-  //       method: 'PUT', // this method issues a PUT request
-  //       params: {
-  //         roleSelected: '@roleSelected'
-  //       }
-  //     }
-  //   });
-  // }
 
 })();

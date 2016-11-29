@@ -1,6 +1,7 @@
 <ion-side-menus enable-menu-with-back-views="true">
 
-  <ion-side-menu-content>
+  <ion-side-menu-content dge-drag-threshold="false"
+                         drag-content="false">
     <ion-nav-bar class="bar-dark">
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -9,10 +10,10 @@
       <ion-nav-buttons side="right">
 
         <!--<div style="margin: 6px">-->
-          <!--{{user.username}}-->
+        <!--{{user.username}}-->
         <!--</div>-->
 
-        <div style="margin-top: -10%; " ng-repeat="image in user.images"
+        <div style="margin-top: -8%; " ng-repeat="image in user.images"
              class="thumbnailCircless">
           <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgsss">
         </div>
@@ -34,13 +35,13 @@
       <ion-list>
 
         <div ng-show="user">
-          <div class="item item-divider colorMenuu">
+          <div class="item item-divider wal font-sizeInAppPli">
             <a class="ion-ios-gear dark" href="#/app/edituser"></a>
             Edit Profile
           </div>
 
           <div align="right">
-            <div class="item item-divider colorMenu">
+            <div class="item item-divider Wall">
               <div align="center" class="text-center profileUser">
                 <div align="center">
                   <div style="margin-top: -5%" ng-repeat="image in user.images"
@@ -75,12 +76,14 @@
         <div class="item item-divider colorMenuu">
           User Menu
         </div>
-        <ion-item menu-close class="item item-icon-left item-icon-right" href="#/app/login" ng-hide="user">
+        <ion-item menu-close class="item item-icon-left item-icon-right font-sizeInAppPli" href="#/app/login"
+                  ng-hide="user">
           <i class="icon ion-ios-person"></i>
           Login
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
-        <ion-item menu-close class="item item-icon-left item-icon-right" href="#/app/register" ng-hide="user">
+        <ion-item menu-close class="item item-icon-left item-icon-right font-sizeInAppPli" href="#/app/register"
+                  ng-hide="user">
           <i class="icon ion-ios-personadd"></i>
           Register
           <i class="icon ion-ios-arrow-right button-small"></i>
@@ -90,24 +93,26 @@
         <!--Information-->
         <!--<i class="icon ion-ios-arrow-right button-small"></i>-->
         <!--</ion-item>-->
-        <ion-item class="item item-icon-left item-icon-right" menu-close href="#/app/video">
+        <ion-item class="item item-icon-left item-icon-right font-sizeInAppPli" menu-close href="#/app/video">
           <i class="icon ion-ios-home"></i>
           Home
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
-        <ion-item class="item item-icon-left item-icon-right" ng-show="hasRole('member')" menu-close href="#/app/favorite">
+        <ion-item class="item item-icon-left item-icon-right font-sizeInAppPli" ng-show="hasRole('member')" menu-close
+                  href="#/app/favorite">
           <i class="icon ion-heart"></i>
           My Favorite
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
-        <ion-item class="item item-icon-left item-icon-right" ng-show="hasRole('member')" menu-close href="#/app/payment">
+        <ion-item class="item item-icon-left item-icon-right font-sizeInAppPli" ng-show="hasRole('member')" menu-close
+                  href="#/app/payment">
           <i class="icon ion-ios-cart"></i>
           Shopping Cart
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
 
         <div ng-show="hasRole('trainer')">
-          <div class="item item-divider colorMenuu">
+          <div class="item item-divider colorMenuu font-sizeInAppPli">
             Trainer Menu
           </div>
 
@@ -168,16 +173,16 @@
         </div>
 
         <div ng-show="hasRole('admin')">
-          <div class="item item-divider colorMenu">
+          <div class="item item-divider colorMenu font-sizeInAppPli">
             Admin Menu
           </div>
-          <ion-item menu-close href="#/app/management">
+          <ion-item menu-close href="#/app/management" class="font-sizeInAppPli">
             System management
           </ion-item>
         </div>
 
         <div align="center">
-          <div class="item item-divider colorMenu" ng-show="user">
+          <div class="item item-divider colorMenu font-sizeInAppPli" ng-show="user">
             <ion-item menu-close ng-click="logout()">
               Log Out &nbsp;&nbsp;<i class="icon ion-log-out" style="font-size:30px"></i>
             </ion-item>

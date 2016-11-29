@@ -36,5 +36,4 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return shoppingCartDao.shoppingId(id);
     }
 
-
 }

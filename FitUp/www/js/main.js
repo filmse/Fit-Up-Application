@@ -33,6 +33,28 @@
       $scope.Payment = function () {
         $state.go("app.payment");
       }
+
+      var vm = this;
+
+      vm.data = {};
+      vm.createUser = function (signupForm) {
+        if (signupForm.$valid) {
+          var newEmail = vm.user.email;
+          var newPassword = vm.user.password;
+          var newFullName = vm.user.username;
+          // var selectedPlan = $state.params.pId;
+
+          AuthService.signupEmail(newEmail, newPassword, newFullName);
+        }
+        ;
+      };
+    })
+
+    /** @ngInject */
+    .controller('slidesController', function ($scope, $ionicSlideBoxDelegate) {
+      $scope.nextSlide = function () {
+        $ionicSlideBoxDelegate.next();
+      }
     })
 
 })();

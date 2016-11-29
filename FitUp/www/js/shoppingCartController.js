@@ -6,7 +6,7 @@
   angular.module('starter.controllers')
 
   /** @ngInject */
-    .controller('shoppingListController', function ($scope, shoppingListService, videoService) {
+    .controller('shoppingListController', function ($scope, shoppingListService) {
 
       $scope.queryPromise = shoppingListService.query(function (data) {
         $scope.shoppingCarts = data;

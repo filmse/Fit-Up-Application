@@ -1,5 +1,6 @@
 package camt.FitUp.Project.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -16,6 +17,11 @@ public class FitUpInfo implements Comparable {
     private Long id;
     private String name;
     private String description;
+
+//    @ManyToOne
+//    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+//    @JsonBackReference
+//    User user;
 
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
@@ -54,7 +60,8 @@ public class FitUpInfo implements Comparable {
 
         FitUpInfo fitUpInfo = (FitUpInfo) o;
 
-        if (description != null ? !description.equals(fitUpInfo.description) : fitUpInfo.description != null) return false;
+        if (description != null ? !description.equals(fitUpInfo.description) : fitUpInfo.description != null)
+            return false;
         if (id != null ? !id.equals(fitUpInfo.id) : fitUpInfo.id != null) return false;
         if (name != null ? !name.equals(fitUpInfo.name) : fitUpInfo.name != null) return false;
         return true;

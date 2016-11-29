@@ -56,25 +56,30 @@
       var vm = this;
       vm.user = {};
       vm.register = function (flowFiles) {
-
         UserService.save(vm.user, function (data) {
-
           var userId = data.id;
-          flowFiles.opts.target = 'http://localhost:8080/userImage/add';
-          flowFiles.opts.testChunks = false;
-          flowFiles.opts.query = {userId: userId};
-          flowFiles.upload();
+          console.log(vm.user.username);
 
-          $rootScope.addSuccess = true;
-          $ionicLoading.show({
-            template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
-          });
-          $timeout(function () {
-            $ionicLoading.hide();
-          }, 4000)
-          $state.go('app.login');
+          if (vm.user.username == undefined) {
+            alert("Null");
+            $state.go('app.register');
+          } else {
+            flowFiles.opts.target = 'http://localhost:8080/userImage/add';
+            flowFiles.opts.testChunks = false;
+            flowFiles.opts.query = {userId: userId};
+            flowFiles.upload();
+            $rootScope.addSuccess = true;
+            $ionicLoading.show({
+              template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
+            });
+            $timeout(function () {
+              $ionicLoading.hide();
+            }, 3000)
+            $state.go('app.login');
+          }
         })
       }
+
     })
     /** @ngInject */
     .controller('listUserController', function ($scope, queryUserService, userService, $rootScope, $ionicLoading, $timeout) {
@@ -155,7 +160,7 @@
       $scope.deleteImage = function (id) {
         var answer = confirm("Change your image?");
         if (answer) {
-          $http.delete("http://localhost:8080/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
+          $http.delete("/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
             $scope.user = data;
             // window.location.reload();
           });

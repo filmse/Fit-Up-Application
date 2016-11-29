@@ -11,7 +11,7 @@
 
   /** @ngInject */
   function shoppingService($resource) {
-    return $resource('http://localhost:8080/shopping', {}, {
+    return $resource('/shopping', {}, {
       // authenticate: {
       method: 'POST'
       // params: {'action': 'authenticate'},
@@ -22,7 +22,7 @@
 
   /** @ngInject */
   function shoppingAddUserService($resource) {
-    return $resource('http://localhost:8080/shoppingAddUser/:id', {id: '@_id'}, {
+    return $resource('/shoppingAddUser/:id', {id: '@_id'}, {
       // authenticate: {
       method: 'PUT'
       // params: {'action': 'authenticate'},
@@ -33,7 +33,7 @@
 
   /**@ngInject*/
   function shoppingListService($resource) {
-    return $resource('http://localhost:8080/shoppingList',
+    return $resource('/shoppingList',
       {
         query: {
           method: 'GET'
@@ -43,42 +43,11 @@
 
   /**@ngInject*/
   function shoppingUpdateService($resource) {
-    return $resource('http://localhost:8080/shoppingList/:id', {id: '@_id'}, {
+    return $resource('/shoppingList/:id', {id: '@_id'}, {
       update: {
         method: 'PUT' // this method issues a PUT request
       }
     });
   }
-
-
-  // /** @ngInject */
-  // function shoppingService($resource) {
-  //   return $resource('http://10.80.54.235:8080/shopping', {}, {
-  //     // authenticate: {
-  //     method: 'POST'
-  //     // params: {'action': 'authenticate'},
-  //     // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-  //     //}
-  //   })
-  // }
-  //
-  // /**@ngInject*/
-  // function shoppingListService($resource) {
-  //   return $resource('http://10.80.54.235:8080/shoppingList',
-  //     {
-  //       query: {
-  //         method: 'GET'
-  //       }
-  //     });
-  // }
-  //
-  // /**@ngInject*/
-  // function shoppingUpdateService($resource) {
-  //   return $resource('http://10.80.54.235:8080/shoppingList/:id', {id: '@_id'}, {
-  //     update: {
-  //       method: 'PUT' // this method issues a PUT request
-  //     }
-  //   });
-  // }
 
 })();
