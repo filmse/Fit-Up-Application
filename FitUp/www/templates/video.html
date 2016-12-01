@@ -1,9 +1,11 @@
 <ion-view>
   <ion-content scroll="false" ng-controller="slidesController">
+
     <ion-slides options="options" slider="data.slider">
 
       <ion-slide-page ng-controller="listVideoController" class="Wall" style="padding: 2%">
         <ion-content>
+
           <div style="padding: 3px; opacity: 1.0; margin: 3px" class="button-bar">
             <a style="border-radius: 2%;color: white; font-size: 20px; height: 100px; width: auto"
                class="ImgD1 button button-assertive animated bounceInDown"><p style="margin-top: 20px;">Fit-Up</p></a>&nbsp
@@ -18,52 +20,70 @@
           <div align="center" class="button-bar" style="width: 100%; height: 60px;">
             <a style="width: 100%;font-size: 20px" class="icon ion-ios-film button-large overDiv"
                ng-click="videoClicks()"><p
-              style="color: white ;font-size: small; margin-top: -30px">Video</p></a>
+              style="color: black ;font-size: small; margin-top: -30px">Video</p></a>
             <a style="width: 100%;font-size: 20px" class="icon ion-android-list button-large overDiv"
                ng-click="InfoClicks()">
               <p
-                style="color: white ;font-size: small; margin-top: -30px">Forum</p></a>
+                style="color: black ;font-size: small; margin-top: -30px">Forum</p></a>
             <a style="width: 100%;font-size: 20px" class="icon ion-ios-cart button-large overDiv" ng-click="Payment()">
               <p
-                style="color: white ;font-size: small; margin-top: -30px">Cart</p></a>
+                style="color: black ;font-size: small; margin-top: -30px">Cart</p></a>
             <a style="width: 100%;font-size: 20px" class="icon ion-ios-compose button-large overDiv"
                ng-click="aboutUsClicks()"><p
-              style="color: white ;font-size: small; margin-top: -30px">Help</p></a>
+              style="color: black ;font-size: small; margin-top: -30px">Help</p></a>
           </div>
+
         </ion-content>
       </ion-slide-page>
 
-      <ion-slide-page ng-controller="listInfoController" class="Wall" style="padding: 2%">
+      <ion-slide-page ng-show="hasRole('trainer')" class="Wall" style="padding: 2%">
         <ion-content>
 
-          <div class="bar bar-header item-input-inset">
-            <label class="item-input-wrapper">
-              <i class="icon ion-ios-search placeholder-icon"></i>
-              <input type="search" placeholder="Search" ng-model="name"/>
-            </label>
-            <button class="button button-dark" ng-click="searchInfo(name)">
-              Search
+          <ion-item class="row">
+            <button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"
+                    ng-click="UploadInfo()">
+              <div style="width:20%; font-size: 50px" class="ion-android-add-circle">
+              </div>
+              <p align="right">Upload Info</p>
             </button>
-          </div>
-          <hr>
+          </ion-item>
 
-          <div class="list animated bounceInDown">
-            <a class="overDivs item item-thumbnail-left Wall3" ng-repeat="fitUpInfo in infos | filter:name"
-               ng-href="#/app/informationExpand/{{fitUpInfo.id}}">
-              <img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
-                   ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}">
-              <h2>{{fitUpInfo.name}}</h2>
-              <p class="over overflow-ellipsis">{{fitUpInfo.description}}</p>
-              <!--<p style="color: red">Read More...</p>-->
-            </a>
+          <div align="center" ng-controller="listInfoController">
+            <table style="width: 100%">
+
+              <thead class="simply th">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+              </thead>
+
+              <tbody class="simply tbody">
+              <tr ng-repeat="fitUpInfo in user.infos | filter: name">
+                <td><img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
+                         ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}"
+                         style="width: 50px; height: auto"></td>
+                <td>{{fitUpInfo.name}}</td>
+                <td>
+                  <a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}">Edit Information</a>
+                </td>
+
+                <td>
+                  <a class="icon-left ion-ios-close-outline" ng-href="#" ng-click="deleteInfo(fitUpInfo.id)">Delete</a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
           </div>
 
         </ion-content>
-
       </ion-slide-page>
 
-      <ion-slide-page class="Wall" style="padding: 2%">
+      <ion-slide-page class="Wall" ng-show="hasRole('member')" style="padding: 2%">
         <ion-content>
+
 
         </ion-content>
       </ion-slide-page>

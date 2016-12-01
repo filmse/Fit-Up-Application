@@ -5,12 +5,11 @@
 
       <div align="center">
         <div ng-repeat="file in $flow.files" class="text-center" align="center">
-          <br>
           <div><img flow-img="$flow.files[{{$index}}]" class="thumbnailCircles thumbnailImgs"></div>
-          <a class="ion-close-circled" style="cursor: pointer; margin: 2px" ng-click="$flow.cancel()"></a>
+          <a class="ion-close-circled" style="cursor: pointer; margin: 2px" ng-click="$flow.cancel()" type="file"></a>
         </div>
 
-        <button ng-hide="$flow.getSize()!=0" class="button ion-images"
+        <button ng-hide="$flow.getSize()!=0" class="thumbnailCircles thumbnailImgs"
                 style="font-size: 1em; cursor: pointer; opacity: 0.7"
                 aria-disabled="true" type="file"
                 flow-btn>

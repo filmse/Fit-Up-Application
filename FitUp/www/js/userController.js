@@ -64,7 +64,7 @@
             alert("Null");
             $state.go('app.register');
           } else {
-            flowFiles.opts.target = 'http://localhost:8080/userImage/add';
+            flowFiles.opts.target = 'http://10.80.52.77:8080/userImage/add';
             flowFiles.opts.testChunks = false;
             flowFiles.opts.query = {userId: userId};
             flowFiles.upload();
@@ -148,7 +148,7 @@
             console.log(userId)
             // set location
 
-            flowFiles.opts.target = 'http://localhost:8080/userImage/add';
+            flowFiles.opts.target = 'http://10.80.52.77:8080/userImage/add';
             flowFiles.opts.testChunks = false;
             flowFiles.opts.query = {userId: userId};
             flowFiles.upload();
@@ -160,7 +160,7 @@
       $scope.deleteImage = function (id) {
         var answer = confirm("Change your image?");
         if (answer) {
-          $http.delete("/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
+          $http.delete("http://10.80.52.77:8080/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
             $scope.user = data;
             // window.location.reload();
           });

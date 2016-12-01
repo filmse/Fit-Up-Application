@@ -7,72 +7,472 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27540bf1-bc14-4afb-bc16-92610505c895" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitUp/www/css/img/wall.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitUp/www/css/img/wall1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitUp/www/js/decorate.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/css/img/Fit02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/css/img/FitUp_002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/css/img/FitUp_003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/css/img/FitUp_004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/css/img/FitUp_005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/img/LoGo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/img/ionic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/SHA-1/sha1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/service/FitUpInfoServiceTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/config/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/config/AppConfig.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/licenses.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/shortcuts/infinite-scroll/waypoints-infinite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/shortcuts/infinite-scroll/waypoints-infinite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/shortcuts/sticky-elements/waypoints-sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/waypoints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FitUp/www/lib/waypoints/waypoints.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/FitUpInfoController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/FitUpInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/shoppingCartController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/shoppingCartController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/FitUpInfoDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/FitUpInfoDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/FitUpInfo.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/FitUpInfo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/FitUpInfoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/FitUpInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/css/style.css" afterPath="$PROJECT_DIR$/FitUp/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/index.html" afterPath="$PROJECT_DIR$/FitUp/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/app.js" afterPath="$PROJECT_DIR$/FitUp/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/main.js" afterPath="$PROJECT_DIR$/FitUp/www/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/passSetServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/passSetServices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/decorate.js" afterPath="$PROJECT_DIR$/FitUp/www/js/decorate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/userController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/userServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/userServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/videoController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/videoController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/videoServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/videoServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular-sanitize/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/.bowerrc" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/.bowerrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/CHANGELOG.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-adobe.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-adobe.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-baidu.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-baidu.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-chartbeat.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-chartbeat.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-debug.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-debug.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-flurry.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-flurry.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga-cordova-google-analytics-plugin.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga-cordova-google-analytics-plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga-cordova.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga-cordova.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-ga.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-gtm.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-gtm.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-intercom.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-intercom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-kissmetrics.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-kissmetrics.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-localytics.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-localytics.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-loggly.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-loggly.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-marketo.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-marketo.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-mixpanel.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-mixpanel.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-piwik.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-piwik.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-scroll.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-scroll.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-segmentio.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-segmentio.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-splunk.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-splunk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-woopra.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics-woopra.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/dist/angulartics.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/karma.conf.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.adobe.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.adobe.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.baidu.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.baidu.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.chartbeat.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.chartbeat.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.cnzz.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.cnzz.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.core.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.core.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.debug.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.debug.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.flurry.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.flurry.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.cordova-google-analytics-plugin.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.cordova-google-analytics-plugin.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.cordova.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.cordova.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.ga.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.gtm.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.gtm.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.hubspot.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.hubspot.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.intercom.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.intercom.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.kissmetrics.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.kissmetrics.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.localytics.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.localytics.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.loggly.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.loggly.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.marketo.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.marketo.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.mixpanel.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.mixpanel.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.piwik.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.piwik.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.scroll.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.scroll.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.segmentio.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.segmentio.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.splunk.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.splunk.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.woopra.nuspec" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/nuget/angular.analytics.woopra.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/adobe-analytics.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/adobe-analytics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/baidu.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/baidu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/chartbeat.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/chartbeat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/cnzz.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/cnzz.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/flurry.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/flurry.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/google-analytics.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/google-analytics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/google-tag-manager.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/google-tag-manager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/intercom.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/intercom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/kissmetrics.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/kissmetrics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/localytics.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/localytics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/loggly.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/loggly.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/loggly.tracker.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/loggly.tracker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/marketo.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/marketo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/mixpanel.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/mixpanel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/piwik.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/piwik.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/scroll.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/scroll.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/segmentio.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/segmentio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/splunk.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/splunk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/woopra.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/samples/woopra.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-adobe.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-adobe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-baidu.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-baidu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-chartbeat.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-chartbeat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-cnzz.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-cnzz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-debug.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-flurry.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-flurry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga-cordova-google-analytics-plugin.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga-cordova-google-analytics-plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga-cordova.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga-cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-ga.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-gtm-cordova.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-gtm-cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-gtm.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-gtm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-hubspot.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-hubspot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-intercom.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-intercom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-kissmetrics.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-kissmetrics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-localytics.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-localytics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-loggly.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-loggly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-marketo.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-marketo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-mixpanel.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-mixpanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-piwik.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-piwik.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-scroll.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-scroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-segmentio.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-segmentio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-splunk.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-splunk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-woopra.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics-woopra.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/src/angulartics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/angulartics/test/angularticsSpec.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/angulartics/test/angularticsSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/CHANGELOG.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/COLLABORATOR_GUIDE.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/COLLABORATOR_GUIDE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/component.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/composer.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/contrib.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/contrib.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video-js-cdn.css" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video-js-cdn.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video.novtt.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video.novtt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video.novtt.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/alt/video.novtt.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ar.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ar.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ja.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ja.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ru.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.ru.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.sv.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/captions.sv.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/chapters.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/chapters.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/descriptions.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/descriptions.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/index.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/elephantsdream/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/shared/example-captions.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/shared/example-captions.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/simple-embed/index.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/examples/simple-embed/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/font/VideoJS.svg" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/font/VideoJS.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/ie8/videojs-ie8.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/ie8/videojs-ie8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ba.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ba.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/bg.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ca.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/cs.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/da.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/de.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/el.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/en.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/es.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fa.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fi.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fr.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/hr.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/hu.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/it.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ja.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ko.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nb.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nl.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nn.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/pl.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/pt-BR.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/pt-BR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ru.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/sr.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/sv.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/tr.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/uk.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/vi.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/zh-CN.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/zh-CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/zh-TW.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/lang/zh-TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video-js.css" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video-js.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video.min.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/dist/video.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ar.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ar.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ja.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ja.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ru.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.ru.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.sv.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/captions.sv.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/chapters.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/chapters.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/descriptions.en.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/descriptions.en.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/index.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/elephantsdream/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/shared/example-captions.vtt" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/shared/example-captions.vtt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/simple-embed/index.html" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/examples/simple-embed/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/api.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/api.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/audio-tracks.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/audio-tracks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/components.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/components.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/glossary.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/glossary.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/hooks.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/hooks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/languages.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/languages.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/options.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/options.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/plugins.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/plugins.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/removing-players.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/removing-players.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/setup.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/setup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/skins.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/skins.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/tech.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/tech.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/text-tracks.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/text-tracks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/tracks.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/tracks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/video-tracks.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/guides/video-tracks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/index.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/translations-needed.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/docs/translations-needed.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ar.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ar.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ba.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ba.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/bg.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/bg.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ca.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ca.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/cs.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/cs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/da.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/da.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/de.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/de.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/el.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/el.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/en.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/en.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/es.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/es.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fa.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fa.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fi.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fi.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fr.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/fr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/hr.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/hr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/hu.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/hu.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/it.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/it.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ja.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ja.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ko.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ko.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nb.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nl.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nl.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nn.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/nn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/pl.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/pl.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/pt-BR.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/pt-BR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ru.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/ru.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/sr.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/sr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/sv.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/sv.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/tr.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/tr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/uk.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/uk.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/vi.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/vi.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/zh-CN.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/zh-CN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/zh-TW.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/lang/zh-TW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/descriptions.html.example" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/descriptions.html.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/icons.html.example" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/icons.html.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/index.html.example" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/index.html.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/language.html.example" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/language.html.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/plugin.html.example" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/sandbox/plugin.html.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_print.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_print.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_private-variables.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_private-variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_utilities.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_utilities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_variables.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_adaptive.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_adaptive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_audio.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_audio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_big-play.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_big-play.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_button.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_captions-settings.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_captions-settings.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_captions.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_captions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_chapters.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_chapters.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_close-button.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_close-button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control-bar.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control-bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control-spacer.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control-spacer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_control.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_descriptions.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_descriptions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_error.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_error.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_fullscreen.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_fullscreen.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_layout.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_live.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_live.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_loading.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_loading.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_modal-dialog.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_modal-dialog.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_play-pause.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_play-pause.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_playback-rate.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_playback-rate.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_poster.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_poster.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_progress.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_progress.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_slider.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_slider.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_subtitles.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_subtitles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_text-track.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_text-track.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_time.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_time.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_volume.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/_volume.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu-inline.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu-inline.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu-popup.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu-popup.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/components/menu/_menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/ie8.css" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/utilities/_linear-gradient.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/utilities/_linear-gradient.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/video-js.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/video-js.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/vjs-cdn.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/vjs-cdn.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/vjs.scss" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/css/vjs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/big-play-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/big-play-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/clickable-component.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/clickable-component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/close-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/close-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/component.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/audio-track-controls/audio-track-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/audio-track-controls/audio-track-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/audio-track-controls/audio-track-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/audio-track-controls/audio-track-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/control-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/control-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/fullscreen-toggle.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/fullscreen-toggle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/live-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/live-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/mute-toggle.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/mute-toggle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/play-toggle.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/play-toggle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/playback-rate-menu/playback-rate-menu-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/playback-rate-menu/playback-rate-menu-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/playback-rate-menu/playback-rate-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/playback-rate-menu/playback-rate-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/load-progress-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/load-progress-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/mouse-time-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/mouse-time-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/play-progress-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/play-progress-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/progress-control.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/progress-control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/seek-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/seek-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/tooltip-progress-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/progress-control/tooltip-progress-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/spacer-controls/custom-control-spacer.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/spacer-controls/custom-control-spacer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/spacer-controls/spacer.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/spacer-controls/spacer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/caption-settings-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/caption-settings-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/captions-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/captions-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/chapters-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/chapters-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/chapters-track-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/chapters-track-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/descriptions-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/descriptions-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/off-text-track-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/off-text-track-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/subtitles-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/subtitles-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/text-track-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/text-track-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/text-track-menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/text-track-controls/text-track-menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/current-time-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/current-time-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/duration-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/duration-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/remaining-time-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/remaining-time-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/time-divider.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/time-controls/time-divider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/track-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/track-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-bar.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-control.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-level.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-control/volume-level.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-menu-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/control-bar/volume-menu-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/error-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/error-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/event-target.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/event-target.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/extend.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/extend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/fullscreen-api.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/fullscreen-api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/loading-spinner.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/loading-spinner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/media-error.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/media-error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu-item.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/menu/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/modal-dialog.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/modal-dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/player.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/plugins.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/popup/popup-button.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/popup/popup-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/popup/popup.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/popup/popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/poster-image.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/poster-image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/setup.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/slider/slider.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/slider/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash-cache.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash-cache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash-rtmp.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash-rtmp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/html5.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/html5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/loader.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/tech.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tech/tech.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/audio-track-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/audio-track-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/audio-track.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/audio-track.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/html-track-element-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/html-track-element-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/html-track-element.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/html-track-element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-cue-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-cue-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-display.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-list-converter.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-list-converter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-settings.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track-settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/text-track.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track-enums.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track-enums.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/track.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/video-track-list.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/video-track-list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/video-track.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/tracks/video-track.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/browser.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/buffer.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/buffer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/computed-style.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/computed-style.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/dom.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/events.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/fn.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/fn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/format-time.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/format-time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/guid.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/guid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/log.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/log.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/merge-options.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/merge-options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/obj.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/obj.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/stylesheet.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/stylesheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/time-ranges.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/time-ranges.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/to-title-case.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/to-title-case.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/url.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/utils/url.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/video.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/video.js/src/js/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/vg-analytics.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-angulartics/vg-analytics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/vg-buffering.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-buffering/vg-buffering.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/vg-controls.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-controls/vg-controls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/vg-ima-ads.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-ima-ads/vg-ima-ads.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/vg-overlay-play.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-overlay-play/vg-overlay-play.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/vg-poster.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-poster/vg-poster.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/fonts/videogular.dev.svg" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/fonts/videogular.dev.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/fonts/videogular.svg" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/fonts/videogular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/videogular.css" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/videogular.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/videogular.css.map" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular-themes-default/videogular.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/.gitignore" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/Gruntfile.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/LICENSE" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/README.md" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/bower.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/index.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/package.json" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/lib/videogular/videogular.js" afterPath="$PROJECT_DIR$/FitUp/www/lib/videogular/videogular.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Information.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/edituser.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/edituser.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/menu.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/payment.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/payment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/payments.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/payments.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/register.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/video.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/videoExpand.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/videoExpand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/AppConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fitness-FitUp-Content.iml" afterPath="$PROJECT_DIR$/Fitness-FitUp-Content.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/UserDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/FitUpInfoServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/FitUpInfoServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
     </list>
     <ignored path="Fitness-FitUp-Content.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +493,85 @@
     <favorites_list name="Fitness-FitUp-Content" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="videoController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/videoController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+              <folding>
+                <marker date="1480576078577" expanded="true" signature="4745:4756" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FitUpInfoController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="108" column="47" lean-forward="false" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
+              <folding>
+                <marker date="1480576078557" expanded="true" signature="869:880" ph="..." />
+                <marker date="1480576078557" expanded="true" signature="1401:1412" ph="..." />
+                <marker date="1480576078557" expanded="true" signature="2153:2164" ph="..." />
+                <marker date="1480576078557" expanded="true" signature="3544:3555" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/userController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="162" column="47" lean-forward="false" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+              <folding>
+                <marker date="1480576078488" expanded="true" signature="952:963" ph="..." />
+                <marker date="1480576078488" expanded="true" signature="1528:1539" ph="..." />
+                <marker date="1480576078488" expanded="true" signature="2687:2698" ph="..." />
+                <marker date="1480576078488" expanded="true" signature="3221:3232" ph="..." />
+                <marker date="1480576078488" expanded="true" signature="3909:3920" ph="..." />
+                <marker date="1480576078488" expanded="true" signature="4439:4450" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoppingCartController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passSetController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/passSetController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-123">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1480387534000" expanded="true" signature="551:562" ph="..." />
+                <marker date="1480387534000" expanded="true" signature="1084:1095" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoppingCartServices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,7 +605,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDao.java" />
@@ -144,7 +621,6 @@
         <option value="$PROJECT_DIR$/FitUp/www/templates/payment.html" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/payments.html" />
         <option value="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/videoExpand.html" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/edituser.html" />
         <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
@@ -152,32 +628,34 @@
         <option value="$PROJECT_DIR$/FitUp/www/js/videoServices.js" />
         <option value="$PROJECT_DIR$/FitUp/www/js/userServices.js" />
         <option value="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" />
-        <option value="$PROJECT_DIR$/FitUp/www/js/videoController.js" />
-        <option value="$PROJECT_DIR$/FitUp/www/js/decorate.js" />
         <option value="$PROJECT_DIR$/src/test/java/service/FitUpInfoServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/Information.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/DatabaseInitializationBean.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" />
         <option value="$PROJECT_DIR$/FitUp/www/js/FitUpInfoServices.js" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" />
-        <option value="$PROJECT_DIR$/FitUp/www/css/style.css" />
-        <option value="$PROJECT_DIR$/FitUp/www/js/userController.js" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/register.html" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/videoExpand.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/DatabaseInitializationBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" />
         <option value="$PROJECT_DIR$/FitUp/www/index.html" />
         <option value="$PROJECT_DIR$/FitUp/www/js/main.js" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/video.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/css/style.css" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Information.html" />
         <option value="$PROJECT_DIR$/FitUp/www/js/app.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/menu.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/video.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/decorate.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/videoController.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/userController.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/register.html" />
       </list>
     </option>
   </component>
@@ -197,8 +675,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -216,9 +694,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,14 +760,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fitness-FitUp-Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fit-Up-Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitUp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/SE331-lab12complete-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -951,6 +1451,13 @@
       <workItem from="1480386987668" duration="11000" />
       <workItem from="1480390883453" duration="10676000" />
       <workItem from="1480417130901" duration="22903000" />
+      <workItem from="1480498352580" duration="3366000" />
+      <workItem from="1480518400510" duration="4941000" />
+      <workItem from="1480554861681" duration="2357000" />
+      <workItem from="1480560246567" duration="1596000" />
+      <workItem from="1480562708457" duration="854000" />
+      <workItem from="1480564108795" duration="3347000" />
+      <workItem from="1480571345537" duration="5189000" />
     </task>
     <servers />
   </component>
@@ -975,10 +1482,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336646000" />
+    <option name="totallyTimeSpent" value="358296000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -994,15 +1501,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22091503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23222749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19269341" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29383886" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20574887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1076,59 +1583,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/templates/payments.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/videoExpand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="22" column="82" lean-forward="false" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/edituser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1160,20 +1618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/passSetController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/js/ckecksPass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1185,20 +1629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/decorate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1216,45 +1646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/videoController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserImageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/DatabaseInitializationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1293,18 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#1045#1046#0" expanded="false" />
-            <element signature="e#1106#1107#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1312,111 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="561" column="1" lean-forward="false" selection-start-line="561" selection-start-column="1" selection-end-line="561" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="62" column="46" lean-forward="true" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <marker date="1480433691779" expanded="true" signature="952:963" ph="..." />
-            <marker date="1480433691779" expanded="true" signature="1528:1539" ph="..." />
-            <marker date="1480433691779" expanded="true" signature="2685:2696" ph="..." />
-            <marker date="1480433691779" expanded="true" signature="3219:3230" ph="..." />
-            <marker date="1480433691779" expanded="true" signature="3907:3918" ph="..." />
-            <marker date="1480433691779" expanded="true" signature="4437:4448" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#ion-input#0;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#ion-input#1;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#ion-input#2;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-input#0;n#div#4;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1480436528093" expanded="true" signature="944:1090" ph="{...}" />
-            <marker date="1480436528093" expanded="true" signature="1932:2072" ph="{...}" />
-            <marker date="1480436528093" expanded="true" signature="2820:2966" ph="{...}" />
-            <marker date="1480436528093" expanded="false" signature="5722:5735" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="5884:5896" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6305:6333" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6478:6523" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6750:6765" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6786:6798" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6867:6902" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="6926:6949" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7293:7308" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7329:7341" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7407:7441" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7465:7488" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7770:7785" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7806:7818" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7887:7921" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="7945:7968" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="8309:8324" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="8345:8357" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="8429:8463" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="8487:8510" ph="..." />
-            <marker date="1480436528093" expanded="false" signature="8702:8712" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,97 +1702,295 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <marker date="1480438387699" expanded="false" signature="539:551" ph="..." />
-            <marker date="1480438387699" expanded="false" signature="1345:1372" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Information.html">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/config/DatabaseInitializationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="90" column="2" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="103" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="218">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/main.js">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/videoExpand.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="1067">
+          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="79" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/favorite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="97" column="40" lean-forward="false" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="48" selection-end-column="16" />
           <folding>
-            <marker date="1480403754331" expanded="true" signature="867:878" ph="..." />
-            <marker date="1480403754331" expanded="true" signature="1399:1410" ph="..." />
-            <marker date="1480403754331" expanded="true" signature="2149:2160" ph="..." />
-            <marker date="1480403754331" expanded="true" signature="3538:3549" ph="..." />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="146" column="46" lean-forward="false" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
+        <state relative-caret-position="272">
+          <caret line="178" column="43" lean-forward="true" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
           <folding>
-            <marker date="1480440918611" expanded="true" signature="2052:2063" ph="..." />
-            <marker date="1480440918611" expanded="true" signature="3330:3341" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ion-nav-buttons#1;n#ion-nav-bar#0;n#ion-side-menu-content#0;n#ion-side-menus#0;n#!!top" expanded="true" />
+            <marker date="1480573655045" expanded="true" signature="2052:2063" ph="..." />
+            <marker date="1480573655045" expanded="true" signature="3330:3341" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/templates/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="63" lean-forward="true" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+        <state relative-caret-position="189">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
-            <element signature="n#style#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#0;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#1;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#2;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#3;n#div#1;n#ion-content#0;n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-slide-page#2;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1480440898667" expanded="false" signature="3564:3575" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="3598:3637" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="3676:3751" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="3830:3847" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="3886:3961" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="4038:4055" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="4091:4166" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="4245:4262" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5394:5420" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5440:5467" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5558:5607" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5640:5667" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5769:5818" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5851:5878" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="5965:6014" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="6046:6073" ph="..." />
-            <marker date="1480440898667" expanded="false" signature="6176:6225" ph="..." />
+            <element signature="n#style#0;n#div#0;n#button#0;n#ion-item#0;n#ion-content#0;n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#ion-content#0;n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#ion-content#0;n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#ion-content#0;n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#ion-slide-page#2;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/decorate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/videoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+          <folding>
+            <marker date="1480576078577" expanded="true" signature="4745:4756" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="162" column="47" lean-forward="false" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+          <folding>
+            <marker date="1480576078488" expanded="true" signature="952:963" ph="..." />
+            <marker date="1480576078488" expanded="true" signature="1528:1539" ph="..." />
+            <marker date="1480576078488" expanded="true" signature="2687:2698" ph="..." />
+            <marker date="1480576078488" expanded="true" signature="3221:3232" ph="..." />
+            <marker date="1480576078488" expanded="true" signature="3909:3920" ph="..." />
+            <marker date="1480576078488" expanded="true" signature="4439:4450" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="108" column="47" lean-forward="false" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
+          <folding>
+            <marker date="1480576078557" expanded="true" signature="869:880" ph="..." />
+            <marker date="1480576078557" expanded="true" signature="1401:1412" ph="..." />
+            <marker date="1480576078557" expanded="true" signature="2153:2164" ph="..." />
+            <marker date="1480576078557" expanded="true" signature="3544:3555" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/edituser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="98" lean-forward="false" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="98" />
+          <folding>
+            <marker date="1480574907630" expanded="false" signature="5698:5724" ph="..." />
+            <marker date="1480574907630" expanded="false" signature="5980:6006" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <marker date="1480576446373" expanded="true" signature="954:1100" ph="{...}" />
+            <marker date="1480576446373" expanded="true" signature="1942:2082" ph="{...}" />
+            <marker date="1480576446373" expanded="true" signature="2830:2976" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/passSetController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480387534000" expanded="true" signature="551:562" ph="..." />
+            <marker date="1480387534000" expanded="true" signature="1084:1095" ph="..." />
           </folding>
         </state>
       </provider>

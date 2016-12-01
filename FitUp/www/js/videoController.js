@@ -28,7 +28,7 @@
         VideoService.save({userId: $rootScope.user.id}, vm.video, function (data) {
           var videoId = data.id;
           // set location
-          flowFiles.opts.target = '/videoClip/add';
+          flowFiles.opts.target = 'http://10.80.52.77:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId, videoName: name};
           flowFiles.upload();
@@ -128,7 +128,7 @@
         videoService.update({id: $scope.videos.id}, $scope.videos, function () {
           var videoId = $scope.videos.id;
           // set location
-          flowFiles.opts.target = '/videoClip/add';
+          flowFiles.opts.target = 'http://10.80.52.77:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId};
           flowFiles.upload();
@@ -147,7 +147,7 @@
         console.log(id)
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
+          $http.delete("http://10.80.52.77:8080/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
             $scope.videos = data;
             console.log(video)
             $location.path("app.video");

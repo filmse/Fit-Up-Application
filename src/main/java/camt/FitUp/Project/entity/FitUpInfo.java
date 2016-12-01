@@ -20,6 +20,7 @@ public class FitUpInfo implements Comparable {
 
 //    @ManyToOne
 //    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+//    @JoinColumn(name = "user_id")
 //    @JsonBackReference
 //    User user;
 

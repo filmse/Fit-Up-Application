@@ -33,6 +33,11 @@ public class User {
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<ImageUser> images = new HashSet<>();
 
+//    @OneToMany(mappedBy = "user")
+//    @Cascade(CascadeType.ALL)
+//    @JsonManagedReference
+//    private Set<FitUpInfo> infos;
+
     @ManyToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<FitUpInfo> infos = new HashSet<>();

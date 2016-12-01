@@ -96,5 +96,6 @@
     <orderEntry type="library" name="Maven: cglib:cglib:2.2" level="project" />
     <orderEntry type="library" name="Maven: asm:asm:3.1" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.2" level="project" />
+    <orderEntry type="library" name="angular-messages" level="application" />
   </component>
 </module>

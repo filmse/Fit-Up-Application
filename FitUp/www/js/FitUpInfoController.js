@@ -15,7 +15,7 @@
         InfoService.save({userId: $rootScope.user.id}, vm.info, function (data) {
           var infoId = data.id;
           // set location
-          flowFiles.opts.target = 'http://localhost:8080/infoImage/add';
+          flowFiles.opts.target = 'http://10.80.52.77:8080/infoImage/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {infoId: infoId};
           flowFiles.upload();
@@ -53,7 +53,7 @@
         console.log(id)
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("http://localhost:8080/remove?infoId=" + id + "&userId=" + $rootScope.user.id).success(function (data) {
+          $http.delete("http://10.80.52.77:8080/remove?infoId=" + id + "&userId=" + $rootScope.user.id).success(function (data) {
             $rootScope.user = data;
             $ionicLoading.show({
               template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
@@ -87,7 +87,7 @@
         infoService.update({id: $scope.infos.id}, $scope.infos, function () {
           var infoId = $scope.infos.id;
           // set location
-          flowFiles.opts.target = 'http://localhost:8080/infoImage/add';
+          flowFiles.opts.target = 'http://10.80.52.77:8080/infoImage/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {infoId: infoId};
           flowFiles.upload();
@@ -106,7 +106,7 @@
         console.log(id)
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("http://localhost:8080/removeImage?imageId=" + id + "&infoId=" + $scope.infos.id).success(function (data) {
+          $http.delete("http://10.80.52.77:8080/removeImage?imageId=" + id + "&infoId=" + $scope.infos.id).success(function (data) {
             $scope.infos = data;
             console.log(info)
             $location.path("app.video");

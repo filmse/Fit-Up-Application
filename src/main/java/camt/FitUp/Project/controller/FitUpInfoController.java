@@ -34,6 +34,8 @@ public class FitUpInfoController {
     @ResponseBody
     public FitUpInfo add(@RequestParam("userId") Long userId, @RequestBody FitUpInfo fitUpInfo, BindingResult bindingResult) {
         User user = userService.getUser(userId);
+        //User username = userService.findByUsername(user.getUsername());
+        //User user = userService.findByUserName(shoppingCart.getUser().getUsername());
         //fitUpInfo.setUser(user);
         return fitUpInfoService.addForum(user, fitUpInfo);
     }

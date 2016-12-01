@@ -176,7 +176,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/video.html',
-              controller: 'ctrlController'
+              controller: 'ctrlController',
             }
           }
         })
