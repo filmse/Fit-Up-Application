@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface FavoriteService {
 
-    Favorite addFavorite(User user, Favorite favorite);
+    Favorite addFavorite(Video video, Favorite favorite, User user);
 
     List<Favorite> favoriteList();
 

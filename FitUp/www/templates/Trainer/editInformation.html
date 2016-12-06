@@ -8,7 +8,8 @@
           <td>
             <div ng-repeat="imageFitUpInfo in infos.imageInfos" class="text-center">
               <img ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}" class="thumbnail">
-              <a><span class="ion-close-circled" ng-click="deleteImageInfo(imageFitUpInfo.id)"></span></a>
+              <a><span style="cursor: pointer" class="ion-close-circled"
+                       ng-click="deleteImageInfo(imageFitUpInfo.id)"></span></a>
             </div>
           </td>
         </div>

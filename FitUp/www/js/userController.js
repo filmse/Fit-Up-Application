@@ -24,9 +24,9 @@
       }
 
       $scope.login = function () {
-        $ionicLoading.show({
-          template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
-        });
+        // $ionicLoading.show({
+        //   template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
+        // });
         queryUserService.get({username: $scope.username, password: $scope.password}, function (user) {
 
           if (user.password == $scope.password) {
@@ -34,20 +34,22 @@
             window.localStorage.setItem("Cookie", user.username);
             $timeout(function () {
               $ionicLoading.hide();
-            }, 3000)
+            }, 1000);
             // alert("Success!")
-            $state.go('app.video');
-            $ionicLoading.show({
-              template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
-            });
-            console.log("Password is matched")
+            //$state.go('app.video');
+            // $ionicLoading.show({
+            //   template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
+            // });
+            console.log("Password is matched");
+            window.location.reload();
+            // $ionicLoading.hide();
           } else {
-            console.log("Invalid Password")
-            alert("Wrong username or password!")
+            console.log("Invalid Password");
+            alert("Wrong username or password!");
           }
-        })
-        $state.go('app.login');
-        $ionicLoading.hide()
+        });
+        //$state.go('app.login');
+        // $ionicLoading.hide();
       }
     })
     /** @ngInject */
@@ -64,7 +66,7 @@
             alert("Null");
             $state.go('app.register');
           } else {
-            flowFiles.opts.target = 'http://10.80.52.77:8080/userImage/add';
+            flowFiles.opts.target = 'http://localhost:8080/userImage/add';
             flowFiles.opts.testChunks = false;
             flowFiles.opts.query = {userId: userId};
             flowFiles.upload();
@@ -74,7 +76,7 @@
             });
             $timeout(function () {
               $ionicLoading.hide();
-            }, 3000)
+            }, 2000)
             $state.go('app.login');
           }
         })
@@ -90,7 +92,7 @@
         });
         $timeout(function () {
           $ionicLoading.hide();
-        }, 3000)
+        }, 2000)
         $rootScope.users = data;
       }).$promise;
 
@@ -111,7 +113,7 @@
             });
             $timeout(function () {
               $ionicLoading.hide();
-            }, 3000)
+            }, 2000)
             //location.reload();
           })
         }
@@ -127,7 +129,7 @@
             });
             $timeout(function () {
               $ionicLoading.hide();
-            }, 3000)
+            }, 2000)
             window.localStorage.clear()
             window.location.reload();
           })
@@ -148,7 +150,7 @@
             console.log(userId)
             // set location
 
-            flowFiles.opts.target = 'http://10.80.52.77:8080/userImage/add';
+            flowFiles.opts.target = 'http://localhost:8080/userImage/add';
             flowFiles.opts.testChunks = false;
             flowFiles.opts.query = {userId: userId};
             flowFiles.upload();
@@ -160,7 +162,7 @@
       $scope.deleteImage = function (id) {
         var answer = confirm("Change your image?");
         if (answer) {
-          $http.delete("http://10.80.52.77:8080/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
+          $http.delete("http://localhost:8080/userImage/remove?imageId=" + id + "&userId=" + $scope.user.id).success(function (data) {
             $scope.user = data;
             // window.location.reload();
           });

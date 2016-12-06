@@ -1,5 +1,5 @@
 <ion-view>
-  <ion-content class="padding Wall">
+  <ion-content class="Wall">
 
     <div class="bar bar-header item-input-inset">
       <label class="item-input-wrapper">
@@ -13,7 +13,7 @@
     <hr>
 
     <div class="list animated bounceInDown">
-      <a class="overDivs item item-thumbnail-left Wall3" ng-repeat="fitUpInfo in infos | filter:name"
+      <a class="overDivs item item-thumbnail-left" ng-repeat="fitUpInfo in infos | filter:name"
          ng-href="#/app/informationExpand/{{fitUpInfo.id}}">
         <img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
              ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}">
@@ -22,6 +22,8 @@
         <!--<p style="color: red">Read More...</p>-->
       </a>
     </div>
+
+    <br>
 
   </ion-content>
 </ion-view>

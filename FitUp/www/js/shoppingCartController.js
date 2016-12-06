@@ -6,10 +6,11 @@
   angular.module('starter.controllers')
 
   /** @ngInject */
-    .controller('shoppingListController', function ($scope, shoppingListService) {
+    .controller('shoppingListController', function ($scope, shoppingUpdateService) {
 
-      $scope.queryPromise = shoppingListService.query(function (data) {
+      $scope.queryPromise = shoppingUpdateService.query(function (data) {
         $scope.shoppingCarts = data;
+        console.log($scope.shoppingCarts);
       }).$promise;
     })
 

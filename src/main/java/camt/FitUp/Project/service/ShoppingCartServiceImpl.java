@@ -23,7 +23,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     public ShoppingCart addShoppingCart(Video video, ShoppingCart shoppingCart, User user) {
         shoppingCart.setPurchaseDate(Calendar.getInstance().getTime());
         return shoppingCartDao.addShoppingCart(video, shoppingCart, user);
-
     }
 
     @Override

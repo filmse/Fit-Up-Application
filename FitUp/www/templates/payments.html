@@ -1,67 +1,67 @@
-<ion-view>
-  <ion-content ng-controller="editUserController">
-    <div id="paypal-container" align="center" ng-controller="dateController">
-      <div style="margin: 2em">
+<!--<ion-view>-->
+  <!--<ion-content ng-controller="editUserController">-->
+    <!--<div id="paypal-container" align="center" ng-controller="dateController">-->
+      <!--<div style="margin: 2em">-->
 
-        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">-->
 
-          <!--<input type="input" name="business" value="you@youremail.com">-->
-          <!--<input type="hidden" name="item_name" value="Item Name">-->
-          <!--<input type="hidden" name="currency_code" value="USD">-->
-          <!--<input type="show" name="amount" value="USD"> USD.-->
-          <!--<input type="hidden" name=”invoice” value=”invoice_number”>-->
-          <!--<input type="hidden" name=”rm” value=”2″>-->
-          <!--&lt;!&ndash;<input type="image" src="http://www.paypal.com/th_TH/i/btn/x-click-but01.gif" name="submit"&ndash;&gt;-->
-          <!--&lt;!&ndash;alt="Make payments with PayPal - it's fast, free and secure!">&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="input" name="business" value="you@youremail.com">&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="hidden" name="item_name" value="Item Name">&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="hidden" name="currency_code" value="USD">&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="show" name="amount" value="USD"> USD.&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="hidden" name=”invoice” value=”invoice_number”>&ndash;&gt;-->
+          <!--&lt;!&ndash;<input type="hidden" name=”rm” value=”2″>&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<input type="image" src="http://www.paypal.com/th_TH/i/btn/x-click-but01.gif" name="submit"&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;alt="Make payments with PayPal - it's fast, free and secure!">&ndash;&gt;&ndash;&gt;-->
 
-          <div ng-repeat="shopping in user.shoppingCarts">
+          <!--<div ng-repeat="shopping in user.shoppingCarts">-->
 
-            <h1>FitUp Application</h1>
-            <p><b>Receipt No.</b>{{shopping.purchaseDate}}-{{shopping.id}}</p>
-            <p><b>Username.</b> {{user.username}}</p>
-            <p><b>Email.</b> {{user.email}}</p>
-            <p>{{ today | date : "fullDate" }}</p>
-            <br>
+            <!--<h1>FitUp Application</h1>-->
+            <!--<p><b>Receipt No.</b>{{shopping.purchaseDate}}-{{shopping.id}}</p>-->
+            <!--<p><b>Username.</b> {{user.username}}</p>-->
+            <!--<p><b>Email.</b> {{user.email}}</p>-->
+            <!--<p>{{ today | date : "fullDate" }}</p>-->
+            <!--<br>-->
 
-            <div align="center" style="padding: 0 20% 0% 20%">
-              <hr>
-              <div ng-controller="listVideoController">
-                <div class="form-group">
-                  <label class="item item-input LabelSmooth">
-                    <P style="float: left"><b>Video Name.</b>{{videos[0].name}}</P>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="item item-input LabelSmooth">
-                    <P style="float: left"><b>Video Price.</b>{{videos[0].price}}</P>
-                  </label>
-                </div>
-                <!--<hr style="width: 50%">-->
-                <div class="form-group">
-                  <label class="item item-input LabelSmooth">
-                    <P style="float: left"><b></b></P>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="item item-input LabelSmooth">
-                    <P style="float: left"><b></b></P>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="item item-input LabelSmooth">
-                    <P style="float: right; font-size: m">Total Price. <b>{{videos[0].price}}</b>THB.</P>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
+            <!--<div align="center" style="padding: 0 20% 0% 20%">-->
+              <!--<hr>-->
+              <!--<div ng-controller="listVideoController">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="item item-input LabelSmooth">-->
+                    <!--<P style="float: left"><b>Video Name.</b>{{videos[0].name}}</P>-->
+                  <!--</label>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label class="item item-input LabelSmooth">-->
+                    <!--<P style="float: left"><b>Video Price.</b>{{videos[0].price}}</P>-->
+                  <!--</label>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<hr style="width: 50%">&ndash;&gt;-->
+                <!--<div class="form-group">-->
+                  <!--<label class="item item-input LabelSmooth">-->
+                    <!--<P style="float: left"><b></b></P>-->
+                  <!--</label>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label class="item item-input LabelSmooth">-->
+                    <!--<P style="float: left"><b></b></P>-->
+                  <!--</label>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label class="item item-input LabelSmooth">-->
+                    <!--<P style="float: right;">Total Price. <b>{{videos[0].price}}</b>THB.</P>-->
+                  <!--</label>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<br>-->
 
-          <input type="image" src="http://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" name="submit"
-                 alt="Make payments with PayPal - it's fast, free and secure!">
-        </form>
+          <!--<input type="image" src="http://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" name="submit"-->
+                 <!--alt="Make payments with PayPal - it's fast, free and secure!">-->
+        <!--</form>-->
 
-      </div>
-    </div>
-  </ion-content>
-</ion-view>
+      <!--</div>-->
+    <!--</div>-->
+  <!--</ion-content>-->
+<!--</ion-view>-->

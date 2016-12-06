@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="true">
 
-  <ion-side-menu-content drag-threshold="false"
+  <ion-side-menu-content edge-drag-threshold="false"
                          drag-content="false">
     <ion-nav-bar class="bar-dark">
       <ion-nav-buttons side="left">
@@ -48,7 +48,7 @@
                        class="thumbnailCircles">
                     <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgs">
                   </div>
-                  <p style="color: white">{{user.username}}</p>
+                  <p style="color: black">{{user.username}}</p>
                 </div>
                 <!--<h5><b>Status</b><br> {{user['roles'][0]['roleName']}}</h5>-->
                 <!--<h5><b>Email</b>: {{user.email}}</h5>-->
@@ -111,66 +111,66 @@
           <i class="icon ion-ios-arrow-right button-small"></i>
         </ion-item>
 
-        <div ng-show="hasRole('trainer')">
-          <div class="item item-divider colorMenuu font-sizeInAppPli">
-            Trainer Menu
-          </div>
+        <!--<div ng-show="hasRole('trainer')">-->
+          <!--<div class="item item-divider colorMenuu font-sizeInAppPli">-->
+            <!--Trainer Menu-->
+          <!--</div>-->
 
-          <div align="center" ng-controller="ctrlController">
+          <!--<div align="center" ng-controller="ctrlController">-->
 
-            <ion-item class="row">
-              <button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"
-                      ng-click="uploadVideo()">Upload Video
-              </button>
-            </ion-item>
-
-            <ion-item class="row">
-              <button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"
-                      ng-click="VideoHis()">Video
-                History
-              </button>
-            </ion-item>
-
-            <!--<ion-item class="row">-->
-            <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-            <!--ng-click="UploadInfo()">Upload-->
-            <!--Info-->
-            <!--</button>-->
-            <!--</ion-item>-->
-
-            <!--<ion-item class="row">-->
-            <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-            <!--ng-click="InfoHis()">Info-->
-            <!--History-->
-            <!--</button>-->
-            <!--</ion-item>-->
-
-            <!--<ion-item class="row" menu-close>-->
-            <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
-            <!--ng-click="UploadInfo()">Upload-->
-            <!--Info-->
-            <!--</button>-->
-            <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
-            <!--ng-click="InfoHis()">Info-->
-            <!--History-->
-            <!--</button>-->
-            <!--</ion-item>-->
-          </div>
-
-          <!--<ion-item menu-close href="#/app/addVideo">-->
-          <!--Upload Video-->
-          <!--</ion-item>-->
-          <!--<ion-item menu-close href="#/app/listVideo">-->
-          <!--Video History-->
-          <!--</ion-item>-->
-          <!--<ion-item menu-close href="#/app/listInformation">-->
-          <!--Information History-->
-          <!--</ion-item>-->
-          <!--<ion-item menu-close href="#/app/addInformation">-->
-          <!--Upload Information-->
+          <!--<ion-item class="row">-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+          <!--ng-click="uploadVideo()">Upload Video-->
+          <!--</button>-->
           <!--</ion-item>-->
 
-        </div>
+          <!--<ion-item class="row">-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+          <!--ng-click="VideoHis()">Video-->
+          <!--History-->
+          <!--</button>-->
+          <!--</ion-item>-->
+
+          <!--<ion-item class="row">-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+          <!--ng-click="UploadInfo()">Upload-->
+          <!--Info-->
+          <!--</button>-->
+          <!--</ion-item>-->
+
+          <!--<ion-item class="row">-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+          <!--ng-click="InfoHis()">Info-->
+          <!--History-->
+          <!--</button>-->
+          <!--</ion-item>-->
+
+          <!--<ion-item class="row" menu-close>-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
+          <!--ng-click="UploadInfo()">Upload-->
+          <!--Info-->
+          <!--</button>-->
+          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
+          <!--ng-click="InfoHis()">Info-->
+          <!--History-->
+          <!--</button>-->
+          <!--</ion-item>-->
+          <!--</div>-->
+
+        <!--&lt;!&ndash;<ion-item menu-close href="#/app/addVideo">&ndash;&gt;-->
+        <!--&lt;!&ndash;Upload Video&ndash;&gt;-->
+        <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ion-item menu-close href="#/app/listVideo">&ndash;&gt;-->
+        <!--&lt;!&ndash;Video History&ndash;&gt;-->
+        <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ion-item menu-close href="#/app/listInformation">&ndash;&gt;-->
+        <!--&lt;!&ndash;Information History&ndash;&gt;-->
+        <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ion-item menu-close href="#/app/addInformation">&ndash;&gt;-->
+        <!--&lt;!&ndash;Upload Information&ndash;&gt;-->
+        <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+
+        <!--</div>-->
 
         <div ng-show="hasRole('admin')">
           <div class="item item-divider colorMenu font-sizeInAppPli">

@@ -19,7 +19,7 @@
           });
           $timeout(function () {
             $ionicLoading.hide();
-          }, 4000)
+          }, 2000)
           $state.go('app.login');
         })
       }
@@ -34,7 +34,7 @@
         });
         $timeout(function () {
           $ionicLoading.hide();
-        }, 3000)
+        }, 2000)
         $scope.passSets = data;
       }).$promise;
 

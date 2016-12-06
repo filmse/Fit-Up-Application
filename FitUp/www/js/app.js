@@ -70,10 +70,11 @@
           delete $rootScope.user;
           $timeout(function () {
             $ionicLoading.hide();
-          }, 3000)
+          }, 1000);
+          window.location.reload();
           // delete $rootScope.authToken
           // $cookies.remove('authToken');
-          $location.path("/")
+          //$location.path("/")
         }
       }
 
@@ -93,19 +94,19 @@
       /* Try getting valid user from cookie or go to login page */
       var cookie = window.localStorage.getItem("Cookie");
       if (cookie != undefined) {
-        delete $rootScope.user
+        delete $rootScope.user;
         console.log(cookie);
         queryUserService.get({username: cookie}, function (user) {
-          window.localStorage.clear()
+          window.localStorage.clear();
           $rootScope.user = user;
           $ionicLoading.show({
             template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
           });
           $timeout(function () {
-            window.localStorage.setItem("Cookie", user.username)
-            $ionicLoading.hide()
+            window.localStorage.setItem("Cookie", user.username);
+            $ionicLoading.hide();
             $location.path("app.video");
-          }, 2000)
+          }, 1000)
 
         })
       } else {
@@ -144,7 +145,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/Information.html',
-              controller: 'listInfoController'
+              controller: 'showsNewInfoController'
             }
           }
         })
@@ -176,7 +177,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/video.html',
-              controller: 'ctrlController',
+              controller: 'ctrlController'
             }
           }
         })

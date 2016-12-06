@@ -28,17 +28,19 @@
         VideoService.save({userId: $rootScope.user.id}, vm.video, function (data) {
           var videoId = data.id;
           // set location
-          flowFiles.opts.target = 'http://10.80.52.77:8080/videoClip/add';
+          flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId, videoName: name};
           flowFiles.upload();
           $rootScope.addSuccess = true;
           //$state.go("app.video");
+          $state.go("app.video");
         })
-      }
+      };
+      //location.reload();
     })
     /** @ngInject */
-    .controller('listVideoController', function (shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService, getToFavoriteService) {
+    .controller('listVideoController', function (shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
@@ -55,7 +57,6 @@
           // // $scope.movie = {src: "templates/video/" +value};
           // $scope.movie = {src: "templates/video/One two three four Steps1.mp4"}, {src: "templates/video/Fitness headback.mp4"};
         })
-
       }).$promise;
 
       $scope.searchInfo = function (name) {
@@ -66,11 +67,10 @@
 
       $scope.addToCart = function (video) {
         console.log(video);
-        //console.log(user);
-
         $scope.user = $rootScope.user;
-        console.log($rootScope.user);
+        console.log($scope.user);
         video.videos = null;
+
         shoppingService.save({
           videoId: video.id,
           userId: $rootScope.user.id
@@ -78,39 +78,33 @@
 
           alert("Success!!");
           $rootScope.shoppingCart = shoppingCart;
-        }, function (user) {
-
-          $scope.user = $rootScope.user;
-          shoppingAddUserService.save({userId: $rootScope.user.id}, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
-            alert("Success!!");
-            $rootScope.shoppingCart = shoppingCart;
-          }, function () {
-            // fail event
-            alert("Failed!!");
-          })
-        })
-      }
-
-      $scope.addToFavorite = function (user) {
-        user.users = null;
-        addToFavoriteService.save({userId: user.id}, {FavoriteId: $rootScope.favorite}, function (favorite) {
-          //success event
-          alert("Success!!");
-          $rootScope.favorite = favorite;
-          console.log("success")
-          // window.location.reload();
-          // $state.go("app.payment");
-          // $scope.$apply();
-          // $scope.$digest();
         }, function () {
           // fail event
           alert("Failed!!");
         })
-      }
+      };
 
-      $scope.queryPromise = getToFavoriteService.query(function (data) {
-        $scope.favorites = data;
-      }).$promise;
+      $scope.addToFavorite = function (video) {
+        console.log(video);
+        $scope.user = $rootScope.user;
+        console.log($scope.user);
+        video.videos = null;
+
+        addToFavoriteService.save({
+          videoId: video.id,
+          userId: $scope.user.id
+        }, {FavoriteId: $rootScope.favorite}, function (favorite) {
+
+          //success event
+          alert("Success!!");
+          $rootScope.favorite = favorite;
+          console.log("success");
+
+        }, function () {
+          // fail event
+          alert("Failed!!");
+        })
+      };
 
     })
     /** @ngInject */
@@ -138,18 +132,18 @@
           });
           $timeout(function () {
             $ionicLoading.hide();
-          }, 4000);
+          }, 2000);
           $location.path("app.video");
         });
       };
 
       $scope.deleteVideo = function (id) {
-        console.log(id)
+        console.log(id);
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("http://10.80.52.77:8080/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
+          $http.delete("http://localhost:8080/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
             $scope.videos = data;
-            console.log(video)
+            console.log(video);
             $location.path("app.video");
           });
         }

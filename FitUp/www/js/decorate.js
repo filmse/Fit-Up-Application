@@ -2,7 +2,7 @@
   'use strict';
 
   // var API_PREFIX = 'http://localhost:8080';
-  var API_PREFIX = 'http://10.80.52.77:8080';
+  var API_PREFIX = 'http://localhost:8080';
 
   /** @ngInject */
   angular.module('ngResource+apiPrefix', [

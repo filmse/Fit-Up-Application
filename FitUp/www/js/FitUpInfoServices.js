@@ -29,10 +29,13 @@
 
   /**@ngInject*/
   function queryInfoService($resource) {
-    return $resource('/info',
+    return $resource('/getInfo',
       {
         query: {
-          method: 'GET'// this method issues a GET request
+          method: 'GET',// this method issues a GET request
+          params: {
+            name: ''
+          }
         }
       });
   }

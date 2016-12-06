@@ -95,7 +95,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         admin.setUsername("admin");
         admin.setEmail("admin@gmail.com");
         admin.setPassword("1111");
-        admin.getImages().add(ImageUtil.getImage("pic/a.png"));
+        admin.getImages().add(ImageUtil.getImage("pic/P02.JPG"));
         Set<Role> roles = new HashSet<>();
         roles.add(adminRole);
         admin.setRoles(roles);
@@ -105,7 +105,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         trainer.setUsername("trainer");
         trainer.setEmail("trainer@yahoo.com");
         trainer.setPassword("2222");
-        trainer.getImages().add(ImageUtil.getImage("pic/t.png"));
+        trainer.getImages().add(ImageUtil.getImage("pic/D01.JPG"));
         Set<Role> roles2 = new HashSet<>();
         roles2.add(trainerRole);
         trainer.setRoles(roles2);
@@ -114,6 +114,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         infos.add(products2);
         infos.add(products3);
         infos.add(products4);
+        infos.add(products5);
         trainer.setInfos(infos);
 //        Set<Video> videos = new HashSet<>();
 //        videos.add(video1);
@@ -129,12 +130,13 @@ public class DatabaseInitializationBean implements InitializingBean {
         roles4.add(trainerRole);
         trainer1.setRoles(roles4);
 
+
         User member = new User();
         member.setId(3l);
         member.setUsername("member");
         member.setEmail("member@yahoo.com");
         member.setPassword("3333");
-        member.getImages().add(ImageUtil.getImage("pic/m.png"));
+        member.getImages().add(ImageUtil.getImage("pic/N01.JPG"));
         Set<Role> roles3 = new HashSet<>();
         roles3.add(memberRole);
         member.setRoles(roles3);

@@ -1,54 +1,67 @@
-<ion-view view-title="Fit-Up">
-  <ion-content class="padding BgEdiitt">
+<ion-view>
+  <ion-content class="BgEdiitt">
+    <br>
+    <br>
+    <form name="editform" novalidate flow-init style="width: 100%">
 
-    <div class="list list-inset BgEdiitt modal">
-      <form name="editform" novalidate flow-init>
-
-        <div class="list list-inset BgEdiitt">
-          <div class="list LabelSmooth boundary">
-            <div class="form-group">
-              <div style="color: white" ng-repeat="file in $flow.files">
-                <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>-->
-                {{file.name}}<br>
-                <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
-                  Cancel
-                </a>
-              </div>
-              <div align="center">
-                <button ng-hide="$flow.getSize()!=0" type="file" class="button button-positive button-small" flow-btn>
-                  Select Video
-                </button>
-              </div>
-            </div>
+      <div align="center">
+        <div class="form-group">
+          <div style="color: white" ng-repeat="file in $flow.files">
+            <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>-->
+            {{file.name}}<br>
+            <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
+              Cancel
+            </a>
           </div>
-          <div class="form-group">
-            <label class="item-input">
-              <input style="color: white" type="text" id="videoName" name="videoName" placeholder="Name"
-                     ng-model="vm.video.name"
-                     maxlength="50" required/>
-            </label>
+          <div align="center">
+            <div ng-hide="$flow.getSize()!=0" type="file" style="font-size: 100px; color: white; cursor: pointer"
+                 class="ion-film-marker" flow-btn></div>
           </div>
-          <br>
-          <div class="form-group">
-            <label class="item-input">
-              <input style="color: white" type="text" id="description" name="description" placeholder="Description"
-                     ng-model="vm.video.description"
-                     maxlength="50" required/>
-            </label>
-          </div>
-          <br>
-          <label style="color: white;" for="Select"> Select = </label>
-          <select name="Select" id="Select" ng-model="vm.video.price">
-            <option ng-repeat="option in price.availableOptions" value="{{option.id}}">{{option.name}} THB.
-            </option>
-          </select>
-
-          <br>
-          <button class="button button-block button-positive" ng-click="vm.addVideo($flow)">Upload Video</button>
         </div>
+      </div>
 
-      </form>
-    </div>
+      <br>
+      <div class="form-group">
+        <p style="color: white; margin-left: 30px">Video Name</p>
+        <div align="center">
+          <input style="border: solid 1px cornflowerblue; color: black; width: 90%; padding: 5px" type="text"
+                 id="videoName" name="videoName"
+                 placeholder="Name"
+                 ng-model="vm.video.name"
+                 maxlength="50" required>
+
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <p style="color: white; margin-left: 30px">Video Description</p>
+        <div align="center">
+              <textarea style="border: solid 1px cornflowerblue; color: black; padding: 20px; height: 100px; width: 90%"
+                        type="text" id="description"
+                        name="description"
+                        placeholder="Description"
+                        ng-model="vm.video.description"
+                        maxlength="2000" required>
+              </textarea>
+        </div>
+      </div>
+      <br>
+      <p style="color: white; margin-left: 30px" for="Select"> Select Price </p>
+      <label class="item-input" style="margin-left: 5%">
+        <select style="border: solid 1px cornflowerblue; width: 50%" name="Select" id="Select"
+                ng-model="vm.video.price">
+          <option ng-repeat="option in price.availableOptions" value="{{option.id}}">{{option.name}} THB.
+          </option>
+        </select>
+      </label>
+      <br>
+      <div align="center">
+        <button style="width: 50%" class="button button-block button-positive" ng-click="vm.addVideo($flow)">Upload
+          Video
+        </button>
+      </div>
+
+    </form>
 
   </ion-content>
 </ion-view>

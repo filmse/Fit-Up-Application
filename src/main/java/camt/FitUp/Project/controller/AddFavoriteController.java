@@ -2,6 +2,7 @@ package camt.FitUp.Project.controller;
 
 import camt.FitUp.Project.entity.Favorite;
 import camt.FitUp.Project.entity.User;
+import camt.FitUp.Project.entity.Video;
 import camt.FitUp.Project.service.FavoriteService;
 import camt.FitUp.Project.service.UserService;
 import camt.FitUp.Project.service.VideoService;
@@ -24,16 +25,17 @@ public class AddFavoriteController {
     UserService userService;
 
     @Autowired
-    VideoService videoService;
+    FavoriteService favoriteService;
 
     @Autowired
-    FavoriteService favoriteService;
+    VideoService videoService;
 
     @RequestMapping(value = "addToFavorite", method = RequestMethod.POST)
     @ResponseBody
-    public Favorite addFavorite(@RequestParam("userId") Long userId, @RequestBody Favorite favorite, BindingResult bindingResult) {
+    public Favorite addFavorite(@RequestParam("videoId") Long videoId, @RequestParam("userId") Long userId, @RequestBody Favorite favorite, BindingResult bindingResult) {
+        Video video = videoService.getVideo(videoId);
         User user = userService.getUser(userId);
-        return favoriteService.addFavorite(user, favorite);
+        return favoriteService.addFavorite(video, favorite, user);
     }
 
     @RequestMapping(value = "getToFavorite", method = RequestMethod.GET)
@@ -45,4 +47,31 @@ public class AddFavoriteController {
     public Favorite favoriteId(@PathVariable("id") Long id) {
         return favoriteService.favoriteId(id);
     }
+
+//    @Autowired
+//    UserService userService;
+//
+//    @Autowired
+//    VideoService videoService;
+//
+//    @Autowired
+//    FavoriteService favoriteService;
+//
+//    @RequestMapping(value = "addToFavorite", method = RequestMethod.POST)
+//    @ResponseBody
+//    public Favorite addFavorite(@RequestParam("userId") Long userId, @RequestBody Favorite favorite, BindingResult bindingResult) {
+//        User user = userService.getUser(userId);
+//        return favoriteService.addFavorite(user, favorite);
+//    }
+//
+//    @RequestMapping(value = "getToFavorite", method = RequestMethod.GET)
+//    public List<Favorite> favoriteList() {
+//        return favoriteService.favoriteList();
+//    }
+//
+//    @RequestMapping(value = "getToFavoriteIdService/{id}", method = RequestMethod.GET)
+//    public Favorite favoriteId(@PathVariable("id") Long id) {
+//        return favoriteService.favoriteId(id);
+//    }
+
 }

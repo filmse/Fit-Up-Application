@@ -1,4 +1,4 @@
-<ion-view ng-controller="listVideoController">
+<ion-view ng-controller="listInfoController">
   <ion-content>
 
     <div class="list list-inset">
@@ -10,15 +10,15 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Video Name</th>
-            <th scope="col"></th>
+            <th scope="col">Description</th>
           </tr>
           </thead>
           <!-- Table body -->
           <tbody class="simply tbody">
           <tr ng-repeat="favorite in favorites">
             <td>{{$index+1}}</td>
-            <td>step One.mp4</td>
-            <td></td>
+            <td>{{favorite.videos[0].name}}</td>
+            <td>{{favorite.videos[0].description}}</td>
           </tr>
           </tbody>
         </table>

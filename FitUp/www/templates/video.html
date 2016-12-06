@@ -3,7 +3,7 @@
 
     <ion-slides options="options" slider="data.slider">
 
-      <ion-slide-page ng-controller="listVideoController" class="Wall" style="padding: 2%">
+      <ion-slide-page class="Wall" style="padding: 2%">
         <ion-content>
 
           <div style="padding: 3px; opacity: 1.0; margin: 3px" class="button-bar">
@@ -25,30 +25,74 @@
                ng-click="InfoClicks()">
               <p
                 style="color: black ;font-size: small; margin-top: -30px">Forum</p></a>
-            <a style="width: 100%;font-size: 20px" class="icon ion-ios-cart button-large overDiv" ng-click="Payment()">
+            <a style="width: 100%;font-size: 20px" class="icon ion-android-funnel button-large overDiv"
+               ng-click="aboutClicks()">
               <p
-                style="color: black ;font-size: small; margin-top: -30px">Cart</p></a>
+                style="color: black ;font-size: small; margin-top: -30px">About</p></a>
             <a style="width: 100%;font-size: 20px" class="icon ion-ios-compose button-large overDiv"
                ng-click="aboutUsClicks()"><p
               style="color: black ;font-size: small; margin-top: -30px">Help</p></a>
+          </div>
+
+          <div ng-controller="listVideoController">
+            <div class="list card BgEdiitt" style="border: solid 3px black;" ng-repeat="video in videos">
+              <div class="item item-avatar" ng-controller="listUserController">
+
+                <img style="background-color: #2B333F">
+                <h2>{{video.name}}</h2>
+                <p>{{video.price}} THB.</p>
+                <!--<p>{{video.videoClips[0].fileName}}</p>-->
+                <div align="left" ng-show="hasRole('member')">
+                  <p>
+                    <a ng-show="user" style="width: 5em; font-size: small; cursor: pointer;"
+                       ng-click="addToFavorite(video)">Save to List <i class="ion-heart ion-large"></i>
+                    </a>
+                  </p>
+                  <div align="right" ng-show="hasRole('member')">
+                    <button ng-show="user" style="width: 5em; margin-top: -62px; font-size: small"
+                            class="overDivvv button button-dark button-small"
+                            ng-click="addToCart(video)">Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="item item-body" style="height: 50%">
+                <div align="center">
+                  <video controls width="80%" height="50%">
+                    <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>
+                  </video>
+                </div>
+                <p style="color: black;">{{video.description}}</p>
+              </div>
+            </div>
+            <br>
           </div>
 
         </ion-content>
       </ion-slide-page>
 
       <ion-slide-page ng-show="hasRole('trainer')" class="Wall" style="padding: 2%">
-        <ion-content>
+        <ion-content ng-controller="deleteInfoController">
 
           <ion-item class="row">
-            <button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"
+            <button style="opacity: 0.6; padding: 2em; width: 45%" class="overDivvv col col-100 button-small"
                     ng-click="UploadInfo()">
-              <div style="width:20%; font-size: 50px" class="ion-android-add-circle">
+              <div style="width:20%; font-size: 50px" class="ion-ios-paper">
               </div>
               <p align="right">Upload Info</p>
             </button>
           </ion-item>
+          <ion-item class="row">
+            <button style="opacity: 0.6; padding: 2em; width: 45%" class="overDivvv col col-100 button-small"
+                    ng-click="uploadVideo()">
+              <div style="width:20%; font-size: 50px" class="ion-ios-videocam">
+              </div>
+              <p align="right">Upload Video</p>
+            </button>
+          </ion-item>
 
-          <div align="center" ng-controller="listInfoController">
+          <div align="center">
             <table style="width: 100%">
 
               <thead class="simply th">
@@ -67,17 +111,47 @@
                          style="width: 50px; height: auto"></td>
                 <td>{{fitUpInfo.name}}</td>
                 <td>
-                  <a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}">Edit Information</a>
+                  <a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}"> Edit Information</a>
                 </td>
 
+                <td style="cursor: pointer;" ng-href="#" class="icon-left ion-ios-close-outline"
+                    ng-click="deleteInfo(fitUpInfo.id)"> Delete
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div align="center">
+            <table class="simply">
+              <!-- Table header -->
+              <thead class="simply th">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Video</th>
+                <th scope="col">Price</th>
+                <th scope="col">Edit/Delete</th>
+              </tr>
+              </thead>
+              <!-- Table body -->
+              <tbody class="simply tbody">
+              <tr ng-repeat="video in user.videos | filter: name">
+                <td>{{$index+1}}</td>
+                <td>{{video.name}}</td>
+                <td>{{video.price}} THB.</td>
+                <!--<td>{{forum.description}}</td>-->
                 <td>
-                  <a class="icon-left ion-ios-close-outline" ng-href="#" ng-click="deleteInfo(fitUpInfo.id)">Delete</a>
+            <span>
+              <a class="ion-ios-gear dark" ng-href="#/app/editVideo/{{video.id}}">Edit</a> /
+              <a class="icon-left ion-ios-close-outline" ng-click="deleteVideo(video.id)">Delete</a>
+              <!--//<a ng-href="#/app/editInformation/{{forum.id}}">Delete</a>-->
+            </span>
                 </td>
               </tr>
               </tbody>
             </table>
           </div>
 
+          <br>
         </ion-content>
       </ion-slide-page>
 

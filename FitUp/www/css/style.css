@@ -201,7 +201,7 @@
 }
 
 .thumbnailCircles {
-  border: solid 5px cadetblue;
+  border: solid 5px #303c44;
   background-color: white;
   align-content: center;
   border-radius: 100%;
@@ -213,7 +213,7 @@
 }
 
 .thumbnailCircless {
-  border: solid 2px cadetblue;
+  border: solid 2px #303c44;
   background-color: white;
   align-content: center;
   border-radius: 100%;
@@ -500,11 +500,11 @@
 }
 
 /*.Wall {*/
-  /*background-image: url("img/wall15.png");*/
-  /*opacity: 1.0;*/
-  /*background-size: 100% 100%;*/
-  /*background-repeat: repeat;*/
-  /*background-position: center;*/
+/*background-image: url("img/wall15.png");*/
+/*opacity: 1.0;*/
+/*background-size: 100% 100%;*/
+/*background-repeat: repeat;*/
+/*background-position: center;*/
 /*}*/
 
 /*.Wall3 {*/

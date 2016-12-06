@@ -1,47 +1,64 @@
-<ion-view view-title="Fit-Up">
-  <ion-content class="padding" ng-controller="ctrlController">
+<ion-view>
+  <ion-content class="padding BgEdiitt" ng-controller="ctrlController">
+    <br>
+    <br>
+    <form name="editform" class="BgEdiitt" novalidate flow-init>
 
-    <div class="list list-inset">
-
-      <form name="editform" novalidate flow-init>
-        <div class="list list-inset">
-          <div class="list LabelSmooth boundary">
-            <div class="form-group">
-              <div ng-repeat="file in $flow.files" class="text-center" align="center">
-                <div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>
-                <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
-                  Cancel
-                </a>
-              </div>
-              <div align="center">
-                <button type="file" class="button icon-left ion-imageFitUpInfo button-positive" flow-btn>Add Picture
-                </button>
-              </div>
+      <div class="list LabelSmooth boundary">
+        <div class="form-group">
+          <div ng-repeat="file in $flow.files" class="text-center" align="center">
+            <div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>
+            <a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">
+              Cancel
+            </a>
+          </div>
+          <div align="center">
+            <div ng-hide="$flow.getSize()!=0" type="file" style="color: white; font-size: 100px; cursor: pointer;"
+                 class="ion-images" flow-btn>
             </div>
           </div>
-          <div class="form-group">
-            <p>Topic:</p>
-            <label class="item item-input banner-info">
-              <input type="text" id="productname" name="productname" placeholder="Topic" ng-model="vm.info.name"
-                     maxlength="50" required/>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <p>Content:</p>
-            <label class="item item-input banner-info">
-              <input style="width: 100%; height: 100px;" type="text" id="productdescription"
-                     placeholder="description" name="productdescription" ng-model="vm.info.description"
-                     maxlength="2000" required/>
-            </label>
-          </div>
-
-          <button class="button button-block button-positive" ng-click="vm.addInfo($flow)">Add</button>
         </div>
-      </form>
+      </div>
 
-    </div>
+      <div class="form-group">
+        <p style="color: white; margin-left: 30px">Topic:</p>
+        <div align="center">
+          <input style="border: solid 1px cornflowerblue; width: 90%" type="text" id="productname" name="productname"
+                 placeholder="Topic"
+                 ng-model="vm.info.name"
+                 maxlength="50" required/>
 
+        </div>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <p style="color: white; margin-left: 30px">Content:</p>
+        <div align="center">
+          <label class="item item-input" style="border: solid 1px cornflowerblue; width: 90%">
+            <div style="word-wrap: break-word; width: 100%; height: 90px; padding: 5px">
+                  <textarea style="word-wrap: break-word; width: 100%; height: 90px;"
+                            type="text"
+                            placeholder="description" name="productdescription" ng-model="vm.info.description"
+                            id="productdescription"
+                            maxlength="2000" required>
+                  </textarea>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div align="center">
+        <button style="width: 50%" class="button button-block button-positive" ng-click="vm.addInfo($flow)">Add</button>
+      </div>
+
+    </form>
 
   </ion-content>
 </ion-view>

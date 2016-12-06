@@ -20,8 +20,8 @@ public class FavoriteServiceImpl implements FavoriteService {
     FavoriteDao favoriteDao;
 
     @Override
-    public Favorite addFavorite(User user, Favorite favorite) {
-        return favoriteDao.addFavorite(user, favorite);
+    public Favorite addFavorite(Video video, Favorite favorite, User user) {
+        return favoriteDao.addFavorite(video, favorite, user);
     }
 
     @Override

@@ -37,14 +37,15 @@
       <br>
       <br>
 
+
       <ul class="address">
 
         <li>
           <ul class="address-text">
-            <li style="color: white">Name</li>
+            <li style="color: white; margin-left: 40px">Name :</li>
             <li>
-              <div class="form-group">
-                <label class="item item-input LabelSmooth">
+              <div align="center">
+                <label style="width: 90%" class="item item-input LabelSmooth">
                   <input class="form-control" type="text" placeholder="Username" ng-model="user.username"
                          ng-pattern="/^[a-zA-Z0-9]*$/" ng-minlength="4" ng-maxlength="20" required>
                 </label>
@@ -54,10 +55,10 @@
         </li>
         <li>
           <ul class="address-text">
-            <li style="color: white">Email</li>
+            <li style="color: white; margin-left: 40px">Email</li>
             <li>
-              <div class="form-group">
-                <label class="item item-input LabelSmooth">
+              <div align="center">
+                <label style="width: 90%" class="item item-input LabelSmooth">
                   <input class="form-control" type="email" placeholder="E-mail" ng-model="user.email" required>
                 </label>
               </div>
@@ -67,10 +68,10 @@
 
         <li>
           <ul class="address-text">
-            <li style="color: white">Password</li>
+            <li style="color: white; margin-left: 40px">Password</li>
             <li>
-              <div class="form-group">
-                <label class="item item-input LabelSmooth">
+              <div align="center">
+                <label style="width: 90%" class="item item-input LabelSmooth">
                   <input type="password" placeholder="Password" id="txtNewPassword" ng-model="user.password"
                          ng-minlength="4" ng-maxlength="20" required>
                 </label>
@@ -79,16 +80,22 @@
           </ul>
         </li>
 
-        <!--<h5 style="cursor: pointer" type="file" flow-btn><u><b>Add Picture</b></u></h5>-->
-        <button type="submit" class="button button-block button-positive" ng-disabled="editform.$invalid"
-                ng-click="editUser($flow)"> Edit
-        </button>
-      </ul>
+        <br>
+        <div class="dark" align="right">
+          <p style="cursor: pointer; margin-right: 70px" ng-click="deleteUsers(user.id)">Delete Account</p>
+        </div>
 
+        <div align="center">
+          <button style="width: 50%" type="submit" class="button button-block button-positive"
+                  ng-disabled="editform.$invalid"
+                  ng-click="editUser($flow)"> Edit
+          </button>
+        </div>
+      </ul>
     </form>
-    <div class="dark" align="left">
-      <p style="cursor: pointer" ng-click="deleteUsers(user.id)">Delete Account</p>
-    </div>
+    <br>
+    <br>
+    <br>
   </ion-content>
 </ion-view>
 

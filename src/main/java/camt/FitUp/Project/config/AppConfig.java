@@ -1,12 +1,17 @@
 package camt.FitUp.Project.config;
 
+import com.braintreegateway.BraintreeGateway;
+import com.braintreegateway.Environment;
 import org.springframework.boot.context.embedded.MultipartConfigFactory;
 import org.springframework.context.annotation.*;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
@@ -68,4 +73,12 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         factory.setMaxRequestSize("50MB");
         return factory.createMultipartConfig();
     }
+
+//    private static BraintreeGateway gateway = new BraintreeGateway(
+//            Environment.SANDBOX,
+//            "your_merchant_id",
+//            "your_public_key",
+//            "your_private_key"
+//    );
+
 }

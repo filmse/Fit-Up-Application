@@ -21,7 +21,7 @@
         <div align="left" ng-show="hasRole('member')">
           <p>
             <a ng-show="user" style="width: 5em; font-size: small; cursor: pointer;"
-               ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>
+               ng-click="addToFavorite(video)">Save to List <i class="ion-heart ion-large"></i>
             </a>
           </p>
           <div align="right" ng-show="hasRole('member')">
@@ -33,9 +33,9 @@
         </div>
       </div>
       <hr>
-      <div class="item item-body" style="height: 250px">
+      <div class="item item-body" style="height: 50%">
         <div align="center">
-          <video controls width="80%" height="auto">
+          <video controls width="80%" height="50%">
             <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>
           </video>
           <p>{{video.description}}</p>
@@ -54,8 +54,8 @@
       <hr>
       <div class="item item-body" style="height: 250px">
         <div align="center">
-          <iframe width="80%" height="auto" src="https://www.youtube.com/embed/EZVQLzOUZG4" frameborder="0"
-                  allowfullscreen></iframe>
+          <!--<iframe width="80%" height="auto" src="https://www.youtube.com/embed/EZVQLzOUZG4" frameborder="0"-->
+          <!--allowfullscreen></iframe>-->
           <p>Fitness HipNThigh Excercise</p>
         </div>
 
@@ -72,8 +72,8 @@
       <hr>
       <div class="item item-body" style="height: 250px">
         <div align="center">
-          <iframe width="80%" height="auto" src="https://www.youtube.com/embed/sU_EHvXUjx0" frameborder="0"
-                  allowfullscreen></iframe>
+          <!--<iframe width="80%" height="auto" src="https://www.youtube.com/embed/sU_EHvXUjx0" frameborder="0"-->
+          <!--allowfullscreen></iframe>-->
           <p>www.rayoka.com
             ra'yoKa uses breath centered flow and yoga therapeutics and enhances it with martial arts movement and
             core conditioning so you can improve your core and muscle groups while enhancing our flexibility.</p>
