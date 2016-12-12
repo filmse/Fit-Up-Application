@@ -19,7 +19,6 @@
       //}
     })
   }
-
   /** @ngInject */
   function shoppingAddUserService($resource) {
     return $resource('/shoppingAddUser/:id', {id: '@_id'}, {
@@ -30,7 +29,6 @@
       //}
     })
   }
-
   /**@ngInject*/
   function shoppingListService($resource) {
     return $resource('/shoppingList',
@@ -40,7 +38,6 @@
         }
       });
   }
-
   /**@ngInject*/
   function shoppingUpdateService($resource) {
     return $resource('/shoppingList/:id', {id: '@_id'}, {

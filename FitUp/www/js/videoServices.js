@@ -15,7 +15,6 @@
       method: 'POST'
     })
   }
-
   /** @ngInject */
   function videoService($resource) {
     return $resource('/video/:id', {id: '@_id'}, {
@@ -30,7 +29,6 @@
       }
     });
   }
-
   /** @ngInject */
   function queryVideoService($resource) {
     return $resource('/videoName',

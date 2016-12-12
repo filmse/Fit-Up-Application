@@ -97,7 +97,7 @@
       initFileFn: null,
       readFileFn: webAPIFileRead
     };
-    
+
     /**
      * Current options
      * @type {Object}
@@ -699,7 +699,7 @@
      * @type {Flow}
      */
     this.flowObj = flowObj;
-    
+
     /**
      * Used to store the bytes read
      * @type {Blob|string}

@@ -8,12 +8,16 @@
   /** @ngInject */
     .controller('shoppingListController', function ($scope, shoppingUpdateService) {
 
+      $scope.Confirm = function () {
+        console.log("Success!!");
+      };
+
       $scope.queryPromise = shoppingUpdateService.query(function (data) {
         $scope.shoppingCarts = data;
         console.log($scope.shoppingCarts);
       }).$promise;
     })
-
+    /** @ngInject */
     .controller('dateController', function ($scope) {
       $scope.today = new Date();
     });

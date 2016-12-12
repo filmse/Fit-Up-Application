@@ -6,7 +6,7 @@
   angular.module('starter.controllers')
 
   /** @ngInject */
-    .controller('listInfoController', function (getToFavoriteService, $scope, $rootScope, $http, $ionicLoading, $timeout) {
+    .controller('favoriteController', function (getToFavoriteService, $scope, $rootScope, $http, $ionicLoading, $timeout) {
 
       $scope.queryPromise = getToFavoriteService.query(function (data) {
         $ionicLoading.show({
@@ -18,6 +18,5 @@
         $scope.favorites = data;
       }).$promise;
     })
-
 
 })();

@@ -1,26 +1,24 @@
-<ion-view ng-controller="listInfoController">
-  <ion-content>
+<ion-view>
+  <ion-content ng-controller="listUserController">
 
     <div class="list list-inset">
-
       <div align="center">
         <table class="simply">
-          <!-- Table header -->
-          <thead class="simply th">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Video Name</th>
-            <th scope="col">Description</th>
-          </tr>
-          </thead>
-          <!-- Table body -->
-          <tbody class="simply tbody">
-          <tr ng-repeat="favorite in favorites">
-            <td>{{$index+1}}</td>
-            <td>{{favorite.videos[0].name}}</td>
-            <td>{{favorite.videos[0].description}}</td>
-          </tr>
-          </tbody>
+          <item>
+            <tr ng-repeat="favorite in user.favorites">
+              <td>
+                <video controls width="70%" height="auto">
+                  <source src="{{'templates/video/' +favorite.videos[0].videoClips[0].fileName}}" type='video/mp4'>
+                </video>
+                <br>
+                <br>
+                <p>Video Name:&nbsp;{{favorite.videos[0].name}}</p>
+                <p class="over overflow-ellipsis">Video Description:{{favorite.videos[0].description}}</p>
+              </td>
+              <td></td>
+            </tr>
+          </item>
+
         </table>
       </div>
 

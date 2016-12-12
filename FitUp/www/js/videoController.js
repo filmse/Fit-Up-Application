@@ -4,8 +4,9 @@
 (function () {
   'use strict';
   angular.module('starter.controllers')
+
   /** @ngInject */
-    .controller('addVideoController', function (VideoService, $http, $scope, $rootScope, $state) {
+    .controller('addVideoController', function ($timeout, $ionicLoading, VideoService, $http, $scope, $rootScope, $state) {
 
       $scope.price = {
         price: null, availableOptions: [
@@ -15,7 +16,7 @@
           {id: '100', name: '100'},
           {id: '100', name: '150'},
           {id: '100', name: '200'}
-        ],
+        ]
       };
 
       var vm = this;
@@ -27,20 +28,29 @@
 
         VideoService.save({userId: $rootScope.user.id}, vm.video, function (data) {
           var videoId = data.id;
+
+          $ionicLoading.show({
+            template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Video Uploading...</p>'
+          });
+
+          $timeout(function () {
+            $ionicLoading.hide();
+          }, 7000);
+
           // set location
           flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId, videoName: name};
           flowFiles.upload();
           $rootScope.addSuccess = true;
-          //$state.go("app.video");
+
+          // location.reload();
           $state.go("app.video");
         })
       };
-      //location.reload();
     })
     /** @ngInject */
-    .controller('listVideoController', function (shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
+    .controller('listVideoController', function ($ionicPopup, shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
@@ -49,21 +59,16 @@
       $scope.queryPromise = videoService.query(function (data) {
         $scope.videos = data;
 
-        angular.forEach($scope.videos, function (value, key) {
-          console.log(value.videoClips[0].fileName);
-          // $scope.trustSrc = function (src) {
-          //   return $sce.trustAsResourceUrl(src);
-          // }
-          // // $scope.movie = {src: "templates/video/" +value};
-          // $scope.movie = {src: "templates/video/One two three four Steps1.mp4"}, {src: "templates/video/Fitness headback.mp4"};
-        })
+        //angular.forEach($scope.videos, function (value, key) {
+        //console.log(value.videoClips[0].fileName);
+        //})
       }).$promise;
 
       $scope.searchInfo = function (name) {
         queryVideoService.query({name: name}, function (data) {
           $scope.videos = data;
         });
-      }
+      };
 
       $scope.addToCart = function (video) {
         console.log(video);
@@ -76,11 +81,17 @@
           userId: $rootScope.user.id
         }, {shoppingCartId: $rootScope.shoppingCart}, function (shoppingCart) {
 
-          alert("Success!!");
+          $ionicPopup.alert({
+            title: 'Success!',
+            template: 'Add video to your cart'
+          });
           $rootScope.shoppingCart = shoppingCart;
         }, function () {
           // fail event
-          alert("Failed!!");
+          $ionicPopup.alert({
+            title: 'Failed!',
+            template: 'Cannot add video to your cart'
+          });
         })
       };
 
@@ -96,16 +107,21 @@
         }, {FavoriteId: $rootScope.favorite}, function (favorite) {
 
           //success event
-          alert("Success!!");
+          $ionicPopup.alert({
+            title: 'Success!',
+            template: 'Add video to your favorite'
+          });
           $rootScope.favorite = favorite;
           console.log("success");
 
         }, function () {
           // fail event
-          alert("Failed!!");
+          $ionicPopup.alert({
+            title: 'Failed!',
+            template: 'Cannot add video to your favorite'
+          });
         })
       };
-
     })
     /** @ngInject */
     .controller('editVideoController', function ($scope, $route, $timeout, $ionicLoading, $routeParams, $location, $rootScope, videoService, VideoService, $http) {
@@ -116,7 +132,7 @@
         videoService.get({id: videoId}, function (data) {
           $scope.videos = data;
         })
-      })
+      });
 
       $scope.editVideo = function (flowFiles) {
         videoService.update({id: $scope.videos.id}, $scope.videos, function () {
@@ -149,39 +165,5 @@
         }
       }
     })
-    /** @ngInject */
-    .controller('HomeCtrl', function ($sce, videoService, $scope) {
-        this.config = {
-          sources: [
-            {
-              src: $sce.trustAsResourceUrl('templates/video/One two three four Steps2.mp4'),
-              type: "video/mp4"
-            }
-            // ,
-            // {
-            //   src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/videos/videogular.webm"),
-            //   type: "video/webm"
-            // },
-            // {
-            //   src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/videos/videogular.ogg"),
-            //   type: "video/ogg"
-            // }
-          ],
-          tracks: [
-            {
-              src: "http://www.videogular.com/assets/subs/pale-blue-dot.vtt",
-              kind: "subtitles",
-              srclang: "en",
-              label: "English",
-              default: ""
-            }
-          ],
-          theme: "lib/videogular-themes-default/videogular.css",
-          plugins: {
-            poster: "templates/video/FitUp005.png"
-            // poster: "http://www.videogular.com/assets/images/videogular.png"
-          }
-        };
-      }
-    );
+
 })();

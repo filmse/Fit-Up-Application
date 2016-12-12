@@ -14,7 +14,6 @@
       method: 'POST' // this method issues a POST request
     });
   }
-
   /**@ngInject*/
   function querypassSetService($resource) {
     return $resource('/passSetList',

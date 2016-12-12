@@ -48,30 +48,4 @@ public class AddFavoriteController {
         return favoriteService.favoriteId(id);
     }
 
-//    @Autowired
-//    UserService userService;
-//
-//    @Autowired
-//    VideoService videoService;
-//
-//    @Autowired
-//    FavoriteService favoriteService;
-//
-//    @RequestMapping(value = "addToFavorite", method = RequestMethod.POST)
-//    @ResponseBody
-//    public Favorite addFavorite(@RequestParam("userId") Long userId, @RequestBody Favorite favorite, BindingResult bindingResult) {
-//        User user = userService.getUser(userId);
-//        return favoriteService.addFavorite(user, favorite);
-//    }
-//
-//    @RequestMapping(value = "getToFavorite", method = RequestMethod.GET)
-//    public List<Favorite> favoriteList() {
-//        return favoriteService.favoriteList();
-//    }
-//
-//    @RequestMapping(value = "getToFavoriteIdService/{id}", method = RequestMethod.GET)
-//    public Favorite favoriteId(@PathVariable("id") Long id) {
-//        return favoriteService.favoriteId(id);
-//    }
-
 }

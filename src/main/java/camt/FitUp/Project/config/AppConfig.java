@@ -1,7 +1,5 @@
 package camt.FitUp.Project.config;
 
-import com.braintreegateway.BraintreeGateway;
-import com.braintreegateway.Environment;
 import org.springframework.boot.context.embedded.MultipartConfigFactory;
 import org.springframework.context.annotation.*;
 import org.springframework.web.multipart.MultipartResolver;

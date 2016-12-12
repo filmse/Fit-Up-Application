@@ -1,37 +1,51 @@
 <ion-view>
   <ion-content ng-controller="listUserController">
 
-    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_account" method="post">
+    <form>
       <div class="list list-inset" ng-controller="shoppingListController">
 
         <div align="center" ng-controller="dateController">
           <table class="simply">
-            <!-- Table header -->
-            <thead class="simply th">
-            <tr>
-              <th scope="col">Cart</th>
-              <th scope="col"></th>
-              <th scope="col"></th>
-            </tr>
-            </thead>
+            <!--&lt;!&ndash; Table header &ndash;&gt;-->
+            <!--<thead class="simply th">-->
+            <!--<tr>-->
+            <!--<th scope="col">Cart</th>-->
+            <!--<th scope="col"></th>-->
+            <!--<th scope="col"></th>-->
+            <!--</tr>-->
+            <!--</thead>-->
             <!-- Table body -->
             <tbody class="simply tbody">
             <tr ng-repeat="shopping in user.shoppingCarts | filter: name">
-              <td style=" float: left;margin-top: 20px">
+              <td style="margin-top: 20px">
                 <p><b>Payment ID</b></p>
                 <p>{{shopping.purchaseDate}}-{{shopping.id}}</p>
                 <p><b>Username.</b> {{user.username}}</p>
                 <p><b>Email.</b> {{user.email}}</p>
                 <p>{{ today | date : "fullDate" }}</p>
-                <p><b>Video Name</b>{{shopping.videos[0].name}}</p>
+                <p><b>Video Name</b> {{shopping.videos[0].name}}</p>
                 <p><b>Video Price</b> {{shopping.videos[0].price}} THB.</p>
               </td>
-              <td></td>
-              <td style=" float: right;margin-top: 20px; padding: 10px">
-                <input type="image"
-                       src="http://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"
-                       name="submit"
-                       alt="Make payments with PayPal - it's fast, free and secure!">
+              <td>
+                <p style="color: black">Confirm payment time</p>
+                <input style="width: 95%; padding: 5px" type="text" name="confirm" placeholder="Confirm time">
+                <p style="color: black">Confirm payment money</p>
+                <input style="width: 95%; padding: 5px" type="text" name="amountOfMoney"
+                       placeholder="Confirm amount of money">
+                <p style="color: black">Confirm secret Id</p>
+                <input style="width: 95%; padding: 5px" type="text" name="secretId"
+                       placeholder="Confirm secret Id">
+                <br>
+                <div align="center">
+                  <button class="button button-block icon button-assertive"
+                          style="width: 70%"
+                          ng-click="Confirm()">Submit
+                  </button>
+                </div>
+                <!--<input type="image"-->
+                <!--src="http://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"-->
+                <!--name="submit"-->
+                <!--alt="Make payments with PayPal - it's fast, free and secure!" ng-click="paypal()">-->
               </td>
             </tr>
             </tbody>

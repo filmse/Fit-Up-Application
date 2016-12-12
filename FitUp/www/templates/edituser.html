@@ -45,7 +45,7 @@
             <li style="color: white; margin-left: 40px">Name :</li>
             <li>
               <div align="center">
-                <label style="width: 90%" class="item item-input LabelSmooth">
+                <label style="width: 100%" class="item item-input LabelSmooth">
                   <input class="form-control" type="text" placeholder="Username" ng-model="user.username"
                          ng-pattern="/^[a-zA-Z0-9]*$/" ng-minlength="4" ng-maxlength="20" required>
                 </label>
@@ -58,7 +58,7 @@
             <li style="color: white; margin-left: 40px">Email</li>
             <li>
               <div align="center">
-                <label style="width: 90%" class="item item-input LabelSmooth">
+                <label style="width: 100%" class="item item-input LabelSmooth">
                   <input class="form-control" type="email" placeholder="E-mail" ng-model="user.email" required>
                 </label>
               </div>
@@ -71,7 +71,7 @@
             <li style="color: white; margin-left: 40px">Password</li>
             <li>
               <div align="center">
-                <label style="width: 90%" class="item item-input LabelSmooth">
+                <label style="width: 100%" class="item item-input LabelSmooth">
                   <input type="password" placeholder="Password" id="txtNewPassword" ng-model="user.password"
                          ng-minlength="4" ng-maxlength="20" required>
                 </label>
@@ -82,11 +82,11 @@
 
         <br>
         <div class="dark" align="right">
-          <p style="cursor: pointer; margin-right: 70px" ng-click="deleteUsers(user.id)">Delete Account</p>
+          <p style="cursor: pointer; margin-right: 40px" ng-click="deleteUsers(user.id)">Delete Account</p>
         </div>
 
         <div align="center">
-          <button style="width: 50%" type="submit" class="button button-block button-positive"
+          <button style="width: 50%" type="submit" class="button button-block button-assertive"
                   ng-disabled="editform.$invalid"
                   ng-click="editUser($flow)"> Edit
           </button>

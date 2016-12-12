@@ -35,7 +35,7 @@
           </div>
 
           <div ng-controller="listVideoController">
-            <div class="list card BgEdiitt" style="border: solid 3px black;" ng-repeat="video in videos">
+            <div class="list card BgEdiitt" ng-repeat="video in videos">
               <div class="item item-avatar" ng-controller="listUserController">
 
                 <img style="background-color: #2B333F">
@@ -44,7 +44,7 @@
                 <!--<p>{{video.videoClips[0].fileName}}</p>-->
                 <div align="left" ng-show="hasRole('member')">
                   <p>
-                    <a ng-show="user" style="width: 5em; font-size: small; cursor: pointer;"
+                    <a ng-show="hasRole('member')" style="width: 5em; font-size: small; cursor: pointer;"
                        ng-click="addToFavorite(video)">Save to List <i class="ion-heart ion-large"></i>
                     </a>
                   </p>
@@ -59,11 +59,13 @@
               <hr>
               <div class="item item-body" style="height: 50%">
                 <div align="center">
-                  <video controls width="80%" height="50%">
+                  <video controls width="100%" height="50%">
                     <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>
                   </video>
                 </div>
-                <p style="color: black;">{{video.description}}</p>
+                <div align="center">
+                  <p style="color: black;">{{video.description}}</p>
+                </div>
               </div>
             </div>
             <br>
@@ -72,8 +74,8 @@
         </ion-content>
       </ion-slide-page>
 
-      <ion-slide-page ng-show="hasRole('trainer')" class="Wall" style="padding: 2%">
-        <ion-content ng-controller="deleteInfoController">
+      <ion-slide-page class="Wall" ng-show="hasRole('trainer')" style="padding: 2%">
+        <ion-content>
 
           <ion-item class="row">
             <button style="opacity: 0.6; padding: 2em; width: 45%" class="overDivvv col col-100 button-small"
@@ -92,334 +94,131 @@
             </button>
           </ion-item>
 
-          <div align="center">
-            <table style="width: 100%">
-
-              <thead class="simply th">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Topic</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
-              </tr>
-              </thead>
-
-              <tbody class="simply tbody">
-              <tr ng-repeat="fitUpInfo in user.infos | filter: name">
-                <td><img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
-                         ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}"
-                         style="width: 50px; height: auto"></td>
-                <td>{{fitUpInfo.name}}</td>
-                <td>
-                  <a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}"> Edit Information</a>
-                </td>
-
-                <td style="cursor: pointer;" ng-href="#" class="icon-left ion-ios-close-outline"
-                    ng-click="deleteInfo(fitUpInfo.id)"> Delete
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-          <div align="center">
-            <table class="simply">
-              <!-- Table header -->
-              <thead class="simply th">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Video</th>
-                <th scope="col">Price</th>
-                <th scope="col">Edit/Delete</th>
-              </tr>
-              </thead>
-              <!-- Table body -->
-              <tbody class="simply tbody">
-              <tr ng-repeat="video in user.videos | filter: name">
-                <td>{{$index+1}}</td>
-                <td>{{video.name}}</td>
-                <td>{{video.price}} THB.</td>
-                <!--<td>{{forum.description}}</td>-->
-                <td>
-            <span>
-              <a class="ion-ios-gear dark" ng-href="#/app/editVideo/{{video.id}}">Edit</a> /
-              <a class="icon-left ion-ios-close-outline" ng-click="deleteVideo(video.id)">Delete</a>
-              <!--//<a ng-href="#/app/editInformation/{{forum.id}}">Delete</a>-->
-            </span>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <br>
         </ion-content>
       </ion-slide-page>
 
-      <ion-slide-page class="Wall" ng-show="hasRole('member')" style="padding: 2%">
+      <ion-slide-page class="Wall" ng-show="hasRole('trainer')">
+        <ion-content ng-controller="deleteInfoController">
+
+          <div ng-controller="showsNewInfoController">
+            <table style="width: 100%" ng-controller="editInfoController">
+              <!-- Table header -->
+              <!--<thead class="simply th">-->
+              <!--<tr>-->
+              <!--<th scope="col"></th>-->
+              <!--<th scope="col">Topic</th>-->
+              <!--<th scope="col">Edit</th>-->
+              <!--<th scope="col">Delete</th>-->
+              <!--</tr>-->
+              <!--</thead>-->
+
+              <!-- Table body -->
+              <item>
+                <tbody class="simply tbody">
+                <tr ng-repeat="fitUpInfo in user.infos | filter: name" class="overDivvv">
+                  <td></td>
+                  <td><img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"
+                           ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}"
+                           style="margin-left: 3px; width: 60px; height: auto"><br>{{fitUpInfo.name}}
+                  </td>
+                  <td>
+                    <a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}"> Edit</a>
+                  </td>
+                  <td>
+                    <a style="cursor: pointer;" class="icon-left ion-ios-close-outline"
+                       ng-click="deleteInfo(fitUpInfo.id)"> Delete</a>
+                  </td>
+                </tr>
+                </tbody>
+              </item>
+
+            </table>
+          </div>
+
+        </ion-content>
+      </ion-slide-page>
+
+      <ion-slide-page class="Wall" ng-show="hasRole('trainer')">
         <ion-content>
+
+          <table style="width: 100%">
+            <!-- Table header -->
+            <thead class="simply th">
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Video</th>
+              <th scope="col">Price</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+            </thead>
+
+            <!-- Table body -->
+            <tbody class="simply tbody">
+            <tr ng-repeat="video in user.videos | filter: name">
+              <td></td>
+              <td>{{video.name}}</td>
+              <td>{{video.price}} THB.</td>
+              <!--<td>{{forum.description}}</td>-->
+              <td>
+                <a class="ion-ios-gear dark" ng-href="#/app/editVideo/{{video.id}}">Edit</a>
+              </td>
+              <td>
+                <a class="icon-left ion-ios-close-outline" ng-click="deleteVideo(video.id)">Delete</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+        </ion-content>
+      </ion-slide-page>
+
+      <ion-slide-page class="Wall" ng-show="hasRole('member')">
+        <ion-content>
+          <ion-header-bar>Your Video</ion-header-bar>
 
 
         </ion-content>
       </ion-slide-page>
 
     </ion-slides>
+
   </ion-content>
 </ion-view>
 
-<!--<ion-view>-->
-<!--<ion-content ng-controller="listVideoController" class="Wall" style="padding: 2%">-->
+<!--<ion-slide-page class="Wall" ng-show="hasRole('trainer')">-->
+<!--<ion-content ng-controller="deleteInfoController">-->
 
-<!--<div style="padding: 3px; opacity: 1.0; margin: 3px" class="button-bar">-->
-<!--<a style="border-radius: 2%;color: white; font-size: 20px; height: 100px; width: auto"-->
-<!--class="ImgD1 button button-assertive animated bounceInDown"><p style="margin-top: 20px;">Fit-Up</p></a>&nbsp-->
-<!--<a style="border-radius: 2%;color: white; font-size: 20px; height: 100px; width: auto"-->
-<!--class="ImgD2 button button-assertive animated bounceInUp"><p style="margin-top: 20px;">For</p></a>&nbsp-->
-<!--<a style="border-radius: 2%;color: white; font-size: 20px; height: 100px; width: auto"-->
-<!--class="ImgD3 button button-assertive animated bounceInDown"><p style="margin-top: 20px;">Fun</p></a>&nbsp&nbsp-->
-<!--</div>-->
+<!--<table style="width: 100%" ng-controller="editInfoController">-->
 
-<!--&lt;!&ndash;<div class="bar bar-header item-input-inset">&ndash;&gt;-->
-<!--&lt;!&ndash;<label style="background-color: gray" class="item-input-wrapper">&ndash;&gt;-->
-<!--&lt;!&ndash;<i class="icon ion-ios-search placeholder-icon"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;<input type="search" placeholder="Search" ng-model="name"/>&ndash;&gt;-->
-<!--&lt;!&ndash;</label>&ndash;&gt;-->
-<!--&lt;!&ndash;<button class="button button-dark" ng-click="searchInfo(name)">&ndash;&gt;-->
-<!--&lt;!&ndash;Search&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--<hr>-->
-<!--&lt;!&ndash;<div style="width: 100%" class="item-input-inset">&ndash;&gt;-->
-<!--&lt;!&ndash;<label style="width: 100%" class="item-input-wrapper">&ndash;&gt;-->
-<!--&lt;!&ndash;<i class="icon ion-ios-search placeholder-icon"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;<input style="width: 100%" type="search" placeholder="Search" ng-model="name"/>&ndash;&gt;-->
-<!--&lt;!&ndash;</label>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<thead class="simply th">-->
+<!--<tr>-->
+<!--<th scope="col"></th>-->
+<!--<th scope="col">Topic</th>-->
+<!--<th scope="col">Edit</th>-->
+<!--<th scope="col">Delete</th>-->
+<!--</tr>-->
+<!--</thead>-->
 
-<!--<div align="center" class="button-bar" style="width: 100%; height: 60px;">-->
-<!--<a style="width: 100%;font-size: 20px" class="icon ion-ios-film button-large overDiv" ng-click="videoClicks()"><p-->
-<!--style="color: white ;font-size: small; margin-top: -30px">Video</p></a>-->
-<!--<a style="width: 100%;font-size: 20px" class="icon ion-android-list button-large overDiv" ng-click="InfoClicks()">-->
-<!--<p-->
-<!--style="color: white ;font-size: small; margin-top: -30px">Forum</p></a>-->
-<!--<a style="width: 100%;font-size: 20px" class="icon ion-ios-cart button-large overDiv" ng-click="Payment()"><p-->
-<!--style="color: white ;font-size: small; margin-top: -30px">Cart</p></a>-->
-<!--<a style="width: 100%;font-size: 20px" class="icon ion-ios-compose button-large overDiv"-->
-<!--ng-click="aboutUsClicks()"><p-->
-<!--style="color: white ;font-size: small; margin-top: -30px">Help</p></a>-->
-<!--</div>-->
+<!--<ion-item>-->
+<!--<tbody class="simply tbody">-->
+<!--<tr ng-repeat="fitUpInfo in user.infos | filter: name">-->
+<!--<td><img ng-repeat="imageFitUpInfo in fitUpInfo.imageInfos"-->
+<!--ng-src="data:{{imageFitUpInfo.contentType}};base64,{{imageFitUpInfo.content}}"-->
+<!--style="margin-left: 10px; width: 60px; height: auto"></td>-->
+<!--<td>{{fitUpInfo.name}}</td>-->
+<!--<td>-->
+<!--<a class="ion-ios-gear dark" ng-href="#/app/editInformation/{{fitUpInfo.id}}"> Edit Information</a>-->
+<!--</td>-->
 
-<!--&lt;!&ndash;<div class="item item-divider">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="col col-50">|</div>&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="col col-50">|</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<td style="cursor: pointer;" ng-href="#" class="icon-left ion-ios-close-outline"-->
+<!--ng-click="deleteInfo(fitUpInfo.id)"> Delete-->
+<!--</td>-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</ion-item>-->
 
-<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="col text-center">&ndash;&gt;-->
-<!--&lt;!&ndash;<h3 class="title" style="color: white">Welcome</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;<p style="color: white">{{user.username}}</p>&ndash;&gt;-->
-<!--&lt;!&ndash;<hr style="border-color: red">&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<p>This could be your Dashboard.</p>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<div style="width: 100%; height: 180px; font-size: 10px;" ng-click="videoClicks()"&ndash;&gt;-->
-<!--&lt;!&ndash;class="ImgD1 overDivsy button button-full button-positive animated bounceInRight">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div&ndash;&gt;-->
-<!--&lt;!&ndash;style="width: 200px ;float: left; border-radius: 5px; font-size: 20px; margin-top: 150px; opacity: 0.7;">&ndash;&gt;-->
-<!--&lt;!&ndash;Video&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<div style="width: 100%; height: 180px; font-size: 10px;" ng-click="InfoClicks()"&ndash;&gt;-->
-<!--&lt;!&ndash;class="ImgD2 overDivsy button button-full button-positive animated bounceInLeft">&ndash;&gt;-->
-<!--&lt;!&ndash;<div&ndash;&gt;-->
-<!--&lt;!&ndash;style="width: 200px ;float: right; border-radius: 5px; font-size: 20px; margin-top: 150px; opacity: 0.7;">&ndash;&gt;-->
-<!--&lt;!&ndash;Information&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<div style="width: 100%; height: 180px; font-size: 10px;" ng-click="aboutUsClicks()"&ndash;&gt;-->
-<!--&lt;!&ndash;class="ImgD2 overDivsy button button-full button-positive animated bounceInLeft">&ndash;&gt;-->
-<!--&lt;!&ndash;<div&ndash;&gt;-->
-<!--&lt;!&ndash;style="width: 200px ;float: right; border-radius: 5px; font-size: 20px; margin-top: 150px; opacity: 0.7;">&ndash;&gt;-->
-<!--&lt;!&ndash;About Us&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;<p style="color: gray">@Fit-Up Application</p>&ndash;&gt;-->
-<!--&lt;!&ndash;<p style="color: gray">WWW.Fit-Up Sport Inc, 2016</p>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;<div class="list card" ng-repeat="video in videos">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="item item-avatar">&ndash;&gt;-->
-<!--&lt;!&ndash;<img style="background-color: #2B333F">&ndash;&gt;-->
-<!--&lt;!&ndash;<h2>{{video.name}}</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;<p>{{video.price}} THB.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;<p>{{video.videoClips[0].fileName}}</p>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="item item-body">&ndash;&gt;-->
-<!--&lt;!&ndash;<video controls width="300" height="auto">&ndash;&gt;-->
-<!--&lt;!&ndash;<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>&ndash;&gt;-->
-<!--&lt;!&ndash;</video>&ndash;&gt;-->
-<!--&lt;!&ndash;<p>{{video.description}}</p>&ndash;&gt;-->
-<!--&lt;!&ndash;<p>&ndash;&gt;-->
-<!--&lt;!&ndash;<button ng-show="user" style="width: 5em; font-size: small" class="overDivvv button button-dark button-small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToFavorite(user)">Like <i class="ion-heart ion-large"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--&lt;!&ndash;<button ng-show="user" style="width: 5em; font-size: small" class="overDivvv button button-dark button-small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToCart(user)">Buy&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--&lt;!&ndash;</p>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<ion-item>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="row responsive-sm" ng-repeat="video in videos">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="col">&ndash;&gt;-->
-<!--&lt;!&ndash;<ul class="list">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="scopes">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="item item-image">&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;{{video.videoClips[0].fileName}}&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<video id="my-video" class="video-js" controls preload="auto" width="450" height="264">&ndash;&gt;-->
-<!--&lt;!&ndash;<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>&ndash;&gt;-->
-<!--&lt;!&ndash;</video>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center" style="cursor: pointer">&ndash;&gt;-->
-<!--&lt;!&ndash;<ion ng-show="user" style="width: 5em; font-size: small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToFavorite(user)">Add Favorite<i class="ion-heart ion-large"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;</ion>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;<video controls style="width: 350px; height: auto">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<source src="{{movie.src}}" type="video/mp4">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</video>&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;<div ng-repeat="videoClip in video.videoClips" class="text-center" class="thumbnail">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<img ng-src="data:{{videoClip.contentType}};base64,{{videoClip.content}}">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;<h1>{{video.name}}</h1>&ndash;&gt;-->
-<!--&lt;!&ndash;{{video.description}}<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<br><b>Price: </b>{{video.price}}THB.<br>&ndash;&gt;-->
-<!--&lt;!&ndash;{{video.videoClips[0].fileName}}&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;<button ng-show="user" style="width: 5em; font-size: small" class="button button-dark button-small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToCart(user)">Buy&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;{{$index+1}}&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<p>{{video.name}}</p><br>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;{{video.description}}<br>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<br><b>Price: </b>{{video.price}}THB.&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;</ul>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<ion-item ng-repeat="video in videos">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center" style="cursor: pointer">&ndash;&gt;-->
-<!--&lt;!&ndash;<ion ng-show="user" style="width: 5em; font-size: small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToFavorite(user)">Add Favorite<i class="ion-heart ion-large"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;</ion>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div ng-controller="HomeCtrl as controller" class="videogular-container">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<videogular vg-theme="controller.config.theme">&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-media vg-src="controller.config.sources"&ndash;&gt;-->
-<!--&lt;!&ndash;vg-tracks="controller.config.tracks">&ndash;&gt;-->
-<!--&lt;!&ndash;</vg-media>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<vg-controls>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-play-pause-button></vg-play-pause-button>&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-scrub-bar>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-scrub-bar-current-time></vg-scrub-bar-current-time>&ndash;&gt;-->
-<!--&lt;!&ndash;</vg-scrub-bar>&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-volume>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-mute-button></vg-mute-button>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-volume-bar></vg-volume-bar>&ndash;&gt;-->
-<!--&lt;!&ndash;</vg-volume>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-fullscreen-button></vg-fullscreen-button>&ndash;&gt;-->
-<!--&lt;!&ndash;</vg-controls>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<vg-overlay-play></vg-overlay-play>&ndash;&gt;-->
-<!--&lt;!&ndash;<vg-poster vg-url='controller.config.plugins.poster'></vg-poster>&ndash;&gt;-->
-<!--&lt;!&ndash;</videogular>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;<h2>Name: {{video.name}}</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;</h2>{{video.description}}</h2><br>&ndash;&gt;-->
-<!--&lt;!&ndash;</h2>Price:{{video.price}}THB.</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="row responsive-sm" ng-repeat="video in videos">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="col">&ndash;&gt;-->
-<!--&lt;!&ndash;<ul class="list">&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="lines">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="textVid">&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;{{$index+1}}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<p>{{video.name}}</p><br>&ndash;&gt;-->
-<!--&lt;!&ndash;{{video.description}}<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<br><b>Price: </b>{{video.price}}THB.&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div class="scopes">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="item item-image">&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<br>&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="thumbnailVideo">&ndash;&gt;-->
-<!--&lt;!&ndash;<div ng-repeat="videoClip in video.videoClips" class="text-center">&ndash;&gt;-->
-<!--&lt;!&ndash;<img ng-src="data:{{videoClip.contentType}};base64,{{videoClip.content}}">&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;</ul>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;<div align="center">&ndash;&gt;-->
-<!--&lt;!&ndash;<button ng-show="user" style="width: 5em; font-size: small" class="button button-dark button-small"&ndash;&gt;-->
-<!--&lt;!&ndash;ng-click="addToCart(user)">Buy&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+<!--</table>-->
 
 <!--</ion-content>-->
-<!--</ion-view>-->
-
+<!--</ion-slide-page>-->

@@ -10,32 +10,32 @@
 
       $scope.videoClicks = function () {
         $state.go("app.videoExpand");
-      }
+      };
       $scope.InfoClicks = function () {
         $state.go("app.board");
-      }
+      };
       $scope.aboutUsClicks = function () {
         $state.go("app.setPassword");
-      }
+      };
       $scope.aboutClicks = function () {
         $state.go("app.aboutUs");
-      }
+      };
 
       $scope.uploadVideo = function () {
         $state.go("app.addVideo");
-      }
+      };
       $scope.VideoHis = function () {
         $state.go("app.listVideo");
-      }
+      };
       $scope.UploadInfo = function () {
         $state.go("app.addInformation");
-      }
+      };
       $scope.InfoHis = function () {
         $state.go("app.listInformation");
-      }
+      };
       $scope.Payment = function () {
         $state.go("app.payment");
-      }
+      };
 
       var vm = this;
 
@@ -49,8 +49,7 @@
 
           AuthService.signupEmail(newEmail, newPassword, newFullName);
         }
-        ;
-      };
+      }
     })
 
     /** @ngInject */
@@ -58,6 +57,6 @@
       $scope.nextSlide = function () {
         $ionicSlideBoxDelegate.next();
       }
-    })
+    });
 
 })();

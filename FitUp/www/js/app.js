@@ -2,8 +2,8 @@
   'use strict';
 
   // angular.module('ngResource+apiPrefix', ['ngResource'])
-  angular.module('starter.controllers', [])
-  angular.module('starter.services', [])
+  angular.module('starter.controllers', []);
+  angular.module('starter.services', []);
   angular.module('starter', ['ionic',
     'ngCookies',
     'LocalStorageModule',
@@ -115,7 +115,6 @@
       $rootScope.initialzed = true;
 
     })
-
     /** Run */
     .run(function ($log) {
       $log.debug('runBlock end');
@@ -276,6 +275,16 @@
 
         /** For Admin*/
 
+        .state('app.checkConfirm', {
+          url: '/checkConfirm',
+          views: {
+            'menuContent': {
+              templateUrl: 'templates/Admin/checkConfirm.html',
+              controller: 'shoppingListController'
+            }
+          }
+        })
+
         .state('app.management', {
           url: '/management',
           views: {
@@ -358,7 +367,6 @@
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/app/video');
     })
-
     /** Config */
     .config(configCompilerProvider)
     /** Config */
@@ -372,13 +380,16 @@
       target: 'app.video',
       permanentErrors: [404, 500, 501],
       maxChunkRetries: 1,
+      chunkSize: 1024 * 1024 * 1024 * 1024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 10241024 * 2014 * 1024 * 1024 * 1024 * 1024 * 1024,
+      progressCallbacksInterval: 3000,
+      testChunks: false,
       chunkRetryInterval: 5000,
       simultaneousUploads: 4,
       singleFile: false
     };
-    flowFactoryProvider.on('catchAll', function ($log) {
-      console.log('catchAll', arguments);
-    });
+    // flowFactoryProvider.on('catchAll', function ($log) {
+    //   console.log('catchAll', arguments);
+    // });
     // Can be used with different implementations of Flow.js
     // flowFactoryProvider.factory = fustyFlowFactory;
   }

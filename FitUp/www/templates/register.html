@@ -1,15 +1,15 @@
-<ion-view view-title="Fit-Up">
-  <ion-content class="padding BgRegis" ng-controller="ctrlController">
+<ion-view>
+  <ion-content class="BgLogin" ng-controller="ctrlController">
 
-    <form name="signupForm" ng-submit="createUser(signupForm)" class="list card no-margin BgRegis" novalidate flow-init>
-
+    <form name="signupForm" ng-submit="createUser(signupForm)" class="list no-margin" novalidate flow-init>
+      <br style="margin-top: 30px">
       <div align="center">
         <div ng-repeat="file in $flow.files" class="text-center" align="center">
-          <div><img flow-img="$flow.files[{{$index}}]" class="thumbnailCircles thumbnailImgs"></div>
+          <div><img flow-img="$flow.files[{{$index}}]" class="thumbnailRegis thumbnailRegisImg"></div>
           <a class="ion-close-circled" style="cursor: pointer; margin: 2px" ng-click="$flow.cancel()" type="file"></a>
         </div>
 
-        <button ng-hide="$flow.getSize()!=0" class="thumbnailCircles thumbnailImgs"
+        <button ng-hide="$flow.getSize()!=0" class="thumbnailRegis thumbnailRegisImg"
                 style="font-size: 1em; cursor: pointer; opacity: 0.7"
                 aria-disabled="true" type="file"
                 flow-btn>
@@ -17,41 +17,45 @@
         </button>
       </div>
 
-      <br>
+      <br style="margin-top: 5px">
 
-      <ion-input class="item item-input item-stacked-label"
+      <ion-input class="item-input item-stacked-label"
                  ng-class="{ 'has-errors' : signupForm.username.$invalid && signupForm.$submitted,
         'no-errors' : signupForm.username.$valid && signupForm.$submitted}">
         <ion-label>Username</ion-label>
-        <input style="width: 95%" type="text" name="username" placeholder="Username" ng-model="vm.user.username"
+        <input style="width: 95%; padding: 5px" type="text" name="username" placeholder="Username"
+               ng-model="vm.user.username"
                ng-minlength="4"
                ng-maxlength="20" required>
       </ion-input>
 
       <div class="error-container" ng-show="signupForm.username.$error && signupForm.$submitted"
            ng-messages="signupForm.username.$error">
-        <div class="error" ng-message="required">
+        <div class="error" ng-show="signupForm.username.$invalid && !signupForm.username.$pristine">
           <i class="ion-information-circled"></i>
           require username
         </div>
         <div class="error" ng-show="signupForm.username.$invalid && !signupForm.username.$pristine">
           <i class="ion-information-circled"></i>
           username invalid form
+          <p>[ required 4-20 characters ]</p>
         </div>
       </div>
 
-      <ion-input class="item item-input item-stacked-label"
+      <ion-input class="item-input item-stacked-label"
                  ng-class="{ 'has-errors' : signupForm.email.$invalid && signupForm.$submitted,
         'no-errors' : signupForm.email.$valid && signupForm.$submitted}">
         <ion-label>Email</ion-label>
-        <input style="width: 95%" type="email" name="email" placeholder="email" ng-model="vm.user.email" required>
+        <input style="width: 95%; padding: 5px" type="email" name="email" placeholder="email" ng-model="vm.user.email"
+               required>
       </ion-input>
 
       <div class="error-container" ng-show="signupForm.email.$error && signupForm.$submitted"
            ng-messages="signupForm.email.$error">
-        <div class="error" ng-message="required">
+        <div class="error" ng-show="signupForm.email.$invalid && !signupForm.email.$pristine">
           <i class="ion-information-circled"></i>
           require email
+          <p>[ Ex. user@emal.com ]</p>
         </div>
         <div class="error" ng-show="signupForm.email.$invalid && !signupForm.email.$pristine">
           <i class="ion-information-circled"></i>
@@ -59,18 +63,19 @@
         </div>
       </div>
 
-      <ion-input class="item item-input item-stacked-label"
+      <ion-input class="item-input item-stacked-label"
                  ng-class="{ 'has-errors' : signupForm.password.$invalid && signupForm.$submitted,
         'no-errors' : signupForm.password.$valid && signupForm.$submitted}">
         <ion-label>Password</ion-label>
-        <input style="width: 95%" type="password" name="password" placeholder="Password" ng-model="vm.user.password"
+        <input style="width: 95%; padding: 5px" type="password" name="password" placeholder="Password"
+               ng-model="vm.user.password"
                ng-minlength="4"
                ng-maxlength="20" required>
       </ion-input>
 
       <div class="error-container" ng-show="signupForm.password.$error && signupForm.$submitted"
            ng-messages="signupForm.password.$error">
-        <div class="error" ng-message="required">
+        <div class="error" ng-show="signupForm.password.$invalid && !signupForm.password.$pristine">
           <i class="ion-information-circled"></i>
           require password
         </div>
@@ -81,156 +86,19 @@
       </div>
 
       <br>
-
+      <div align="center" style="font-size: 18px; color: white">
+        -------Create account-------
+      </div>
       <div align="center">
-        <ion-input class="item-input padding" style="width: 50%">
-          <input type="submit" class="button button-positive" value="Create Account" ng-click="vm.register($flow)"
+        <ion-input class="item-input padding" style="width: 70%">
+          <input style="border-radius: 5px" type="submit"
+                 class="overDiv button button-block icon ion-ios-unlocked-outline button-assertive"
+                 value="Create Account" ng-click="vm.register($flow)"
                  ng-disabled="signupForm.$invalid && signupForm.$submitted">
         </ion-input>
       </div>
-
+      <br style="margin-top: 40px">
     </form>
-
-    <!--<form name="editform" novalidate flow-init>-->
-    <!--<div class="list list-inset">-->
-    <!--<div class="list LabelSmooth boundary">-->
-    <!--<div class="form-group">-->
-    <!--<div ng-repeat="file in $flow.files" class="text-center" align="center">-->
-    <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>-->
-    <!--<a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">-->
-    <!--Cancel-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--<div align="center">-->
-    <!--<button type="file" class="button icon-left ion-imageFitUpInfo button-positive" flow-btn>Add Picture-->
-    <!--</button>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="form-group">-->
-    <!--<p>Topic:</p>-->
-    <!--<label class="item item-input banner-info">-->
-    <!--<input type="text" id="productname" name="productname" placeholder="Topic" ng-model="vm.info.name"-->
-    <!--maxlength="50" required/>-->
-    <!--</label>-->
-    <!--</div>-->
-
-    <!--<div class="form-group">-->
-    <!--<p>Content:</p>-->
-    <!--<label class="item item-input banner-info">-->
-    <!--<input style="width: 100%; height: 100px;" type="text" id="productdescription"-->
-    <!--placeholder="description" name="productdescription" ng-model="vm.info.description"-->
-    <!--maxlength="2000" required/>-->
-    <!--</label>-->
-    <!--</div>-->
-
-    <!--<button class="button button-block button-positive" ng-click="vm.addInfo($flow)">Add</button>-->
-    <!--</div>-->
-
-    <!--</form>-->
 
   </ion-content>
 </ion-view>
-
-
-<!--<ion-view>-->
-<!--<ion-content class="BgRegis">-->
-
-<!--<div style="padding: 20px">-->
-<!--<form align="center" name="form" novalidate flow-init>-->
-<!--<div class="list LabelSmooth">-->
-<!--<div align="center">-->
-<!--<h2 style="color: white">Create Account</h2>-->
-<!--</div>-->
-
-<!--<div class="BorderImg"></div>-->
-<!--<br>-->
-
-<!--<div align="center">-->
-
-<!--<div class="form-group">-->
-<!--<div align="center">-->
-<!--<div ng-repeat="file in $flow.files" class="text-center" align="center">-->
-<!--<br>-->
-<!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnailCircles thumbnailImgs"></div>-->
-<!--<a class="ion-close-circled" style="cursor: pointer; margin: 2px" ng-click="$flow.cancel()"></a>-->
-<!--</div>-->
-<!--</div>-->
-<!--<button ng-hide="$flow.getSize()!=0" class="button ion-images"-->
-<!--style="font-size: 1em; cursor: pointer; opacity: 0.7"-->
-<!--aria-disabled="true" type="file"-->
-<!--flow-btn>-->
-<!--Upload Picture Profile-->
-<!--</button>-->
-<!--</div>-->
-<!--<div class="form-group">-->
-<!--<label class="item-floating-label">-->
-<!--<div align="left" style="margin-left: 3%">-->
-<!--<h5 style="color: white">Username</h5>-->
-<!--</div>-->
-<!--<div class="LabelSmooth" style="width: 95%; background-color: white">-->
-<!--<input style="width: 95%; height: 3em" type="text" placeholder="[4-20 characters, English only]"-->
-<!--ng-model="vm.user.username" name="username" ng-minlength="4" ng-maxlength="20"-->
-<!--ng-pattern="/^[a-zA-Z0-9]*$/" required>-->
-<!--</div>-->
-<!--</label>-->
-<!--</div>-->
-<!--<div class="form-group">-->
-<!--<label class="item-floating-label">-->
-<!--<div align="left" style="margin-left: 3%">-->
-<!--<h5 style="color: white">Email</h5>-->
-<!--</div>-->
-<!--<div class="LabelSmooth" style="width: 95%;background-color: white">-->
-<!--<input style="width: 95%; height: 3em" type="email"-->
-<!--placeholder="[Email format, Example: xxxx@xmail.com]"-->
-<!--name="email" ng-model="vm.user.email" required>-->
-<!--</div>-->
-<!--</label>-->
-<!--</div>-->
-<!--<div class="form-group">-->
-<!--<label class="item-floating-label">-->
-<!--<div align="left" style="margin-left: 3%">-->
-<!--<h5 style="color: white">Password</h5>-->
-<!--</div>-->
-<!--<div class="LabelSmooth" style="width: 95%;background-color: white">-->
-<!--<input style="width: 95%; height: 3em" type="password"-->
-<!--placeholder="[4-20 characters, Allow specials character]"-->
-<!--id="txtNewPassword"-->
-<!--ng-model="vm.user.password" ng-minlength="4" ng-maxlength="20" required>-->
-<!--</div>-->
-<!--</label>-->
-<!--</div>-->
-<!--<div class="form-group">-->
-<!--<label class="item-floating-label">-->
-<!--<div align="left" style="margin-left: 3%">-->
-<!--<h5 style="color: white">Re-Password</h5>-->
-<!--</div>-->
-<!--<div class="LabelSmooth" style="width: 95%;background-color: white">-->
-<!--<input style="width: 95%; height: 3em" type="password" placeholder="Re-Password"-->
-<!--id="txtConfirmPassword" onkeyup="checkPasswordMatch();"-->
-<!--ng-minlength="4" ng-maxlength="20" required>-->
-<!--</div>-->
-<!--<div style="color: red" class="registrationFormAlert" id="divCheckPasswordMatch"></div>-->
-<!--</label>-->
-<!--</div>-->
-<!--<br>-->
-<!--<div align="center">-->
-<!--<div class="form-group">-->
-<!--<button class="overDiv button button-assertive ion-ios-people-outline"-->
-<!--ng-disabled="form.$invalid"-->
-<!--ng-click="vm.register($flow)"> Create Account-->
-<!--</button>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--</div>-->
-
-<!--</div>-->
-
-<!--</form>-->
-<!--</div>-->
-
-<!--<br>-->
-<!--</ion-content>-->
-<!--</ion-view>-->
-

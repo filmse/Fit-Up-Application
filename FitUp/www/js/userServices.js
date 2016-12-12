@@ -17,7 +17,6 @@
       // }
     })
   }
-
   /** @ngInject */
   function userService($resource) {
     return $resource('/customer/:id', {id: '@_id'}, {
@@ -33,7 +32,6 @@
       }
     });
   }
-
   /** @ngInject */
   function queryUserService($resource) {
     return $resource('/customer/login',
@@ -46,7 +44,6 @@
         }
       });
   }
-
   /** @ngInject */
   function ChangeRole($resource) {
     return $resource('/customerRole/:id', {id: '@_id'}, {

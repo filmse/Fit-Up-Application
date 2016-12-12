@@ -24,7 +24,6 @@
         })
       }
     })
-
     /** @ngInject */
     .controller('listPassSetController', function ($scope, $rootScope, infoService, querypassSetService, $http, $ionicLoading, $timeout) {
 
@@ -39,4 +38,5 @@
       }).$promise;
 
     })
+
 })();

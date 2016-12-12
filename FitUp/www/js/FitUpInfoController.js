@@ -31,15 +31,9 @@
       }
     })
     /** @ngInject */
-    .controller('listInfoController', function ($scope, $rootScope, infoService, queryInfoService, $http, $ionicLoading, $timeout) {
+    .controller('listInfoController', function ($scope, $rootScope, infoService, queryInfoService) {
 
       // $scope.queryPromise = infoService.query(function (data) {
-      //   $ionicLoading.show({
-      //     template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
-      //   });
-      //   $timeout(function () {
-      //     $ionicLoading.hide();
-      //   }, 3000);
       //   $scope.infos = data;
       // }).$promise;
 
@@ -51,15 +45,15 @@
 
     })
     /** @ngInject */
-    .controller('editInfoController', function ($scope, $route, $timeout, $ionicLoading, $routeParams, $location, $rootScope, infoService, InfoService, $http) {
+    .controller('editInfoController', function ($rootScope, $ionicPopup, $stateParams, $scope, $route, $timeout, $ionicLoading, $routeParams, $location, infoService, InfoService, $http) {
 
       $scope.$on('$ionicView.loaded', function (data, event) {
-        console.log(event.stateParams.id)
+        console.log(event.stateParams.id);
         var infoId = event.stateParams.id;
         infoService.get({id: infoId}, function (data) {
           $scope.infos = data;
         })
-      })
+      });
 
       $scope.editInfo = function (flowFiles) {
         infoService.update({id: $scope.infos.id}, $scope.infos, function () {
@@ -84,10 +78,16 @@
         console.log(id);
         var answer = confirm("Are you sure?");
         if (answer) {
+          $ionicLoading.show({
+            template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
+          });
           $http.delete("http://localhost:8080/removeImage?imageId=" + id + "&infoId=" + $scope.infos.id).success(function (data) {
             $scope.infos = data;
-            console.log(info);
-            $location.path("app.video");
+            console.log($scope.infos);
+            $rootScope.deleteImageSuccess = true;
+            $timeout(function () {
+              $ionicLoading.hide();
+            }, 2000);
           });
         }
       }
@@ -96,6 +96,7 @@
     .controller('deleteInfoController', function ($scope, $route, $timeout, $ionicLoading, $routeParams, $location, $rootScope, infoService, InfoService, $http) {
       $scope.deleteInfo = function (id) {
         console.log(id);
+
         var answer = confirm("Are you sure?");
         if (answer) {
           $http.delete("http://localhost:8080/remove?infoId=" + id + "&userId=" + $rootScope.user.id).success(function (data) {
@@ -110,7 +111,7 @@
               infoService.delete({id: id}, function () {
                 console.log(id);
                 $rootScope.deleteSuccess = true;
-              })
+              });
             }, 2000);
           })
         }

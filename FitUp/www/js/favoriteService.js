@@ -7,7 +7,6 @@
 
     .factory('addToFavoriteService', addToFavoriteService)
     .factory('getToFavoriteService', getToFavoriteService);
-  // .factory('getToFavoriteIdService', getToFavoriteIdService);
 
   /** @ngInject */
   function addToFavoriteService($resource) {
@@ -32,17 +31,5 @@
         }
       });
   }
-
-  // /** @ngInject */
-  // function getToFavoriteIdService($resource) {
-  //   return $resource('/getToFavoriteIdService/:id', {id: '@_id'}, {
-  //     update: {
-  //       method: 'PUT', // this method issues a PUT request
-  //       params: {
-  //         id: '@id'
-  //       }
-  //     }
-  //   });
-  // }
 
 })();

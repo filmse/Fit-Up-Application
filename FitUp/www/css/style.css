@@ -212,6 +212,25 @@
   font-size: small;
 }
 
+/*Regis*/
+.thumbnailRegis {
+  border: solid 3px #303c44;
+  background-color: white;
+  align-content: center;
+  border-radius: 100%;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+  font-size: small;
+}
+
+.thumbnailRegisImg {
+  width: 150px;
+  height: 150px;
+  font-size: small;
+}
+
 .thumbnailCircless {
   border: solid 2px #303c44;
   background-color: white;

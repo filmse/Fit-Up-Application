@@ -84,7 +84,15 @@
 
     })
     /** @ngInject */
-    .controller('listUserController', function ($scope, queryUserService, userService, $rootScope, $ionicLoading, $timeout) {
+    .controller('listUserController', function (videoService, $scope, queryUserService, userService, $rootScope, $ionicLoading, $timeout) {
+
+      $scope.queryPromise = videoService.query(function (data) {
+        $scope.videos = data;
+
+        //angular.forEach($scope.videos, function (value, key) {
+        //console.log(value.videoClips[0].fileName);
+        //})
+      }).$promise;
 
       $scope.queryPromise = userService.query(function (data) {
         $ionicLoading.show({

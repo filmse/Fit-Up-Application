@@ -13,7 +13,7 @@
         <!--{{user.username}}-->
         <!--</div>-->
 
-        <div style="margin-top: -8%; " ng-repeat="image in user.images"
+        <div style="margin-top: -7.5%; " ng-repeat="image in user.images"
              class="thumbnailCircless">
           <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnailImgsss">
         </div>
@@ -112,50 +112,50 @@
         </ion-item>
 
         <!--<div ng-show="hasRole('trainer')">-->
-          <!--<div class="item item-divider colorMenuu font-sizeInAppPli">-->
-            <!--Trainer Menu-->
-          <!--</div>-->
+        <!--<div class="item item-divider colorMenuu font-sizeInAppPli">-->
+        <!--Trainer Menu-->
+        <!--</div>-->
 
-          <!--<div align="center" ng-controller="ctrlController">-->
+        <!--<div align="center" ng-controller="ctrlController">-->
 
-          <!--<ion-item class="row">-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-          <!--ng-click="uploadVideo()">Upload Video-->
-          <!--</button>-->
-          <!--</ion-item>-->
+        <!--<ion-item class="row">-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+        <!--ng-click="uploadVideo()">Upload Video-->
+        <!--</button>-->
+        <!--</ion-item>-->
 
-          <!--<ion-item class="row">-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-          <!--ng-click="VideoHis()">Video-->
-          <!--History-->
-          <!--</button>-->
-          <!--</ion-item>-->
+        <!--<ion-item class="row">-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+        <!--ng-click="VideoHis()">Video-->
+        <!--History-->
+        <!--</button>-->
+        <!--</ion-item>-->
 
-          <!--<ion-item class="row">-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-          <!--ng-click="UploadInfo()">Upload-->
-          <!--Info-->
-          <!--</button>-->
-          <!--</ion-item>-->
+        <!--<ion-item class="row">-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+        <!--ng-click="UploadInfo()">Upload-->
+        <!--Info-->
+        <!--</button>-->
+        <!--</ion-item>-->
 
-          <!--<ion-item class="row">-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
-          <!--ng-click="InfoHis()">Info-->
-          <!--History-->
-          <!--</button>-->
-          <!--</ion-item>-->
+        <!--<ion-item class="row">-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-100 button-small"-->
+        <!--ng-click="InfoHis()">Info-->
+        <!--History-->
+        <!--</button>-->
+        <!--</ion-item>-->
 
-          <!--<ion-item class="row" menu-close>-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
-          <!--ng-click="UploadInfo()">Upload-->
-          <!--Info-->
-          <!--</button>-->
-          <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
-          <!--ng-click="InfoHis()">Info-->
-          <!--History-->
-          <!--</button>-->
-          <!--</ion-item>-->
-          <!--</div>-->
+        <!--<ion-item class="row" menu-close>-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
+        <!--ng-click="UploadInfo()">Upload-->
+        <!--Info-->
+        <!--</button>-->
+        <!--<button style="opacity: 0.6; padding: 1em" class="overDivvv col col-50 button button-dark button-small"-->
+        <!--ng-click="InfoHis()">Info-->
+        <!--History-->
+        <!--</button>-->
+        <!--</ion-item>-->
+        <!--</div>-->
 
         <!--&lt;!&ndash;<ion-item menu-close href="#/app/addVideo">&ndash;&gt;-->
         <!--&lt;!&ndash;Upload Video&ndash;&gt;-->
@@ -173,24 +173,36 @@
         <!--</div>-->
 
         <div ng-show="hasRole('admin')">
-          <div class="item item-divider colorMenu font-sizeInAppPli">
-            Admin Menu
-          </div>
+          <!--<div class="item item-divider font-sizeInAppPli">-->
+            <!--Admin Menu-->
+          <!--</div>-->
           <ion-item menu-close href="#/app/management" class="font-sizeInAppPli">
             System management
           </ion-item>
         </div>
 
-        <div align="center">
-          <div class="item item-divider colorMenu font-sizeInAppPli" ng-show="user">
-            <ion-item menu-close ng-click="logout()">
-              Log Out &nbsp;&nbsp;<i class="icon ion-log-out" style="font-size:30px"></i>
-            </ion-item>
-          </div>
-        </div>
+        <!--<div align="center" style="margin-top: 80px">-->
+        <!--<div class="item item-divider colorMenu font-sizeInAppPli" ng-show="user">-->
+        <!--<ion-item menu-close ng-click="logout()">-->
+        <!--Log Out &nbsp;&nbsp;<i class="icon ion-log-out" style="font-size:30px"></i>-->
+        <!--</ion-item>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <ion-item ng-show="user" class="item item-icon-left font-sizeInAppPli" menu-close ng-click="logout()">
+          <i class="icon ion-log-out"></i>
+          Logout
+        </ion-item>
 
       </ion-list>
     </ion-content>
+
+    <ion-footer-bar align-title="center" class="bar-dark" ng-show="user">
+      <!--<div class="buttons" ng-click="logout()">-->
+      <!--<button style="font-size: 15px; width: 100%; margin-left: 30%" class="button icon ion-log-out"> Logout Button-->
+      <!--</button>-->
+      <!--</div>-->
+    </ion-footer-bar>
 
   </ion-side-menu>
 </ion-side-menus>
