@@ -51,11 +51,27 @@
       };
     })
     /** @ngInject */
-    .controller('listVideoController', function ($ionicPopup, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
+    .controller('listVideoController', function ($location, $ionicLoading, $state, $ionicPopup, $timeout, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
       }).$promise;
+
+      $scope.playVideo = function (video) {
+        console.log(video);
+        console.log("HAHA");
+        $timeout(function () {
+          $ionicPopup.alert({
+            title: '"Purchase Exercise Video"',
+            template: 'This is the exercise example <br> if you need more <br> you can  purchase it'
+          });
+          $timeout(function () {
+            //location.reload();
+            location.reload();
+          }, 10000);
+        }, 7000);
+      };
+
 
       $scope.queryPromise = videoService.query(function (data) {
         $scope.videos = data;

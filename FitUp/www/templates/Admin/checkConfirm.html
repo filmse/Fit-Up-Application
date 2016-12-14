@@ -2,6 +2,7 @@
   <ion-content ng-controller="shoppingListController">
 
     <div class="list">
+      <p>Input the User Id and Video Id for The valid payment</p>
       <label class="item item-input item-floating-label">
         <span class="input-label">User Id</span>
         <input type="text" placeholder="User Id" ng-model="purchased.userId">
@@ -24,11 +25,12 @@
         <div align="left">
           <ion-item style="padding: 10px" class="item item-complex" ng-repeat="transaction in transactions">
             <p>Confirm Payment: {{transaction.id}}</p>
+            <p style="background-color: #0a9dc7">User Id: {{transaction.users[0].id}}</p>
             <p>Email: {{transaction.confirmEmail}}</p>
             <p>Time: {{transaction.confirmTime}}</p>
             <p>Money: {{transaction.confirmMoney}}</p>
             <p>Secret Id: {{transaction.confirmSecretId}}</p>
-            <p>Video Id: {{transaction.users[0].shoppingCarts[0].videos[0].id}}</p>
+            <p style="background-color: #0a9dc7">Video Id: {{transaction.users[0].shoppingCarts[0].videos[0].id}}</p>
             <p>Video Name: {{transaction.users[0].shoppingCarts[0].videos[0].name}}</p>
           </ion-item>
         </div>
