@@ -1,6 +1,5 @@
 package camt.FitUp.Project.controller;
 
-import camt.FitUp.Project.entity.FitUpInfo;
 import camt.FitUp.Project.entity.PassSet;
 import camt.FitUp.Project.service.PassSetService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +28,15 @@ public class PassSetController {
     @RequestMapping(value = "passSetList", method = RequestMethod.GET)
     public List<PassSet> passSetList() {
         return passSetService.passSetList();
+    }
+
+    @RequestMapping(value = "passSet/{id}", method = RequestMethod.GET)
+    public PassSet getPassSet(@PathVariable("id") Long id) {
+        return passSetService.getPassSet(id);
+    }
+
+    @RequestMapping(value = "passSet/{id}", method = RequestMethod.DELETE)
+    public PassSet deletePassSet(@PathVariable("id") Long id) {
+        return passSetService.deletePassSet(id);
     }
 }

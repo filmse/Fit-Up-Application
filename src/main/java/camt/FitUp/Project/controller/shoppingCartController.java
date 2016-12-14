@@ -1,8 +1,6 @@
 package camt.FitUp.Project.controller;
 
-import camt.FitUp.Project.entity.ShoppingCart;
-import camt.FitUp.Project.entity.User;
-import camt.FitUp.Project.entity.Video;
+import camt.FitUp.Project.entity.*;
 import camt.FitUp.Project.service.ShoppingCartService;
 import camt.FitUp.Project.service.UserService;
 import camt.FitUp.Project.service.VideoService;
@@ -32,7 +30,6 @@ public class shoppingCartController {
     VideoService videoService;
 
     @RequestMapping(value = "shopping", method = RequestMethod.POST)
-    @ResponseBody
     public ShoppingCart addShoppingCart(@RequestParam("videoId") Long videoId, @RequestParam("userId") Long userId, @RequestBody ShoppingCart shoppingCart, BindingResult bindingResult) {
         Video video = videoService.getVideo(videoId);
         User user = userService.getUser(userId);
@@ -47,6 +44,30 @@ public class shoppingCartController {
     @RequestMapping(value = "shoppingList/{id}", method = RequestMethod.GET)
     public ShoppingCart shoppingId(@PathVariable("id") Long id) {
         return shoppingCartService.shoppingId(id);
+    }
+
+    @RequestMapping(value = "transaction", method = RequestMethod.POST)
+    public Transaction addTransaction(@RequestParam("userId") Long userId, @RequestBody Transaction transaction, BindingResult bindingResult) {
+        User user = userService.getUser(userId);
+        return shoppingCartService.addTransaction(transaction, user);
+    }
+
+    @RequestMapping(value = "transactionList", method = RequestMethod.GET)
+    public List<Transaction> transactionList() {
+        return shoppingCartService.transactionList();
+    }
+
+//    @RequestMapping(value = "/remove/{id}", method = RequestMethod.DELETE)
+//    public ShoppingCart deleteShoppingCart(@PathVariable("id") Long id) {
+//        return shoppingCartService.deleteShoppingCart(id);
+//    }
+
+
+    @RequestMapping(value = "purchased", method = RequestMethod.POST)
+    public VideoPurchased addVideoPurchased(@RequestParam("videoId") Long videoId,@RequestParam("userId") Long userId, @RequestBody VideoPurchased videoPurchased, BindingResult bindingResult) {
+        Video video = videoService.getVideo(videoId);
+        User user = userService.getUser(userId);
+        return shoppingCartService.addVideoPurchased(videoPurchased, video, user);
     }
 
 }

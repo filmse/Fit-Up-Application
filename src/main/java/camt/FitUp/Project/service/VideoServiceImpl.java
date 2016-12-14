@@ -93,4 +93,11 @@ public class VideoServiceImpl implements VideoService {
         return userRepository.save(user);
     }
 
+    @Override
+    public Video deleteVideo(Long id) {
+        Video video = getVideo(id);
+        return videoDao.deleteVideo(video);
+    }
+
+
 }

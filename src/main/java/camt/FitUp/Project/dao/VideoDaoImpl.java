@@ -2,7 +2,6 @@ package camt.FitUp.Project.dao;
 
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.entity.Video;
-import camt.FitUp.Project.entity.VideoClip;
 import camt.FitUp.Project.repository.VideoClipRepository;
 import camt.FitUp.Project.repository.VideoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +42,13 @@ public class VideoDaoImpl implements VideoDao {
 
     @Override
     public Video deleteVideoClip(Video video) {
+        videoRepository.delete(video);
+        video.setId(null);
+        return video;
+    }
+
+    @Override
+    public Video deleteVideo(Video video) {
         videoRepository.delete(video);
         video.setId(null);
         return video;

@@ -52,15 +52,12 @@ public class VideoClipController {
                 Video video1 = videoService.addVideoClip(video, videoClip);
                 for (VideoClip v : video1.getVideoClips()) {
 
-//                  File outputFile = new File("C:\\Users\\Film\\Documents\\Application\\src\\main\\resources\\video\\" + video1.getId() + "-" + v.getId() + ".mp4");
+
                     File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\FitUp\\www\\templates\\video\\" + multipartFile.getOriginalFilename());
-//                    File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up\\FitUp\\www\\templates\\video\\" + video1.getId() + "-" + v.getId()+ ".mp4");
                     FileOutputStream outputStream = new FileOutputStream(outputFile);
                     outputStream.write(multipartFile.getBytes());
                 }
-//                File outputFile = new File("C:\\Users\\Film\\Documents\\Fit-Up-Application\\FitUp\\www\\templates\\video\\" + video1.getId() + ".mp4");
-//                FileOutputStream outputStream = new FileOutputStream(outputFile);
-//                outputStream.write(multipartFile.getBytes());
+
             }
 
         } catch (Exception e) {

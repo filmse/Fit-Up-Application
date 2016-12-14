@@ -1,7 +1,7 @@
 package camt.FitUp.Project.controller;
 
-import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.entity.Role;
+import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;

@@ -24,6 +24,24 @@ public class PassSet {
     public PassSet() {
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        PassSet passSet1 = (PassSet) o;
+
+        if (id != null ? !id.equals(passSet1.id) : passSet1.id != null) return false;
+        return passSet != null ? passSet.equals(passSet1.passSet) : passSet1.passSet == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (passSet != null ? passSet.hashCode() : 0);
+        return result;
+    }
+
     public Long getId() {
         return id;
     }
@@ -46,25 +64,6 @@ public class PassSet {
                 "id=" + id +
                 ", passSet='" + passSet + '\'' +
                 '}';
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (passSet != null ? passSet.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        PassSet passSet = (PassSet) o;
-
-        if (id != null ? !id.equals(passSet.id) : passSet.id != null) return false;
-        if (passSet != null ? !passSet.equals(passSet.passSet) : passSet.passSet != null) return false;
-        return !(passSet != null ? !passSet.equals(passSet.passSet) : passSet.passSet != null);
     }
 
 }

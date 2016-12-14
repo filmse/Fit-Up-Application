@@ -1,7 +1,7 @@
 <ion-view>
   <ion-content ng-controller="listUserController">
 
-    <form>
+    <form name="payment" novalidate>
       <div class="list list-inset" ng-controller="shoppingListController">
 
         <div align="center" ng-controller="dateController">
@@ -18,6 +18,9 @@
             <tbody class="simply tbody">
             <tr ng-repeat="shopping in user.shoppingCarts | filter: name">
               <td style="margin-top: 20px">
+                <a class="icon-left ion-ios-close-outline" ng-href="#" ng-click="deletePayment(shopping.id)">Delete</a>
+                <br>
+                <br>
                 <p><b>Payment ID</b></p>
                 <p>{{shopping.purchaseDate}}-{{shopping.id}}</p>
                 <p><b>Username.</b> {{user.username}}</p>
@@ -27,19 +30,24 @@
                 <p><b>Video Price</b> {{shopping.videos[0].price}} THB.</p>
               </td>
               <td>
+                <p style="color: black">Confirm payment Email</p>
+                <input style="width: 95%; padding: 5px" type="email" name="cEmail" ng-model="transaction.confirmEmail"
+                       placeholder="Confirm Email" required>
                 <p style="color: black">Confirm payment time</p>
-                <input style="width: 95%; padding: 5px" type="text" name="confirm" placeholder="Confirm time">
+                <input style="width: 95%; padding: 5px" type="text" name="cTime" ng-model="transaction.confirmTime"
+                       placeholder="Confirm Time" required>
                 <p style="color: black">Confirm payment money</p>
-                <input style="width: 95%; padding: 5px" type="text" name="amountOfMoney"
-                       placeholder="Confirm amount of money">
+                <input style="width: 95%; padding: 5px" type="text" name="cMoney" ng-model="transaction.confirmMoney"
+                       placeholder="Confirm amount of money" required>
                 <p style="color: black">Confirm secret Id</p>
-                <input style="width: 95%; padding: 5px" type="text" name="secretId"
-                       placeholder="Confirm secret Id">
+                <input style="width: 95%; padding: 5px" type="text" name="cSecret"
+                       ng-model="transaction.confirmSecretId"
+                       placeholder="Confirm secret Id" required>
                 <br>
                 <div align="center">
                   <button class="button button-block icon button-assertive"
-                          style="width: 70%"
-                          ng-click="Confirm()">Submit
+                          style="width: 70%" type="submit" ng-disabled="payment.$invalid"
+                          ng-click="confirmPayment()">Submit
                   </button>
                 </div>
                 <!--<input type="image"-->

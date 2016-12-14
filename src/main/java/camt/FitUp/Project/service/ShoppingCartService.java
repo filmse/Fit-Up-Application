@@ -1,8 +1,6 @@
 package camt.FitUp.Project.service;
 
-import camt.FitUp.Project.entity.ShoppingCart;
-import camt.FitUp.Project.entity.User;
-import camt.FitUp.Project.entity.Video;
+import camt.FitUp.Project.entity.*;
 
 import java.util.List;
 
@@ -17,4 +15,14 @@ public interface ShoppingCartService {
 
     ShoppingCart shoppingId(Long id);
 
+    ShoppingCart editShoppingCart(ShoppingCart shoppingCart);
+
+
+    Transaction addTransaction(Transaction transaction, User user);
+
+    List<Transaction> transactionList();
+
+    ShoppingCart deleteShoppingCart(Long shoppingId);
+
+    VideoPurchased addVideoPurchased(VideoPurchased videoPurchased, Video video, User user);
 }

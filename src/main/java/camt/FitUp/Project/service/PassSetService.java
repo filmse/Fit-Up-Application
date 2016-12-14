@@ -11,4 +11,8 @@ public interface PassSetService {
     PassSet passSet(PassSet passSet);
 
     List<PassSet> passSetList();
+
+    PassSet deletePassSet(Long id);
+
+    PassSet getPassSet(Long id);
 }

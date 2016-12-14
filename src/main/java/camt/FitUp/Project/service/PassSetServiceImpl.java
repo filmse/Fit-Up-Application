@@ -26,4 +26,16 @@ public class PassSetServiceImpl implements PassSetService {
         return passSetDao.passSetList();
     }
 
+    @Override
+    public PassSet deletePassSet(Long id) {
+        PassSet passSet = getPassSet(id);
+        return passSetDao.deletePassSet(passSet);
+    }
+
+    @Override
+    public PassSet getPassSet(Long id) {
+        return passSetDao.getPassSet(id);
+    }
+
+
 }

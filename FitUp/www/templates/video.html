@@ -139,7 +139,7 @@
       </ion-slide-page>
 
       <ion-slide-page class="Wall" ng-show="hasRole('trainer')">
-        <ion-content>
+        <ion-content ng-controller="editVideoController">
 
           <table style="width: 100%">
             <!-- Table header -->
@@ -164,7 +164,7 @@
                 <a class="ion-ios-gear dark" ng-href="#/app/editVideo/{{video.id}}">Edit</a>
               </td>
               <td>
-                <a class="icon-left ion-ios-close-outline" ng-click="deleteVideo(video.id)">Delete</a>
+                <a class="icon-left ion-ios-close-outline" style="cursor: pointer;" ng-click="deleteVideo(video.id)">Delete</a>
               </td>
             </tr>
             </tbody>
@@ -174,14 +174,36 @@
       </ion-slide-page>
 
       <ion-slide-page class="Wall" ng-show="hasRole('member')">
-        <ion-content>
+        <ion-content ng-controller="listUserController">
           <ion-header-bar>Your Video</ion-header-bar>
+          <br style="margin-top: 10px">
+          <div class="list list-inset">
+            <div align="center">
+              <table class="simply">
+                <item>
+                  <tr ng-repeat="purchased in user.videoPurchaseds">
+                    <td>
+                      <video controls width="70%" height="auto">
+                        <source src="{{'templates/video/' +purchased.videos[0].videoClips[0].fileName}}"
+                                type='video/mp4'>
+                      </video>
+                      <br>
+                      <br>
+                      <p>Video Name:&nbsp;{{purchased.videos[0].name}}</p>
+                      <p class="over overflow-ellipsis">Video Description:{{purchased.videos[0].description}}</p>
+                    </td>
+                    <td></td>
+                  </tr>
+                </item>
 
+              </table>
+            </div>
 
-        </ion-content>
+          </div>
+
       </ion-slide-page>
-
-    </ion-slides>
+  </ion-content>
+  </ion-slides>
 
   </ion-content>
 </ion-view>

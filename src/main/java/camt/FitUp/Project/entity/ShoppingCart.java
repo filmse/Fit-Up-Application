@@ -24,12 +24,29 @@ public class ShoppingCart {
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<Video> videos = new HashSet<>();
 
-    public Set<Video> getVideos() {
-        return videos;
+    public ShoppingCart(Date purchaseDate, Set<Video> videos) {
+        this.purchaseDate = purchaseDate;
+        this.videos = videos;
     }
 
-    public void setVideos(Set<Video> videos) {
-        this.videos = videos;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ShoppingCart that = (ShoppingCart) o;
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (purchaseDate != null ? !purchaseDate.equals(that.purchaseDate) : that.purchaseDate != null) return false;
+        return videos != null ? videos.equals(that.videos) : that.videos == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (purchaseDate != null ? purchaseDate.hashCode() : 0);
+        result = 31 * result + (videos != null ? videos.hashCode() : 0);
+        return result;
     }
 
     public Long getId() {
@@ -48,22 +65,12 @@ public class ShoppingCart {
         this.purchaseDate = purchaseDate;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ShoppingCart that = (ShoppingCart) o;
-
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        return !(purchaseDate != null ? !purchaseDate.equals(that.purchaseDate) : that.purchaseDate != null);
+    public Set<Video> getVideos() {
+        return videos;
     }
 
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (purchaseDate != null ? purchaseDate.hashCode() : 0);
-        return result;
+    public void setVideos(Set<Video> videos) {
+        this.videos = videos;
     }
 
     public ShoppingCart() {

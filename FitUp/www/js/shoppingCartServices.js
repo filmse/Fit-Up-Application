@@ -6,7 +6,10 @@
   angular.module('starter.services')
     .factory('shoppingListService', shoppingListService)
     .factory('shoppingUpdateService', shoppingUpdateService)
-    .factory('shoppingAddUserService', shoppingAddUserService)
+    .factory('transactionService', transactionService)
+    .factory('transactionListService', transactionListService)
+    .factory('purchasedService', purchasedService)
+    // .factory('shoppingAddUserService', shoppingAddUserService)
     .factory('shoppingService', shoppingService);
 
   /** @ngInject */
@@ -19,16 +22,39 @@
       //}
     })
   }
+
   /** @ngInject */
-  function shoppingAddUserService($resource) {
-    return $resource('/shoppingAddUser/:id', {id: '@_id'}, {
+  function transactionService($resource) {
+    return $resource('/transaction', {}, {
       // authenticate: {
-      method: 'PUT'
+      method: 'POST'
       // params: {'action': 'authenticate'},
       // header: {'Content-Type': 'application/x-www-form-urlencoded'}
       //}
     })
   }
+
+  /** @ngInject */
+  function purchasedService($resource) {
+    return $resource('/purchased', {}, {
+      // authenticate: {
+      method: 'POST'
+      // params: {'action': 'authenticate'},
+      // header: {'Content-Type': 'application/x-www-form-urlencoded'}
+      //}
+    })
+  }
+
+  // /** @ngInject */
+  // function shoppingAddUserService($resource) {
+  //   return $resource('/shoppingAddUser/:id', {id: '@_id'}, {
+  //     // authenticate: {
+  //     method: 'PUT'
+  //     // params: {'action': 'authenticate'},
+  //     // header: {'Content-Type': 'application/x-www-form-urlencoded'}
+  //     //}
+  //   })
+  // }
   /**@ngInject*/
   function shoppingListService($resource) {
     return $resource('/shoppingList',
@@ -38,13 +64,31 @@
         }
       });
   }
+
   /**@ngInject*/
   function shoppingUpdateService($resource) {
     return $resource('/shoppingList/:id', {id: '@_id'}, {
       update: {
-        method: 'PUT' // this method issues a PUT request
+        method: 'PUT', // this method issues a PUT request
+        params: {
+          id: '@id',
+          confirmEmail: '@confirmEmail',
+          confirmTime: '@confirmTime',
+          confirmMoney: '@confirmMoney',
+          confirmSecretId: '@confirmSecretId'
+        }
       }
     });
+  }
+
+  /**@ngInject*/
+  function transactionListService($resource) {
+    return $resource('/transactionList',
+      {
+        query: {
+          method: 'GET'
+        }
+      });
   }
 
 })();

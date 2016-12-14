@@ -95,7 +95,7 @@
       var cookie = window.localStorage.getItem("Cookie");
       if (cookie != undefined) {
         delete $rootScope.user;
-        console.log(cookie);
+        //console.log(cookie);
         queryUserService.get({username: cookie}, function (user) {
           window.localStorage.clear();
           $rootScope.user = user;
@@ -117,7 +117,7 @@
     })
     /** Run */
     .run(function ($log) {
-      $log.debug('runBlock end');
+      //$log.debug('runBlock end');
     })
 
     /** Config */
@@ -294,11 +294,11 @@
           }
         })
 
-        .state('app.checksMail', {
-          url: '/checksMail',
+        .state('app.checkRequest', {
+          url: '/checkRequest',
           views: {
             'menuContent': {
-              templateUrl: 'templates/Admin/checksMail.html',
+              templateUrl: 'templates/Admin/checkRequest.html',
               controller: 'listPassSetController'
             }
           }
@@ -320,7 +320,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/Admin/informationlist.html',
-              controller: 'listInfoController'
+              controller: 'showsNewInfoController'
             }
           }
         })

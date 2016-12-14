@@ -84,12 +84,11 @@ public class VideoController {
         return videoService.deleteUserVideo(user, videoId);
     }
 
-    @RequestMapping(value = "/removeVideoClip", method = RequestMethod.DELETE)
-    @ResponseBody
-    public Video deleteVideoClip(@RequestParam("videoClipId") Long videoClipId, @RequestParam("videoId") Long videoId) {
-        Video video = videoService.getVideo(videoId);
-        return videoService.deleteVideoClip(video, videoClipId);
+    @RequestMapping(value = "video/{id}", method = RequestMethod.DELETE)
+    public Video delete(@PathVariable("id") Long id) {
+        return videoService.deleteVideo(id);
     }
+
 
     //    @RequestMapping(value="/play/{id}", method=RequestMethod.GET)
 //    public  void getMedia(@PathVariable("id") Long id, HttpServletRequest request, HttpServletResponse response) throws IOException

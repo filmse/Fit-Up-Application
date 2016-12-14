@@ -25,7 +25,7 @@
       }
     })
     /** @ngInject */
-    .controller('listPassSetController', function ($scope, $rootScope, infoService, querypassSetService, $http, $ionicLoading, $timeout) {
+    .controller('listPassSetController', function ($scope, $rootScope, infoService, passSetService, querypassSetService, $http, $ionicLoading, $timeout) {
 
       $scope.queryPromise = querypassSetService.query(function (data) {
         $ionicLoading.show({
@@ -33,10 +33,22 @@
         });
         $timeout(function () {
           $ionicLoading.hide();
-        }, 2000)
+        }, 2000);
         $scope.passSets = data;
       }).$promise;
 
+      $scope.deleteRequest = function (id) {
+        console.log(id);
+        var answer = confirm("Are you sure?");
+        if (answer) {
+
+          passSetService.delete({id: id}, function () {
+            console.log(id);
+            $rootScope.deleteSuccess = true;
+          });
+          location.reload("app.video")
+        }
+      }
     })
 
 })();

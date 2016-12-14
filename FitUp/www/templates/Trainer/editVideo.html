@@ -1,5 +1,6 @@
 <ion-view ng-controller="editVideoController">
   <ion-content class="padding">
+    <h2>Edit Video Content</h2>
 
     <form name="editform" novalidate flow-init ng-controller="addVideoController">
       <div class="list list-inset">
@@ -12,23 +13,6 @@
             </div>
           </td>
         </div>
-
-        <!--<div class="form-group">-->
-          <!--<div class="responsive-sm">-->
-            <!--<div ng-repeat="file in $flow.files" class=" text-center" align="center">-->
-              <!--&lt;!&ndash;<td>{{$index+1}}</td>&ndash;&gt;-->
-              <!--&lt;!&ndash;<td>{{file.name}}</td>&ndash;&gt;-->
-              <!--<div><img flow-img="$flow.files[{{$index}}]" class="thumbnail"/></div>-->
-              <!--<a class="ion-close-circled" href="" style="margin: 10px" ng-click="$flow.cancel()">-->
-                <!--Cancel-->
-              <!--</a>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<div align="center">-->
-              <!--<button type="file" class="button icon-left ion-imageFitUpInfo button-positive" flow-btn>Upload Video</button>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
 
         <div class="form-group">
           <P><b>Name</b></P>
@@ -50,7 +34,7 @@
             <input type="text" id="price" name="price" ng-model="videos.price" disabled required/>
           </label>
         </div>
-
+        <br>
         <div>
           <P><b>Change Price</b></P>
           <label for="Select"> Select = </label>
@@ -59,6 +43,8 @@
             </option>
           </select>
         </div>
+
+        <br style="margin-top: 30px">
 
         <button class="button button-block button-positive" ng-click="editVideo($flow)">Edit</button>
 

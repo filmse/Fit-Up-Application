@@ -130,6 +130,20 @@
         $scope.infos = data;
       }).$promise;
 
+
+      $scope.adminDeleteInfo = function (id) {
+        console.log(id);
+        var answer = confirm("Are you sure?");
+        if (answer) {
+
+          infoService.delete({id: id}, function () {
+            console.log(id);
+            $rootScope.deleteSuccess = true;
+          });
+          //location.reload("app.video")
+        }
+      }
+
     })
 
 })();

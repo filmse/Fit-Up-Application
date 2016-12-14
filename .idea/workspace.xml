@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2cb4889-6a33-4f4d-9c12-cb135daa6e34" name="Default" comment="" />
+    <list default="true" id="ae5226c4-27b3-4d5b-b640-ba5e9941ec4f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/Transaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/VideoPurchased.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/TransactionRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/VideoPurchasedRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FitUp/www/templates/Admin/checksMail.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Admin/checkRequest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/PassSetController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/PassSetController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/VideoClipController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/VideoClipController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/VideoController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/VideoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/shoppingCartController.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/controller/shoppingCartController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/PassSetDao.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/PassSetDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/PassSetDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/PassSetDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/ShoppingCartDao.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/ShoppingCartDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/ShoppingCartDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/ShoppingCartDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/VideoDao.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/VideoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/VideoDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/dao/VideoDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/PassSet.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/PassSet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/ShoppingCart.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/ShoppingCart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/PassSetService.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/PassSetService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/PassSetServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/PassSetServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/ShoppingCartService.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/ShoppingCartService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/ShoppingCartServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/ShoppingCartServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/VideoService.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/VideoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/VideoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/FitUp/Project/service/VideoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/app.js" afterPath="$PROJECT_DIR$/FitUp/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/passSetController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/passSetController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/passSetServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/passSetServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/userServices.js" afterPath="$PROJECT_DIR$/FitUp/www/js/userServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/js/videoController.js" afterPath="$PROJECT_DIR$/FitUp/www/js/videoController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Admin/checkConfirm.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Admin/checkConfirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Admin/informationlist.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Admin/informationlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Admin/management.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Admin/management.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/Trainer/editVideo.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/Trainer/editVideo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/payment.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/payment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitUp/www/templates/video.html" afterPath="$PROJECT_DIR$/FitUp/www/templates/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/PassSetController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/PassSetController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoClipController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoClipController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/PassSet.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/PassSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoServiceImpl.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +83,17 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>thumbnailRegis</find>
-      <find>thumbnailCircles</find>
-      <find>thumbnailImgs</find>
-    </findStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -41,14 +109,51 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FitUp/www/css/style.css" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/login.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/register.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/edituser.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/favorite.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoClipController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Admin/management.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Admin/checkRequest.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/PassSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/PassSetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/PassSetServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDaoImpl.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/passSetServices.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/passSetController.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Admin/informationlist.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/FitUpInfoServices.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js" />
         <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/editVideo.html" />
-        <option value="$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ConfirmPayment.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/userServices.js" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/TransactionRepositoory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/TransactionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/app.js" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/payment.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/VideoPurchase.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/pages.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/VideoPurchased.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/videoController.js" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/Admin/checkConfirm.html" />
+        <option value="$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java" />
+        <option value="$PROJECT_DIR$/FitUp/www/templates/video.html" />
       </list>
     </option>
   </component>
@@ -69,9 +174,9 @@
     <handled-path value="$PROJECT_DIR$/FitUp/www/lib/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1040" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
@@ -89,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,138 +265,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitness-FitUp-Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fit-Up-Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitness-FitUp-Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fit-Up-Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitness-FitUp-Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fit-Up-Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitness-FitUp-Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fit-Up-Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitness-FitUp-Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fit-Up-Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitUp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="editor.config.accepted" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -530,6 +519,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -654,6 +644,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -698,55 +694,59 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e2cb4889-6a33-4f4d-9c12-cb135daa6e34" name="Default" comment="" />
-      <created>1481469153577</created>
+      <changelist id="ae5226c4-27b3-4d5b-b640-ba5e9941ec4f" name="Default" comment="" />
+      <created>1481595303706</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1481469153577</updated>
-      <workItem from="1481469158994" duration="8480000" />
-      <workItem from="1481488535232" duration="1232000" />
-      <workItem from="1481512223561" duration="16587000" />
+      <updated>1481595303706</updated>
+      <workItem from="1481595305519" duration="12000" />
+      <workItem from="1481611710433" duration="1439000" />
+      <workItem from="1481617174406" duration="1100000" />
+      <workItem from="1481622213497" duration="3735000" />
+      <workItem from="1481629312613" duration="39149000" />
+      <workItem from="1481682403200" duration="3361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26299000" />
+    <option name="totallyTimeSpent" value="48796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20714286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75671405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -764,81 +764,121 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/edituser.html">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/FitUpInfoServices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="88" column="94" lean-forward="false" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/InformationExpand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/favorite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/editInformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/editVideo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/videoServices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="170">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/VideoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="88" column="44" lean-forward="true" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+          <folding>
+            <element signature="method#list#0;class#VideoController#0" expanded="false" />
+            <element signature="e#3647#3648#0" expanded="false" />
+            <element signature="e#3698#3699#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ConfirmPayment.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.ShoppingCart">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.ShoppingCart</OriginalElement>
-          <nodes>
-            <node x="" y="">javax.persistence.Entity</node>
-            <node x="" y="">camt.FitUp.Project.entity.ShoppingCart</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/edituser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="48" column="91" lean-forward="true" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/userServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/TransactionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/ShoppingCartRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="81" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/PassSetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/TransactionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/FitUpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,471 +890,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.User">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.User</OriginalElement>
-          <nodes>
-            <node x="" y="">javax.persistence.Entity</node>
-            <node x="" y="">javax.persistence.Table</node>
-            <node x="" y="">camt.FitUp.Project.entity.User</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="71.0" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ImageFitUpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/Role.java">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="119" column="8" lean-forward="false" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+          <folding>
+            <marker date="1481655146404" expanded="true" signature="2054:2065" ph="..." />
+            <marker date="1481655146404" expanded="true" signature="3375:3386" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/addInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-611">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+            <element signature="e#616#617#0" expanded="false" />
+            <element signature="e#661#662#0" expanded="false" />
+            <element signature="e#695#696#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/VideoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.Role">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.Role</OriginalElement>
-          <nodes>
-            <node x="-45.0" y="-109.0">javax.persistence.Entity</node>
-            <node x="-215.0" y="-201.0">camt.FitUp.Project.entity.Role</node>
-            <node x="-294.0" y="3.0">javax.persistence.Table</node>
-            <node x="-247.0" y="179.0">camt.FitUp.Project.entity.User</node>
-            <node x="-207.75" y="-109.0">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="camt.FitUp.Project.entity.Role" target="java.io.Serializable">
-              <point x="-51.25" y="-47.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="javax.persistence.Table">
-              <point x="-91.0" y="-124.5" />
-              <point x="-202.5" y="90.0" />
-              <point x="-264.0" y="90.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="javax.persistence.Entity">
-              <point x="91.0" y="-124.5" />
-              <point x="-20.5" y="90.0" />
-              <point x="1.5" y="90.0" />
-              <point x="15.5" y="14.5" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.Role" target="javax.persistence.Entity">
-              <point x="51.25" y="-47.5" />
-              <point x="-60.25" y="-55.0" />
-              <point x="-29.5" y="-55.0" />
-              <point x="-15.5" y="14.5" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.Role">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-197.0" y="19.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/PassSet.java">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Trainer/listInformation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="115" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.PassSet">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.PassSet</OriginalElement>
-          <nodes>
-            <node x="" y="">javax.persistence.Entity</node>
-            <node x="" y="">camt.FitUp.Project.entity.PassSet</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="35.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.Favorite">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.Favorite</OriginalElement>
-          <nodes>
-            <node x="708.7142857142857" y="251.8571428571429">camt.FitUp.Project.entity.VideoClip</node>
-            <node x="206.71428571428578" y="10.428571428571558">camt.FitUp.Project.entity.User</node>
-            <node x="497.46428571428567" y="383.42857142857144">camt.FitUp.Project.entity.PassSet</node>
-            <node x="252.5714285714285" y="333.9999999999999">camt.FitUp.Project.entity.ImageUser</node>
-            <node x="503.142857142857" y="280.75">camt.FitUp.Project.entity.Favorite</node>
-            <node x="275.89285714285705" y="-208.82142857142858">camt.FitUp.Project.entity.ShoppingCart</node>
-            <node x="700.7857142857142" y="-95.28571428571433">camt.FitUp.Project.entity.Video</node>
-            <node x="-78.53571428571422" y="-198.5">camt.FitUp.Project.entity.ImageFitUpInfo</node>
-            <node x="-67.92857142857133" y="75.53571428571428">camt.FitUp.Project.entity.FitUpInfo</node>
-            <node x="-92.53571428571445" y="265.1428571428572">camt.FitUp.Project.entity.Role</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="camt.FitUp.Project.entity.Favorite" target="camt.FitUp.Project.entity.Video">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.Favorite">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.ShoppingCart" target="camt.FitUp.Project.entity.Video">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.FitUpInfo">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.Video" target="camt.FitUp.Project.entity.VideoClip">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.Role">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.Video">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.ShoppingCart">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.User" target="camt.FitUp.Project.entity.ImageUser">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="camt.FitUp.Project.entity.FitUpInfo" target="camt.FitUp.Project.entity.ImageFitUpInfo">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="472.1111111111111" y="137.44444444444446" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>Project Files</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.VideoController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.VideoController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.VideoController</node>
-            <node x="" y="">camt.FitUp.Project.controller.VideoClipController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="208.5" y="314.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>Project Files</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/FitUpInfoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="97" column="48" lean-forward="false" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.shoppingCartController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.shoppingCartController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.shoppingCartController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="223.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>Project Files</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.PassSetController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.PassSetController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.PassSetController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="181.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>Project Files</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.UserController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.UserController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.UserController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="6.5" y="-12.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>Project Files</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="68" column="76" lean-forward="true" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/UserImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding>
+            <marker date="1481636070627" expanded="true" signature="867:878" ph="..." />
+            <marker date="1481636070627" expanded="true" signature="2486:2497" ph="..." />
+            <marker date="1481636070627" expanded="true" signature="2932:2943" ph="..." />
+            <marker date="1481636070627" expanded="true" signature="3963:3974" ph="..." />
+            <marker date="1481636070627" expanded="true" signature="4706:4717" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FitUpInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.service.FavoriteServiceImpl">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.service.FavoriteServiceImpl</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteServiceImpl</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="100.0" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-            <Category>Properties</Category>
-            <Category>Constructors</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/FavoriteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FavoriteDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/PassSetDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/VideoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/FitUpInfoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="188">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/payment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.service.UserService">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.service.UserService</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.service.UserService</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">camt.FitUp.Project.service.UserServiceImpl</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9" x="105.88888888888886" y="231.55555555555554" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/VideoClipRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.service.PassSetService">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.service.PassSetService</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.service.PassSetServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.PassSetService</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="98.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/pages.ts" />
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/entity/VideoPurchased.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/FitUpInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="method#addImage#0;class#FitUpInfoController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/VideoPurchasedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="41" />
+          <folding>
+            <marker date="1481474147898" expanded="true" signature="971:1117" ph="{...}" />
+            <marker date="1481474147898" expanded="true" signature="2080:2220" ph="{...}" />
+            <marker date="1481474147898" expanded="true" signature="3076:3222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/Admin/checkConfirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/videoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="81" column="52" lean-forward="false" selection-start-line="78" selection-start-column="28" selection-end-line="81" selection-end-column="52" />
+          <folding>
+            <marker date="1481683090335" expanded="true" signature="932:943" ph="..." />
+            <marker date="1481683090335" expanded="true" signature="1505:1516" ph="..." />
+            <marker date="1481683090335" expanded="true" signature="4799:4810" ph="..." />
+            <marker date="1481683090335" expanded="true" signature="5457:5468" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/shoppingCartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <marker date="1481683907212" expanded="true" signature="740:751" ph="..." />
+            <marker date="1481683907212" expanded="true" signature="2005:2016" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1326,278 +1114,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ImageUtilForum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ImageUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/dao/ShoppingCartDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="25" column="87" lean-forward="false" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.service.ShoppingCartServiceImpl">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.service.ShoppingCartServiceImpl</OriginalElement>
-          <nodes>
-            <node x="-23.0" y="-103.0">camt.FitUp.Project.service.ShoppingCartService</node>
-            <node x="-113.25" y="42.0">camt.FitUp.Project.service.ShoppingCartServiceImpl</node>
-            <node x="-166.0" y="-81.0">org.springframework.stereotype.Service</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="camt.FitUp.Project.service.ShoppingCartServiceImpl" target="camt.FitUp.Project.service.ShoppingCartService">
-              <point x="75.75" y="-59.0" />
-              <point x="114.0" y="17.0" />
-              <point x="181.0" y="17.0" />
-              <point x="0.0" y="47.5" />
-            </edge>
-            <edge source="camt.FitUp.Project.service.ShoppingCartServiceImpl" target="org.springframework.stereotype.Service">
-              <point x="-75.75" y="-59.0" />
-              <point x="-37.5" y="17.0" />
-              <point x="-104.5" y="17.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="115.5" y="54.0" />
-          <SelectedNodes>
-            <node>camt.FitUp.Project.service.ShoppingCartServiceImpl</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.entity.VideoClip">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.entity.VideoClip</OriginalElement>
-          <nodes>
-            <node x="-140.0" y="-48.0">camt.FitUp.Project.entity.VideoClip</node>
-            <node x="-85.0" y="-149.0">javax.persistence.Entity</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="camt.FitUp.Project.entity.VideoClip" target="javax.persistence.Entity">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="41.5" y="54.0" />
-          <SelectedNodes>
-            <node>camt.FitUp.Project.entity.VideoClip</node>
-            <node>javax.persistence.Entity</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.service.FavoriteService">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.service.FavoriteService</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteServiceImpl</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">camt.FitUp.Project.dao.FavoriteDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.FavoriteDao</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteService</node>
-            <node x="" y="">org.springframework.stereotype.Repository</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="225.5" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.AddFavoriteController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.AddFavoriteController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.AddFavoriteController</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteServiceImpl</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteService</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RestController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.CrossOrigin</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="181.5" y="130.5" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.VideoClipController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.VideoClipController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.VideoController</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RestController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.CrossOrigin</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.controller.VideoClipController</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="194.0" y="170.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.controller.UserImageController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.controller.UserImageController</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.controller.UserImageController</node>
-            <node x="" y="">camt.FitUp.Project.service.UserService</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">camt.FitUp.Project.service.UserServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.controller.UserController</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RestController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.CrossOrigin</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="195.0" y="170.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.dao.VideoDaoImpl">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.dao.VideoDaoImpl</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.dao.VideoDaoImpl</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">camt.FitUp.Project.dao.VideoDao</node>
-            <node x="" y="">org.springframework.stereotype.Repository</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="226.5" y="254.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/register.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state relative-caret-position="435">
+          <caret line="64" column="73" lean-forward="false" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/camt.FitUp.Project.dao.FavoriteDao">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>camt.FitUp.Project.dao.FavoriteDao</OriginalElement>
-          <nodes>
-            <node x="" y="">camt.FitUp.Project.service.PassSetServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.UserDao</node>
-            <node x="" y="">camt.FitUp.Project.dao.FavoriteDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.FavoriteDao</node>
-            <node x="" y="">camt.FitUp.Project.dao.PassSetDao</node>
-            <node x="" y="">camt.FitUp.Project.service.FavoriteService</node>
-            <node x="" y="">camt.FitUp.Project.dao.FitUpInfoDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.ShoppingCartService</node>
-            <node x="" y="">camt.FitUp.Project.dao.PassSetDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.UserService</node>
-            <node x="" y="">org.springframework.stereotype.Service</node>
-            <node x="" y="">camt.FitUp.Project.dao.FitUpInfoDao</node>
-            <node x="" y="">org.springframework.stereotype.Repository</node>
-            <node x="" y="">camt.FitUp.Project.service.ShoppingCartServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.ImageUtil</node>
-            <node x="" y="">camt.FitUp.Project.dao.VideoDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.ImageUtilForum</node>
-            <node x="" y="">camt.FitUp.Project.service.FitUpInfoServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.ShoppingCartDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.UserDaoImpl</node>
-            <node x="" y="">camt.FitUp.Project.dao.ShoppingCartDao</node>
-            <node x="" y="">camt.FitUp.Project.service.PassSetService</node>
-            <node x="" y="">camt.FitUp.Project.service.FitUpInfoService</node>
-            <node x="" y="">camt.FitUp.Project.dao.VideoDao</node>
-            <node x="" y="">camt.FitUp.Project.service.UserServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoServiceImpl</node>
-            <node x="" y="">camt.FitUp.Project.service.VideoService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.4928571428571429" x="653.2608695652174" y="667.3768115942029" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/service/ShoppingCartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="90" lean-forward="false" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/FitUp/Project/controller/shoppingCartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/js/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding>
+            <marker date="1481456135618" expanded="true" signature="2791:2802" ph="..." />
+            <marker date="1481456135618" expanded="true" signature="3586:3597" ph="..." />
+            <marker date="1481456135618" expanded="true" signature="4274:4285" ph="..." />
+            <marker date="1481456135618" expanded="true" signature="4804:4815" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/favorite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FitUp/www/templates/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="180" column="32" lean-forward="false" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+          <folding>
+            <element signature="n#ion-slide-page#0;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#ion-slide-page#1;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#ion-slide-page#2;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#ion-slide-page#3;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#br#0;n#ion-content#0;n#ion-slide-page#4;n#ion-slides#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

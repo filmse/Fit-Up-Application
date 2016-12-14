@@ -1,29 +1,38 @@
 <ion-view>
-  <ion-content>
+  <ion-content ng-controller="shoppingListController">
+
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">User Id</span>
+        <input type="text" placeholder="User Id" ng-model="purchased.userId">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Video Id</span>
+        <input type="text" placeholder="Video Id" ng-model="purchased.videoId">
+      </label>
+      <div align="center">
+        <button type="submit" class="overDiv button button-block icon button-assertive"
+                style="width: 50%;"
+                ng-click="purchased()">
+          Submit
+        </button>
+      </div>
+    </div>
 
     <div class="list list-inset">
-
-      <div align="center">
-        <table class="simply">
-          <!-- Table header -->
-          <!--<thead class="simply th">-->
-          <!--<tr>-->
-          <!--<th scope="col">#</th>-->
-          <!--<th scope="col">Request</th>-->
-          <!--<th scope="col">Status</th>-->
-          <!--<th scope="col">Delete</th>-->
-          <!--</tr>-->
-          <!--</thead>-->
-          <!-- Table body -->
-          <tbody class="simply tbody">
-          <tr ng-repeat="shoppingCart in shoppingCarts">
-            <td>{{$index+1}}</td>
-            <td>{{shoppingCart.id}}</td>
-          </tr>
-          </tbody>
-        </table>
+      <div>
+        <div align="left">
+          <ion-item style="padding: 10px" class="item item-complex" ng-repeat="transaction in transactions">
+            <p>Confirm Payment: {{transaction.id}}</p>
+            <p>Email: {{transaction.confirmEmail}}</p>
+            <p>Time: {{transaction.confirmTime}}</p>
+            <p>Money: {{transaction.confirmMoney}}</p>
+            <p>Secret Id: {{transaction.confirmSecretId}}</p>
+            <p>Video Id: {{transaction.users[0].shoppingCarts[0].videos[0].id}}</p>
+            <p>Video Name: {{transaction.users[0].shoppingCarts[0].videos[0].name}}</p>
+          </ion-item>
+        </div>
       </div>
-
     </div>
 
   </ion-content>

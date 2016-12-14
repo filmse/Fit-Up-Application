@@ -27,4 +27,16 @@ public class PassSetDaoImpl implements PassSetDao {
         return passSetRepository.findAll();
     }
 
+    @Override
+    public PassSet getPassSet(Long id) {
+        return passSetRepository.findOne(id);
+    }
+
+    @Override
+    public PassSet deletePassSet(PassSet passSet) {
+            passSetRepository.delete(passSet);
+            passSet.setId(null);
+            return passSet;
+        }
+
 }

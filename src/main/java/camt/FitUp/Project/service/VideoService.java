@@ -27,4 +27,5 @@ public interface VideoService {
 
     Video deleteVideoClip(Video video, Long videoClipId);
 
+    Video deleteVideo(Long id);
 }

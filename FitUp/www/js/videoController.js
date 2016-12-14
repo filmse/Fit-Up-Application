@@ -35,22 +35,23 @@
 
           $timeout(function () {
             $ionicLoading.hide();
+            $state.go("app.video");
           }, 7000);
-
           // set location
           flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
           flowFiles.opts.query = {videoId: videoId, videoName: name};
           flowFiles.upload();
           $rootScope.addSuccess = true;
+          $ionicLoading.show({
+            template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Video Uploading...</p>'
+          });
 
-          // location.reload();
-          $state.go("app.video");
         })
       };
     })
     /** @ngInject */
-    .controller('listVideoController', function ($ionicPopup, shoppingAddUserService, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
+    .controller('listVideoController', function ($ionicPopup, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
@@ -58,7 +59,6 @@
 
       $scope.queryPromise = videoService.query(function (data) {
         $scope.videos = data;
-
         //angular.forEach($scope.videos, function (value, key) {
         //console.log(value.videoClips[0].fileName);
         //})
@@ -71,9 +71,9 @@
       };
 
       $scope.addToCart = function (video) {
-        console.log(video);
+        //console.log(video);
         $scope.user = $rootScope.user;
-        console.log($scope.user);
+        //console.log($scope.user);
         video.videos = null;
 
         shoppingService.save({
@@ -157,10 +157,21 @@
         console.log(id);
         var answer = confirm("Are you sure?");
         if (answer) {
-          $http.delete("http://localhost:8080/removeVideoClip?videoClipId=" + id + "&videoId=" + $scope.videos.id).success(function (data) {
-            $scope.videos = data;
-            console.log(video);
-            $location.path("app.video");
+          $http.delete("http://localhost:8080/removeVideo?videoId=" + id + "&userId=" + $rootScope.user.id).success(function (data) {
+            $rootScope.user = data;
+            console.log($rootScope.user);
+            $ionicLoading.show({
+              template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
+            });
+            console.log("Complete");
+            $timeout(function () {
+              $ionicLoading.hide();
+              console.log("Complete");
+              videoService.delete({id: id}, function () {
+                console.log(id);
+                $rootScope.deleteSuccess = true;
+              });
+            }, 2000);
           });
         }
       }

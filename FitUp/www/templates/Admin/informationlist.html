@@ -32,7 +32,9 @@
             <td>{{$index+1}}</td>
             <td>{{fitUpInfo.name}}</td>
             <td>{{fitUpInfo.description}}</td>
-            <td> <button class="ion-close" aria-hidden="true" href="#" ng-click="deleteInfo(fitUpInfo.id)"></button> </td>
+            <td>
+              <button class="ion-close" ng-click="adminDeleteInfo(fitUpInfo.id)"></button>
+            </td>
           </tr>
           </tbody>
         </table>

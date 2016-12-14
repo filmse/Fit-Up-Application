@@ -20,4 +20,5 @@ public interface VideoDao {
 
     Video deleteVideoClip(Video video);
 
+    Video deleteVideo(Video video);
 }

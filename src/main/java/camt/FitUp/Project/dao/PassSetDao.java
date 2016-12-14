@@ -11,4 +11,8 @@ public interface PassSetDao {
     PassSet passSet(PassSet passSet);
 
     List<PassSet> passSetList();
+
+    PassSet getPassSet(Long id);
+
+    PassSet deletePassSet(PassSet passSet);
 }

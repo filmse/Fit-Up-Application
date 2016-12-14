@@ -1,8 +1,6 @@
 package camt.FitUp.Project.dao;
 
-import camt.FitUp.Project.entity.ShoppingCart;
-import camt.FitUp.Project.entity.User;
-import camt.FitUp.Project.entity.Video;
+import camt.FitUp.Project.entity.*;
 
 import java.util.List;
 
@@ -16,6 +14,16 @@ public interface ShoppingCartDao {
     List<ShoppingCart> shoppinglist();
 
     ShoppingCart shoppingId(Long id);
+
+    ShoppingCart editShoppingCart(ShoppingCart shoppingCart);
+
+    Transaction addTransaction(Transaction transaction, User user);
+
+    List<Transaction> transactionList();
+
+    ShoppingCart deleteShoppingCart(ShoppingCart shoppingCart);
+
+    VideoPurchased videoPurchased(VideoPurchased videoPurchased, Video video, User user);
 
 //    ShoppingCart addShoppingCart(ShoppingCart shoppingCart);
 }

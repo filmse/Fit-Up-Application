@@ -28,6 +28,10 @@
           email: '@email',
           password: '@password',
           passSet: '@passSet'
+          // confirmEmail: '@confirmEmail',
+          // confirmTime: '@confirmTime',
+          // confirmMoney: '@confirmMoney',
+          // confirmSecretId: '@confirmSecretId'
         }
       }
     });
