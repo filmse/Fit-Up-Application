@@ -9,52 +9,29 @@
     .factory('transactionService', transactionService)
     .factory('transactionListService', transactionListService)
     .factory('purchasedService', purchasedService)
-    // .factory('shoppingAddUserService', shoppingAddUserService)
     .factory('shoppingService', shoppingService);
 
   /** @ngInject */
   function shoppingService($resource) {
     return $resource('/shopping', {}, {
-      // authenticate: {
       method: 'POST'
-      // params: {'action': 'authenticate'},
-      // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-      //}
     })
   }
 
   /** @ngInject */
   function transactionService($resource) {
     return $resource('/transaction', {}, {
-      // authenticate: {
       method: 'POST'
-      // params: {'action': 'authenticate'},
-      // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-      //}
     })
   }
 
   /** @ngInject */
   function purchasedService($resource) {
     return $resource('/purchased', {}, {
-      // authenticate: {
       method: 'POST'
-      // params: {'action': 'authenticate'},
-      // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-      //}
     })
   }
 
-  // /** @ngInject */
-  // function shoppingAddUserService($resource) {
-  //   return $resource('/shoppingAddUser/:id', {id: '@_id'}, {
-  //     // authenticate: {
-  //     method: 'PUT'
-  //     // params: {'action': 'authenticate'},
-  //     // header: {'Content-Type': 'application/x-www-form-urlencoded'}
-  //     //}
-  //   })
-  // }
   /**@ngInject*/
   function shoppingListService($resource) {
     return $resource('/shoppingList',

@@ -160,12 +160,12 @@
           }
         })
 
-        .state('app.setPassword', {
-          url: '/setPassword',
+        .state('app.reQuest', {
+          url: '/reQuest',
           views: {
             'menuContent': {
-              templateUrl: 'templates/setPassword.html',
-              controller: 'addPassSetController',
+              templateUrl: 'templates/reQuest.html',
+              controller: 'addRequestController',
               controllerAs: 'vm'
             }
           }
@@ -299,7 +299,7 @@
           views: {
             'menuContent': {
               templateUrl: 'templates/Admin/checkRequest.html',
-              controller: 'listPassSetController'
+              controller: 'listRequestController'
             }
           }
         })

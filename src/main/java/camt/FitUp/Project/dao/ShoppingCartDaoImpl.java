@@ -1,7 +1,7 @@
 package camt.FitUp.Project.dao;
 
 import camt.FitUp.Project.entity.*;
-import camt.FitUp.Project.repository.ShoppingCartRepository;
+import camt.FitUp.Project.repository.PaymentRepository;
 import camt.FitUp.Project.repository.TransactionRepository;
 import camt.FitUp.Project.repository.UserRepository;
 import camt.FitUp.Project.repository.VideoPurchasedRepository;
@@ -17,7 +17,7 @@ import java.util.List;
 public class ShoppingCartDaoImpl implements ShoppingCartDao {
 
     @Autowired
-    ShoppingCartRepository shoppingCartRepository;
+    PaymentRepository paymentRepository;
 
     @Autowired
     UserRepository userRepository;
@@ -29,27 +29,27 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
     VideoPurchasedRepository videoPurchasedRepository;
 
     @Override
-    public ShoppingCart addShoppingCart(Video video, ShoppingCart shoppingCart, User user) {
-        shoppingCart.getVideos().add(video);
-        shoppingCartRepository.save(shoppingCart);
-        user.getShoppingCarts().add(shoppingCart);
+    public Payment addShoppingCart(Video video, Payment payment, User user) {
+        payment.getVideos().add(video);
+        paymentRepository.save(payment);
+        user.getPayments().add(payment);
         userRepository.save(user);
-        return shoppingCart;
+        return payment;
     }
 
     @Override
-    public List<ShoppingCart> shoppinglist() {
-        return shoppingCartRepository.findAll();
+    public List<Payment> shoppinglist() {
+        return paymentRepository.findAll();
     }
 
     @Override
-    public ShoppingCart shoppingId(Long id) {
-        return shoppingCartRepository.findOne(id);
+    public Payment shoppingId(Long id) {
+        return paymentRepository.findOne(id);
     }
 
     @Override
-    public ShoppingCart editShoppingCart(ShoppingCart shoppingCart) {
-        return shoppingCartRepository.save(shoppingCart);
+    public Payment editShoppingCart(Payment payment) {
+        return paymentRepository.save(payment);
     }
 
     @Override
@@ -65,10 +65,10 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
     }
 
     @Override
-    public ShoppingCart deleteShoppingCart(ShoppingCart shoppingCart) {
-        shoppingCartRepository.delete(shoppingCart);
-        shoppingCart.setId(null);
-        return shoppingCart;
+    public Payment deleteShoppingCart(Payment payment) {
+        paymentRepository.delete(payment);
+        payment.setId(null);
+        return payment;
     }
 
     @Override

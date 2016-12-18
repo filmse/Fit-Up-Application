@@ -30,19 +30,19 @@ public class shoppingCartController {
     VideoService videoService;
 
     @RequestMapping(value = "shopping", method = RequestMethod.POST)
-    public ShoppingCart addShoppingCart(@RequestParam("videoId") Long videoId, @RequestParam("userId") Long userId, @RequestBody ShoppingCart shoppingCart, BindingResult bindingResult) {
+    public Payment addShoppingCart(@RequestParam("videoId") Long videoId, @RequestParam("userId") Long userId, @RequestBody Payment payment, BindingResult bindingResult) {
         Video video = videoService.getVideo(videoId);
         User user = userService.getUser(userId);
-        return shoppingCartService.addShoppingCart(video, shoppingCart, user);
+        return shoppingCartService.addShoppingCart(video, payment, user);
     }
 
     @RequestMapping(value = "shoppingList", method = RequestMethod.GET)
-    public List<ShoppingCart> shoppinglist() {
+    public List<Payment> shoppinglist() {
         return shoppingCartService.shoppinglist();
     }
 
     @RequestMapping(value = "shoppingList/{id}", method = RequestMethod.GET)
-    public ShoppingCart shoppingId(@PathVariable("id") Long id) {
+    public Payment shoppingId(@PathVariable("id") Long id) {
         return shoppingCartService.shoppingId(id);
     }
 
@@ -56,12 +56,6 @@ public class shoppingCartController {
     public List<Transaction> transactionList() {
         return shoppingCartService.transactionList();
     }
-
-//    @RequestMapping(value = "/remove/{id}", method = RequestMethod.DELETE)
-//    public ShoppingCart deleteShoppingCart(@PathVariable("id") Long id) {
-//        return shoppingCartService.deleteShoppingCart(id);
-//    }
-
 
     @RequestMapping(value = "purchased", method = RequestMethod.POST)
     public VideoPurchased addVideoPurchased(@RequestParam("videoId") Long videoId,@RequestParam("userId") Long userId, @RequestBody VideoPurchased videoPurchased, BindingResult bindingResult) {

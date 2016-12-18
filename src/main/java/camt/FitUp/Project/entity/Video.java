@@ -22,7 +22,7 @@ public class Video implements Comparable {
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     Set<VideoClip> videoClips = new HashSet<>();
 
-    public Video(String name, String description, String price, Set<VideoClip> videoClips, Set<ShoppingCart> shoppingCarts) {
+    public Video(String name, String description, String price, Set<VideoClip> videoClips, Set<Payment> payments) {
         this.name = name;
         this.description = description;
         this.price = price;

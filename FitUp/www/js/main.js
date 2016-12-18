@@ -15,7 +15,7 @@
         $state.go("app.board");
       };
       $scope.aboutUsClicks = function () {
-        $state.go("app.setPassword");
+        $state.go("app.reQuest");
       };
       $scope.aboutClicks = function () {
         $state.go("app.aboutUs");

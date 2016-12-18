@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created by Dto on 3/29/2016.
+ * Created by Film on 3/29/2016.
  */
 @Entity
 public class ImageFitUpInfo {

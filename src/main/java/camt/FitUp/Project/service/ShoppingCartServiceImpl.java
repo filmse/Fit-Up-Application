@@ -2,14 +2,12 @@ package camt.FitUp.Project.service;
 
 import camt.FitUp.Project.dao.ShoppingCartDao;
 import camt.FitUp.Project.entity.*;
-import camt.FitUp.Project.repository.ShoppingCartRepository;
+import camt.FitUp.Project.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Film on 14/10/2559.
@@ -21,27 +19,27 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     ShoppingCartDao shoppingCartDao;
 
     @Autowired
-    ShoppingCartRepository shoppingCartRepository;
+    PaymentRepository paymentRepository;
 
     @Override
-    public ShoppingCart addShoppingCart(Video video, ShoppingCart shoppingCart, User user) {
-        shoppingCart.setPurchaseDate(Calendar.getInstance().getTime());
-        return shoppingCartDao.addShoppingCart(video, shoppingCart, user);
+    public Payment addShoppingCart(Video video, Payment payment, User user) {
+        payment.setPurchaseDate(Calendar.getInstance().getTime());
+        return shoppingCartDao.addShoppingCart(video, payment, user);
     }
 
     @Override
-    public List<ShoppingCart> shoppinglist() {
+    public List<Payment> shoppinglist() {
         return shoppingCartDao.shoppinglist();
     }
 
     @Override
-    public ShoppingCart shoppingId(Long id) {
+    public Payment shoppingId(Long id) {
         return shoppingCartDao.shoppingId(id);
     }
 
     @Override
-    public ShoppingCart editShoppingCart(ShoppingCart shoppingCart) {
-        return shoppingCartDao.editShoppingCart(shoppingCart);
+    public Payment editShoppingCart(Payment payment) {
+        return shoppingCartDao.editShoppingCart(payment);
     }
 
     @Override
@@ -55,9 +53,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    public ShoppingCart deleteShoppingCart(Long shoppingId) {
-        ShoppingCart shoppingCart = shoppingId(shoppingId);
-        return shoppingCartDao.deleteShoppingCart(shoppingCart);
+    public Payment deleteShoppingCart(Long shoppingId) {
+        Payment payment = shoppingId(shoppingId);
+        return shoppingCartDao.deleteShoppingCart(payment);
     }
 
     @Override

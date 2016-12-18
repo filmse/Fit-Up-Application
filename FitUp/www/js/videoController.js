@@ -14,8 +14,8 @@
           {id: '50', name: '50'},
           {id: '70', name: '70'},
           {id: '100', name: '100'},
-          {id: '100', name: '150'},
-          {id: '100', name: '200'}
+          {id: '150', name: '150'},
+          {id: '200', name: '200'}
         ]
       };
 
@@ -51,27 +51,25 @@
       };
     })
     /** @ngInject */
-    .controller('listVideoController', function ($location, $ionicLoading, $state, $ionicPopup, $timeout, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
+    .controller('listVideoController', function ($route, $location, $ionicLoading, $state, $ionicPopup, $timeout, userService, $scope, $rootScope, videoService, shoppingService, $sce, addToFavoriteService) {
 
       $scope.queryPromise = userService.query(function (data) {
         $rootScope.users = data;
       }).$promise;
 
-      $scope.playVideo = function (video) {
-        console.log(video);
-        console.log("HAHA");
-        $timeout(function () {
-          $ionicPopup.alert({
-            title: '"Purchase Exercise Video"',
-            template: 'This is the exercise example <br> if you need more <br> you can  purchase it'
-          });
-          $timeout(function () {
-            //location.reload();
-            location.reload();
-          }, 10000);
-        }, 7000);
-      };
-
+      // $scope.playVideo = function (video) {
+      //
+      //   $timeout(function () {
+      //     $ionicPopup.alert({
+      //       title: '"Purchase Exercise Video"',
+      //       template: ''
+      //     });
+      //     $timeout(function () {
+      //       //location.reload();
+      //       location.reload();
+      //     }, 10000);
+      //   }, 7000);
+      // };
 
       $scope.queryPromise = videoService.query(function (data) {
         $scope.videos = data;
@@ -112,9 +110,9 @@
       };
 
       $scope.addToFavorite = function (video) {
-        console.log(video);
+        //console.log(video);
         $scope.user = $rootScope.user;
-        console.log($scope.user);
+        //console.log($scope.user);
         video.videos = null;
 
         addToFavoriteService.save({
@@ -143,7 +141,7 @@
     .controller('editVideoController', function ($scope, $route, $timeout, $ionicLoading, $routeParams, $location, $rootScope, videoService, VideoService, $http) {
 
       $scope.$on('$ionicView.loaded', function (data, event) {
-        console.log(event.stateParams.id)
+        //console.log(event.stateParams.id);
         var videoId = event.stateParams.id;
         videoService.get({id: videoId}, function (data) {
           $scope.videos = data;
@@ -167,30 +165,34 @@
           }, 2000);
           $location.path("app.video");
         });
+
       };
 
       $scope.deleteVideo = function (id) {
-        console.log(id);
+        //console.log(id);
         var answer = confirm("Are you sure?");
         if (answer) {
           $http.delete("http://localhost:8080/removeVideo?videoId=" + id + "&userId=" + $rootScope.user.id).success(function (data) {
             $rootScope.user = data;
-            console.log($rootScope.user);
+            //console.log($rootScope.user);
+
             $ionicLoading.show({
               template: '<ion-spinner class="spinner-spiral"></ion-spinner><p style="color:white">Loading...</p>'
             });
-            console.log("Complete");
+            //console.log("Complete");
             $timeout(function () {
               $ionicLoading.hide();
-              console.log("Complete");
+              //console.log("Complete");
               videoService.delete({id: id}, function () {
-                console.log(id);
+                //console.log(id);
                 $rootScope.deleteSuccess = true;
               });
             }, 2000);
+            $location.path("app.video");
+            //location.reload();
           });
         }
       }
-    })
+    });
 
 })();

@@ -1,6 +1,5 @@
 package camt.FitUp.Project.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -8,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Dto on 2/7/2015.
+ * Created by Film on 2/7/2015.
  */
 @Entity
 public class FitUpInfo implements Comparable {
@@ -17,16 +16,9 @@ public class FitUpInfo implements Comparable {
     private Long id;
     private String name;
     private String description;
-
-//    @ManyToOne
-//    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-//    @JoinColumn(name = "user_id")
-//    @JsonBackReference
-//    User user;
-
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    Set<ImageFitUpInfo> imageInfos = new HashSet<>();
+    private Set<ImageFitUpInfo> imageInfos = new HashSet<>();
 
     public FitUpInfo(Long id, String name, String description, ImageFitUpInfo imageFitUpInfo) {
         this.id = id;

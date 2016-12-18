@@ -42,7 +42,7 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private Set<ShoppingCart> shoppingCarts = new HashSet<>();
+    private Set<Payment> payments = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
@@ -67,7 +67,7 @@ public class User {
         if (images != null ? !images.equals(user.images) : user.images != null) return false;
         if (infos != null ? !infos.equals(user.infos) : user.infos != null) return false;
         if (videos != null ? !videos.equals(user.videos) : user.videos != null) return false;
-        if (shoppingCarts != null ? !shoppingCarts.equals(user.shoppingCarts) : user.shoppingCarts != null)
+        if (payments != null ? !payments.equals(user.payments) : user.payments != null)
             return false;
         if (favorites != null ? !favorites.equals(user.favorites) : user.favorites != null) return false;
         return videoPurchaseds != null ? videoPurchaseds.equals(user.videoPurchaseds) : user.videoPurchaseds == null;
@@ -83,13 +83,13 @@ public class User {
         result = 31 * result + (images != null ? images.hashCode() : 0);
         result = 31 * result + (infos != null ? infos.hashCode() : 0);
         result = 31 * result + (videos != null ? videos.hashCode() : 0);
-        result = 31 * result + (shoppingCarts != null ? shoppingCarts.hashCode() : 0);
+        result = 31 * result + (payments != null ? payments.hashCode() : 0);
         result = 31 * result + (favorites != null ? favorites.hashCode() : 0);
         result = 31 * result + (videoPurchaseds != null ? videoPurchaseds.hashCode() : 0);
         return result;
     }
 
-    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<ShoppingCart> shoppingCarts, Set<Favorite> favorites, Set<VideoPurchased> videoPurchaseds) {
+    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<Payment> payments, Set<Favorite> favorites, Set<VideoPurchased> videoPurchaseds) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -97,12 +97,12 @@ public class User {
         this.images = images;
         this.infos = infos;
         this.videos = videos;
-        this.shoppingCarts = shoppingCarts;
+        this.payments = payments;
         this.favorites = favorites;
         this.videoPurchaseds = videoPurchaseds;
     }
 
-    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<ShoppingCart> shoppingCarts, Set<Favorite> favorites) {
+    public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos, Set<Video> videos, Set<Payment> payments, Set<Favorite> favorites) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -110,7 +110,7 @@ public class User {
         this.images = images;
         this.infos = infos;
         this.videos = videos;
-        this.shoppingCarts = shoppingCarts;
+        this.payments = payments;
         this.favorites = favorites;
     }
 
@@ -119,6 +119,12 @@ public class User {
         this.email = email;
         this.password = password;
         this.roles = roles;
+    }
+
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
     }
 
     public User(String username, String email, String password, Set<Role> roles, Set<ImageUser> images, Set<FitUpInfo> infos) {
@@ -155,12 +161,12 @@ public class User {
         this.videoPurchaseds = videoPurchaseds;
     }
 
-    public Set<ShoppingCart> getShoppingCarts() {
-        return shoppingCarts;
+    public Set<Payment> getPayments() {
+        return payments;
     }
 
-    public void setShoppingCarts(Set<ShoppingCart> shoppingCarts) {
-        this.shoppingCarts = shoppingCarts;
+    public void setPayments(Set<Payment> payments) {
+        this.payments = payments;
     }
 
     public User() {

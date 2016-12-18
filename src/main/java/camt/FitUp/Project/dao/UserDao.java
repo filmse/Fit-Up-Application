@@ -10,7 +10,7 @@ public interface UserDao {
 
     User deleteUser(User user);
 
-    User registerUser(User user);
+    User addUser(User user);
 
     User findByUsername(String username);
 

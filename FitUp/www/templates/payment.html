@@ -16,7 +16,7 @@
             <!--</thead>-->
             <!-- Table body -->
             <tbody class="simply tbody">
-            <tr ng-repeat="shopping in user.shoppingCarts | filter: name">
+            <tr ng-repeat="shopping in user.payments | filter: name">
               <td style="margin-top: 20px">
                 <a class="icon-left ion-ios-close-outline" ng-href="#" ng-click="deletePayment(shopping.id)">Delete</a>
                 <br>

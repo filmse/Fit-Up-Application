@@ -32,8 +32,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "register", method = RequestMethod.POST)
-    public User register(@RequestBody User user, BindingResult bindingResult) {
-        return userService.registerUser(user);
+    public User addUser(@RequestBody User user, BindingResult bindingResult) {
+        return userService.addUser(user);
     }
 
     @RequestMapping(value = "customer/{id}", method = RequestMethod.PUT)

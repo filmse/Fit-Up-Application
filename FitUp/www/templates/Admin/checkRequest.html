@@ -1,5 +1,5 @@
 <ion-view>
-  <ion-content>
+  <ion-content ng-controller="dateController">
 
     <div class="list list-inset">
 
@@ -10,17 +10,16 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Request</th>
-            <th scope="col">Status</th>
-            <th scope="col">Delete</th>
+            <th scope="col"></th>
           </tr>
           </thead>
           <!-- Table body -->
           <tbody class="simply tbody">
-          <tr ng-repeat="passSet in passSets">
+          <tr ng-repeat="request in requests" ng-click="deleteRequest(request.id)">
             <td>{{$index+1}}</td>
-            <td>{{passSet.passSet}}</td>
-            <td><p>User Request</p></td>
-            <td> <a style="margin-left: 7%; cursor: pointer;" class="ion-close" ng-click="deleteRequest(passSet.id)"></a> </td>
+            <td>{{request.request}}</td>
+            <td><p>{{ today | date : "fullDate" }}</p></td>
+            </td>
           </tr>
           </tbody>
         </table>

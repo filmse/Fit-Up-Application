@@ -57,18 +57,14 @@
                 </div>
               </div>
               <hr>
-              <div class="item item-body" style="height: 50%">
+              <div class="item item-body" style="height: 40%">
                 <div align="center">
-                  <video controls ng-click="playVideo(video)" width="100%" name="video">
+                  <!--ng-click="playVideo(video)"-->
+                  <video controls width="70%" name="video">
                     <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/mp4">
-                    <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/ogg">
-                    <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/webm">
+                    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/ogg">-->
+                    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/webm">-->
                   </video>
-                  <!--<video width="100%" height="50%">-->
-                  <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type='video/mp4'>-->
-                  <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/ogg" />-->
-                  <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/webm" />-->
-                  <!--</video>-->
                 </div>
                 <div align="center">
                   <p style="color: black;">{{video.description}}</p>
@@ -189,11 +185,13 @@
               <table class="simply">
                 <item>
                   <tr ng-repeat="purchased in user.videoPurchaseds">
-                    <td>
-                      <video controls width="70%" height="auto">
-                        <source src="{{'templates/video/' +purchased.videos[0].videoClips[0].fileName}}"
-                                type='video/mp4'>
-                      </video>
+                    <td style="width: 100%">
+                      <div align="center">
+                        <video controls width="90%" height="auto">
+                          <source src="{{'templates/video/' +purchased.videos[0].videoClips[0].fileName}}"
+                                  type='video/mp4'>
+                        </video>
+                      </div>
                       <br>
                       <br>
                       <p>Video Name:&nbsp;{{purchased.videos[0].name}}</p>

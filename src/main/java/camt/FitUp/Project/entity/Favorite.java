@@ -50,8 +50,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Dto on 2/7/2015.
+ * Created by Film on 2/7/2015.
  */
+
 @Entity
 public class Favorite {
     @Id

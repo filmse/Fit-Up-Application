@@ -19,7 +19,7 @@ public class UserDaoImpl implements UserDao {
     UserRepository userRepository;
 
     @Override
-    public User registerUser(User user) {
+    public User addUser(User user) {
         Role customerRole = new Role("member");
         Set<Role> roles = new HashSet<>();
         roles.add(customerRole);

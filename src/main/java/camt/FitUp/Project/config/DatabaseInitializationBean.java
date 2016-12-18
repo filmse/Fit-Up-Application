@@ -58,7 +58,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         };
         videoRepository.save(Arrays.asList(initVideo));
 
-//        ShoppingCart shoppingCart = new ShoppingCart();
+//        Payment shoppingCart = new Payment();
 //        List<SelectedVideo> selectedVideos = new ArrayList<>();
 //        SelectedVideo[] initSelectedVideo = {
 //                new SelectedVideo(initVideo[0], 1),

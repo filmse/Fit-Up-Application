@@ -9,20 +9,20 @@ import java.util.List;
  */
 public interface ShoppingCartService {
 
-    ShoppingCart addShoppingCart(Video video, ShoppingCart shoppingCart, User user);
+    Payment addShoppingCart(Video video, Payment payment, User user);
 
-    List<ShoppingCart> shoppinglist();
+    List<Payment> shoppinglist();
 
-    ShoppingCart shoppingId(Long id);
+    Payment shoppingId(Long id);
 
-    ShoppingCart editShoppingCart(ShoppingCart shoppingCart);
+    Payment editShoppingCart(Payment payment);
 
 
     Transaction addTransaction(Transaction transaction, User user);
 
     List<Transaction> transactionList();
 
-    ShoppingCart deleteShoppingCart(Long shoppingId);
+    Payment deleteShoppingCart(Long shoppingId);
 
     VideoPurchased addVideoPurchased(VideoPurchased videoPurchased, Video video, User user);
 }
