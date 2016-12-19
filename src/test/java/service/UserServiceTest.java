@@ -17,10 +17,10 @@ public class UserServiceTest {
     @Test
     public void testAddUserNotNull() {
         UserDaoImpl userDao = mock(UserDaoImpl.class);
-        User user = new User("Davika", "Davika@gmail.com", "4432");
+        User user = new User(10l, "Davika", "Davika@gmail.com", "4432");
         when(userDao.addUser(user)).thenReturn(null);
         {
-            User returnMock = new User("Davika", "Davika@gmail.com", "4432");
+            User returnMock = new User(10l, "Davika", "Davika@gmail.com", "4432");
             returnMock.setId((long) 101);
             when(userDao.addUser(user)).thenReturn(returnMock);
         }
@@ -37,9 +37,9 @@ public class UserServiceTest {
     @Test
     public void testAddUserNull() {
         UserDaoImpl userDao = mock(UserDaoImpl.class);
-        User user = new User("Davika", "Davika@gmail.com", "4432");
+        User user = new User(10l, "Davika", "Davika@gmail.com", "4432");
         {
-            User returnMock = new User("Davika", "Davika@gmail.com", "4432");
+            User returnMock = new User(10l, "Davika", "Davika@gmail.com", "4432");
             returnMock.setId((long) 101);
             //when(userDao.addUser(user)).thenReturn(returnMock);
         }
@@ -79,6 +79,22 @@ public class UserServiceTest {
 
         User result04 = userService.findByUsername("");
         assertNull(result04);
+    }
+
+    @Test
+    public void testDeleteUser() {
+        UserServiceImpl userServiceImpl = mock(UserServiceImpl.class);
+        User user = new User(10l, "Davika", "Davika@gmail.com", "4432");
+        when(userServiceImpl.getUser(10l)).thenReturn(null);
+        {
+            User returnMock = new User(10l, "Davika", "Davika@gmail.com", "4432");
+            when(userServiceImpl.deleteUser(10l)).thenReturn(returnMock);
+        }
+
+        User result = new User(10l, "Davika", "Davika@gmail.com", "4432");
+        assertNotNull(result);
+        //System.out.println(result.getUsername());
+        assertEquals("Davika", result.getUsername());
     }
 
 }
