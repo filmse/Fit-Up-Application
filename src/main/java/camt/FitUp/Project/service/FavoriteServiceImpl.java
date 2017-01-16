@@ -1,6 +1,7 @@
 package camt.FitUp.Project.service;
 
 import camt.FitUp.Project.dao.FavoriteDao;
+import camt.FitUp.Project.dao.FavoriteDaoImpl;
 import camt.FitUp.Project.entity.Favorite;
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.entity.Video;
@@ -33,6 +34,5 @@ public class FavoriteServiceImpl implements FavoriteService {
     public Favorite favoriteId(Long id) {
         return favoriteDao.favoriteId(id);
     }
-
 
 }

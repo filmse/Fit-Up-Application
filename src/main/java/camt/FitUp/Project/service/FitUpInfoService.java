@@ -10,22 +10,22 @@ import java.util.List;
  * Created by Dto on 2/7/2015.
  */
 public interface FitUpInfoService {
-    //    FitUpInfo addForum(User user, FitUpInfo fitUpInfo, FitUpInfo info);
-    FitUpInfo addForum(User user, FitUpInfo fitUpInfo);
 
-    FitUpInfo addImageForum(FitUpInfo fitUpInfo, ImageFitUpInfo imageFitUpInfo);
+    FitUpInfo addFitUpInfo(User user, FitUpInfo fitUpInfo);
 
-    List<FitUpInfo> getInfos();
+    FitUpInfo addImageFitUpInfo(FitUpInfo fitUpInfo, ImageFitUpInfo imageFitUpInfo);
+
+    List<FitUpInfo> getFitUpInfos();
 
     FitUpInfo findByName(String name);
 
-    FitUpInfo deleteForum(Long id);
+    FitUpInfo deleteFitUpInfo(Long id);
 
-    FitUpInfo getForum(Long id);
+    FitUpInfo getFitUpInfo(Long id);
 
-    FitUpInfo updateForum(FitUpInfo fitUpInfo);
+    FitUpInfo updateFitUpInfo(FitUpInfo fitUpInfo);
 
-    User deleteUserForum(User user, Long infoId);
+    User deleteUserFitUpInfo(User user, Long infoId);
 
-    FitUpInfo deleteImageForum(FitUpInfo fitUpInfo, Long imageId);
+    FitUpInfo deleteImageFitUpInfo(FitUpInfo fitUpInfo, Long imageId);
 }

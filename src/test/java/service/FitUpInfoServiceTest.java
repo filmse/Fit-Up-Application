@@ -22,21 +22,19 @@ public class FitUpInfoServiceTest {
         FitUpInfoDaoImpl fitUpInfoDao = mock(FitUpInfoDaoImpl.class);
 
         FitUpInfo fitUpInfo = new FitUpInfo(10l, "build body sick pack", "The people can build boy six pack in one week");
-        User user = new User(10l,"Davika", "Davika@gmail.com", "4432");
+        User user = new User(2l, "Momomo", "trainer@yahoo.com", "momo002");
 
         when(fitUpInfoDao.addForum(user, fitUpInfo)).thenReturn(null);
         {
-            FitUpInfo returnMock = new FitUpInfo(10l, "build body sick pack", "The people can build boy six pack in one week");
+            FitUpInfo returnMock = new FitUpInfo(2l, "build body sick pack", "The people can build boy six pack in one week");
             when(fitUpInfoDao.addForum(user, fitUpInfo)).thenReturn(returnMock);
         }
 
         FitUpInfoServiceImpl fitUpInfoServiceImpl = new FitUpInfoServiceImpl();
         fitUpInfoServiceImpl.setFitUpInfoDao(fitUpInfoDao);
 
-        FitUpInfo result = fitUpInfoServiceImpl.addForum(user, fitUpInfo);
+        FitUpInfo result = fitUpInfoServiceImpl.addFitUpInfo(user, fitUpInfo);
         assertNotNull(result);
-//        System.out.println(user);
-//        System.out.print(fitUpInfoDao);
     }
 
     @Test
@@ -44,21 +42,19 @@ public class FitUpInfoServiceTest {
         FitUpInfoDaoImpl fitUpInfoDao = mock(FitUpInfoDaoImpl.class);
 
         FitUpInfo fitUpInfo = new FitUpInfo(10l, "build body sick pack", "The people can build boy six pack in one week");
-        User user = new User(10l,"Davika", "Davika@gmail.com", "4432");
+        User user = new User(2l, "Momomo", "trainer@yahoo.com", "momo002");
 
         when(fitUpInfoDao.addForum(user, fitUpInfo)).thenReturn(null);
         {
-            FitUpInfo returnMock = new FitUpInfo(10l, "build body sick pack", "The people can build boy six pack in one week");
+            FitUpInfo returnMock = new FitUpInfo(2l, "build body sick pack", "The people can build boy six pack in one week");
             when(fitUpInfoDao.addForum(user, fitUpInfo)).thenReturn(returnMock);
         }
 
         FitUpInfoServiceImpl fitUpInfoServiceImpl = new FitUpInfoServiceImpl();
         fitUpInfoServiceImpl.setFitUpInfoDao(fitUpInfoDao);
 
-        FitUpInfo result = fitUpInfoServiceImpl.addForum(null, fitUpInfo);
+        FitUpInfo result = fitUpInfoServiceImpl.addFitUpInfo(null, fitUpInfo);
         assertNull(result);
-//        System.out.println(user);
-//        System.out.print(fitUpInfoDao);
     }
 
 }

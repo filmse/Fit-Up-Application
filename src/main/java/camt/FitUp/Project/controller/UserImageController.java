@@ -20,6 +20,7 @@ import java.util.Iterator;
 @CrossOrigin
 @Controller
 @RequestMapping("/userImage")
+
 public class UserImageController {
 
     @Autowired

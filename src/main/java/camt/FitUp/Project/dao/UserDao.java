@@ -14,4 +14,5 @@ public interface UserDao {
 
     User findByUsername(String username);
 
+    User deleteUserFitUpInfo(User user);
 }

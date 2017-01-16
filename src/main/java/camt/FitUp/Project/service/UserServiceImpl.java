@@ -68,7 +68,6 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public User addImageUser(User user, ImageUser image) {
         user.getImages().add(image);
-
         userRepository.save(user);
         return user;
     }

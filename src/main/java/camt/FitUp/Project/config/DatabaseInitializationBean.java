@@ -130,7 +130,6 @@ public class DatabaseInitializationBean implements InitializingBean {
         roles4.add(trainerRole);
         trainer1.setRoles(roles4);
 
-
         User member = new User();
         member.setId(3l);
         member.setUsername("member");
@@ -147,3 +146,53 @@ public class DatabaseInitializationBean implements InitializingBean {
         userRepository.save(trainer1);
     }
 }
+
+//    User admin = new User();
+//        admin.setId(1l);
+//                admin.setUsername("Peterr");
+//                admin.setEmail("admin@gmail.com");
+//                admin.setPassword("peter001");
+//                admin.getImages().add(ImageUtil.getImage("pic/P02.JPG"));
+//                Set<Role> roles = new HashSet<>();
+//        roles.add(adminRole);
+//        admin.setRoles(roles);
+//
+//        User trainer = new User();
+//        trainer.setId(2l);
+//        trainer.setUsername("Momomo");
+//        trainer.setEmail("trainer@yahoo.com");
+//        trainer.setPassword("momo002");
+//        trainer.getImages().add(ImageUtil.getImage("pic/D01.JPG"));
+//        Set<Role> roles2 = new HashSet<>();
+//        roles2.add(trainerRole);
+//        trainer.setRoles(roles2);
+//        Set<FitUpInfo> infos = new HashSet<>();
+//        infos.add(products1);
+//        infos.add(products2);
+//        infos.add(products3);
+//        infos.add(products4);
+//        infos.add(products5);
+//        trainer.setInfos(infos);
+////        Set<Video> videos = new HashSet<>();
+////        videos.add(video1);
+////        trainer.setVideos(videos);
+//
+//        User member = new User();
+//        member.setId(3l);
+//        member.setUsername("Jacker");
+//        member.setEmail("member@yahoo.com");
+//        member.setPassword("jacker003");
+//        member.getImages().add(ImageUtil.getImage("pic/N01.JPG"));
+//        Set<Role> roles3 = new HashSet<>();
+//        roles3.add(memberRole);
+//        member.setRoles(roles3);
+//
+//        User trainer1 = new User();
+//        trainer1.setId(4l);
+//        trainer1.setUsername("Malee");
+//        trainer1.setEmail("film@gmail.com");
+//        trainer1.setPassword("11111");
+//        trainer1.getImages().add(ImageUtil.getImage("pic/F.JPG"));
+//        Set<Role> roles4 = new HashSet<>();
+//        roles4.add(trainerRole);
+//        trainer1.setRoles(roles4);

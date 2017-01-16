@@ -63,6 +63,14 @@ public class Favorite {
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<Video> videos = new HashSet<>();
 
+    public Favorite(Video video) {
+
+    }
+
+    public Favorite() {
+
+    }
+
     public Set<Video> getVideos() {
         return videos;
     }

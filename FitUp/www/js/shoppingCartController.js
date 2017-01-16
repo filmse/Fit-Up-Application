@@ -6,7 +6,7 @@
   angular.module('starter.controllers')
 
   /** @ngInject */
-    .controller('shoppingListController', function (purchasedService, $http, transactionListService, $timeout, $ionicLoading, $ionicPopup, $rootScope, transactionService, $scope, shoppingUpdateService, $state) {
+    .controller('shoppingListController', function ($location, purchasedService, $http, transactionListService, $timeout, $ionicLoading, $ionicPopup, $rootScope, transactionService, $scope, shoppingUpdateService, $state) {
 
       $scope.transaction = {};
       $scope.confirmPayment = function () {

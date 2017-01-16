@@ -2,6 +2,7 @@ package camt.FitUp.Project.service;
 
 import camt.FitUp.Project.dao.RequestDao;
 import camt.FitUp.Project.entity.Request;
+import camt.FitUp.Project.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

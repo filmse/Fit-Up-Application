@@ -36,7 +36,7 @@
           $timeout(function () {
             $ionicLoading.hide();
             $state.go("app.video");
-          }, 7000);
+          }, 10000);
           // set location
           flowFiles.opts.target = 'http://localhost:8080/videoClip/add';
           flowFiles.opts.testChunks = false;
@@ -57,19 +57,19 @@
         $rootScope.users = data;
       }).$promise;
 
-      // $scope.playVideo = function (video) {
-      //
-      //   $timeout(function () {
-      //     $ionicPopup.alert({
-      //       title: '"Purchase Exercise Video"',
-      //       template: ''
-      //     });
-      //     $timeout(function () {
-      //       //location.reload();
-      //       location.reload();
-      //     }, 10000);
-      //   }, 7000);
-      // };
+      $scope.playVideo = function (video) {
+        console.log(video);
+        $timeout(function () {
+          $ionicPopup.alert({
+            title: '"Purchase the Exercise Video"',
+            template: '"If you need to more details. Please purchase the video exercise."'
+          });
+          $timeout(function () {
+            //location.reload();
+            location.reload();
+          }, 6000);
+        }, 5000);
+      };
 
       $scope.queryPromise = videoService.query(function (data) {
         $scope.videos = data;
@@ -193,6 +193,7 @@
           });
         }
       }
-    });
+    })
 
-})();
+})
+();

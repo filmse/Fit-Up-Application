@@ -17,7 +17,6 @@ public interface ShoppingCartService {
 
     Payment editShoppingCart(Payment payment);
 
-
     Transaction addTransaction(Transaction transaction, User user);
 
     List<Transaction> transactionList();

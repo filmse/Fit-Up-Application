@@ -7,7 +7,6 @@ import camt.FitUp.Project.entity.FitUpInfo;
 import camt.FitUp.Project.entity.ImageFitUpInfo;
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.repository.FitUpInfoRepository;
-import camt.FitUp.Project.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,19 +28,16 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
     FitUpInfoRepository fitUpInfoRepository;
 
     @Autowired
-    UserRepository userRepository;
-
-    @Autowired
     UserDao userDao;
 
     @Override
-    public FitUpInfo addForum(User user, FitUpInfo fitUpInfo) {
+    public FitUpInfo addFitUpInfo(User user, FitUpInfo fitUpInfo) {
         return fitUpInfoDao.addForum(user, fitUpInfo);
     }
 
     @Override
     @Transactional
-    public FitUpInfo addImageForum(FitUpInfo fitUpInfo, ImageFitUpInfo imageFitUpInfo) {
+    public FitUpInfo addImageFitUpInfo(FitUpInfo fitUpInfo, ImageFitUpInfo imageFitUpInfo) {
         imageFitUpInfo = ImageUtil.resizeImage(imageFitUpInfo, 200);
         fitUpInfo.getImageInfos().add(imageFitUpInfo);
         fitUpInfoDao.addImageForum(fitUpInfo);
@@ -49,7 +45,7 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
     }
 
     @Override
-    public List<FitUpInfo> getInfos() {
+    public List<FitUpInfo> getFitUpInfos() {
         return fitUpInfoDao.getInfos();
     }
 
@@ -59,24 +55,24 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
     }
 
     @Override
-    public FitUpInfo deleteForum(Long id) {
-        FitUpInfo fitUpInfo = getForum(id);
+    public FitUpInfo deleteFitUpInfo(Long id) {
+        FitUpInfo fitUpInfo = getFitUpInfo(id);
         return fitUpInfoDao.deleteForum(fitUpInfo);
     }
 
     @Override
-    public FitUpInfo getForum(Long id) {
+    public FitUpInfo getFitUpInfo(Long id) {
         return fitUpInfoDao.getForum(id);
     }
 
     @Override
-    public FitUpInfo updateForum(FitUpInfo fitUpInfo) {
+    public FitUpInfo updateFitUpInfo(FitUpInfo fitUpInfo) {
         return fitUpInfoDao.updateForum(fitUpInfo);
     }
 
     @Override
     @Transactional
-    public FitUpInfo deleteImageForum(FitUpInfo fitUpInfo, Long imageId) {
+    public FitUpInfo deleteImageFitUpInfo(FitUpInfo fitUpInfo, Long imageId) {
         Set<ImageFitUpInfo> imageInfos = fitUpInfo.getImageInfos();
         for (Iterator<ImageFitUpInfo> it = imageInfos.iterator(); it.hasNext(); ) {
             ImageFitUpInfo f = it.next();
@@ -89,7 +85,7 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
     }
 
     @Override
-    public User deleteUserForum(User user, Long infoId) {
+    public User deleteUserFitUpInfo(User user, Long infoId) {
         Set<FitUpInfo> fitUpInfo = user.getInfos();
         FitUpInfo removeFitUpInfo = null;
         for (Iterator<FitUpInfo> it = fitUpInfo.iterator(); it.hasNext(); ) {
@@ -100,7 +96,7 @@ public class FitUpInfoServiceImpl implements FitUpInfoService {
             }
         }
         fitUpInfo.remove(removeFitUpInfo);
-        return userRepository.save(user);
+        return userDao.deleteUserFitUpInfo(user);
     }
 
     public void setFitUpInfoDao(FitUpInfoDaoImpl fitUpInfoDao) {

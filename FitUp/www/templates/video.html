@@ -60,10 +60,8 @@
               <div class="item item-body" style="height: 40%">
                 <div align="center">
                   <!--ng-click="playVideo(video)"-->
-                  <video controls width="70%" name="video">
+                  <video ng-click="playVideo(video)" controls width="70%" name="video">
                     <source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/mp4">
-                    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/ogg">-->
-                    <!--<source src="{{'templates/video/' +video.videoClips[0].fileName}}" type="video/webm">-->
                   </video>
                 </div>
                 <div align="center">

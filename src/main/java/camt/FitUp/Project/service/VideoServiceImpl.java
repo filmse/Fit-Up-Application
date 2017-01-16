@@ -1,7 +1,7 @@
 package camt.FitUp.Project.service;
 
-import camt.FitUp.Project.dao.UserDao;
 import camt.FitUp.Project.dao.VideoDao;
+import camt.FitUp.Project.dao.VideoDaoImpl;
 import camt.FitUp.Project.entity.User;
 import camt.FitUp.Project.entity.Video;
 import camt.FitUp.Project.entity.VideoClip;
@@ -100,4 +100,7 @@ public class VideoServiceImpl implements VideoService {
     }
 
 
+    public Video setVideoDao(VideoDaoImpl videoDaoImpl) {
+        return null;
+    }
 }

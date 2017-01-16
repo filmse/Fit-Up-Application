@@ -13,8 +13,6 @@ public interface UserService {
 
     List<User> findAll();
 
-//    User login(String username);
-
     User addUser(User user);
 
     User getUser(Long id);

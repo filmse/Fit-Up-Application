@@ -24,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/")
 public class FitUpInfoController {
+
     @Autowired
     FitUpInfoService fitUpInfoService;
 
@@ -34,18 +35,14 @@ public class FitUpInfoController {
     @ResponseBody
     public FitUpInfo add(@RequestParam("userId") Long userId, @RequestBody FitUpInfo fitUpInfo, BindingResult bindingResult) {
         User user = userService.getUser(userId);
-        //User username = userService.findByUsername(user.getUsername());
-        //User user = userService.findByUserName(shoppingCart.getUser().getUsername());
-        //fitUpInfo.setUser(user);
-        return fitUpInfoService.addForum(user, fitUpInfo);
+        return fitUpInfoService.addFitUpInfo(user, fitUpInfo);
     }
 
     @RequestMapping(value = "/infoImage/add", method = RequestMethod.POST)
     @ResponseBody
-    public FitUpInfo addImage(HttpServletRequest request,
-                              HttpServletResponse response, @RequestParam("infoId") Long infoId) {
+    public FitUpInfo addImage(HttpServletRequest request,@RequestParam("infoId") Long infoId) {
         MultipartHttpServletRequest mRequest;
-        FitUpInfo fitUpInfo = fitUpInfoService.getForum(infoId);
+        FitUpInfo fitUpInfo = fitUpInfoService.getFitUpInfo(infoId);
         try {
             mRequest = (MultipartHttpServletRequest) request;
             Iterator<String> itr = mRequest.getFileNames();
@@ -56,7 +53,7 @@ public class FitUpInfoController {
                 imageFitUpInfo.setContentType(multipartFile.getContentType());
                 imageFitUpInfo.setContent(multipartFile.getBytes());
                 imageFitUpInfo.setCreated(Calendar.getInstance().getTime());
-                fitUpInfoService.addImageForum(fitUpInfo, imageFitUpInfo);
+                fitUpInfoService.addImageFitUpInfo(fitUpInfo, imageFitUpInfo);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,7 +63,7 @@ public class FitUpInfoController {
 
     @RequestMapping(value = "info", method = RequestMethod.GET)
     public List<FitUpInfo> list() {
-        return fitUpInfoService.getInfos();
+        return fitUpInfoService.getFitUpInfos();
     }
 
     @RequestMapping(value = "getInfo", method = RequestMethod.GET)
@@ -78,32 +75,32 @@ public class FitUpInfoController {
     public FitUpInfo edit(@PathVariable("id") Long id,
                           @RequestParam("name") String name,
                           @RequestParam("description") String description) {
-        FitUpInfo fitUpInfo = fitUpInfoService.getForum(id);
+        FitUpInfo fitUpInfo = fitUpInfoService.getFitUpInfo(id);
         fitUpInfo.setName(name);
         fitUpInfo.setDescription(description);
-        return fitUpInfoService.updateForum(fitUpInfo);
+        return fitUpInfoService.updateFitUpInfo(fitUpInfo);
     }
 
     @RequestMapping(value = "info/{id}", method = RequestMethod.DELETE)
     public FitUpInfo delete(@PathVariable("id") Long id) {
-        return fitUpInfoService.deleteForum(id);
+        return fitUpInfoService.deleteFitUpInfo(id);
     }
 
     @RequestMapping(value = "info/{id}", method = RequestMethod.GET)
     public FitUpInfo getInfo(@PathVariable("id") Long id) {
-        return fitUpInfoService.getForum(id);
+        return fitUpInfoService.getFitUpInfo(id);
     }
 
     @RequestMapping(value = "/remove", method = RequestMethod.DELETE)
     public User deleteInfo(@RequestParam("infoId") Long infoId, @RequestParam("userId") Long userId) {
         User user = userService.getUser(userId);
-        return fitUpInfoService.deleteUserForum(user, infoId);
+        return fitUpInfoService.deleteUserFitUpInfo(user, infoId);
     }
 
     @RequestMapping(value = "/removeImage", method = RequestMethod.DELETE)
     @ResponseBody
     public FitUpInfo deleteImageUser(@RequestParam("imageId") Long imageId, @RequestParam("infoId") Long infoId) {
-        FitUpInfo fitUpInfo = fitUpInfoService.getForum(infoId);
-        return fitUpInfoService.deleteImageForum(fitUpInfo, imageId);
+        FitUpInfo fitUpInfo = fitUpInfoService.getFitUpInfo(infoId);
+        return fitUpInfoService.deleteImageFitUpInfo(fitUpInfo, imageId);
     }
 }

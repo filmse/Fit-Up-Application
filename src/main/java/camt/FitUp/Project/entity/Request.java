@@ -24,6 +24,8 @@ public class Request {
 
     }
 
+
+
     public Long getId() {
         return id;
     }
@@ -36,8 +38,9 @@ public class Request {
         return request;
     }
 
-    public void setRequest(String request) {
+    public Request setRequest(String request) {
         this.request = request;
+        return null;
     }
 
     @Override
@@ -57,4 +60,5 @@ public class Request {
         result = 31 * result + (request != null ? request.hashCode() : 0);
         return result;
     }
+
 }

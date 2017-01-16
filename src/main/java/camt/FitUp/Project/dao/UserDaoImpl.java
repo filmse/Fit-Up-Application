@@ -33,6 +33,11 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public User deleteUserFitUpInfo(User user) {
+        return userRepository.save(user);
+    }
+
+    @Override
     public User deleteUser(User user) {
         userRepository.delete(user);
         user.setId(null);
